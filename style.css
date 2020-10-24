@@ -276,6 +276,7 @@
 .slick-list {
     overflow: hidden;
     max-width: 947px;
+    display: block !important;
 }
 /* Лента слайдов */
 .slick-track{
