@@ -13,6 +13,12 @@ $(function () {
                     slidesToShow: 1
                 }
             },
+            {
+                breakpoint: 300,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
         ]
     });
 });
