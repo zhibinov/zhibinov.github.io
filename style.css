@@ -355,7 +355,6 @@
 	opacity: 0.2;
 }
 .slider .slick-dots{
-	display: flex;
 	align-items: center;
 	justify-content: center;
 }
