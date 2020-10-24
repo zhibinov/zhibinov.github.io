@@ -512,7 +512,11 @@
     padding-right: 752px;
 }
 @media (max-width: 1024px){
+<<<<<<< HEAD
     .container, .container-cer{
+=======
+    .container{
+>>>>>>> parent of 4f90475... поменял контейнеры в адаптивах
         max-width: 706px;
     }
     .back_header{
@@ -666,8 +670,13 @@
     }
 }
 @media (max-width: 667px){
+<<<<<<< HEAD
     .container, .container-cer{
         max-width: 343px;
+=======
+    .container{
+            max-width: 343px;
+>>>>>>> parent of 4f90475... поменял контейнеры в адаптивах
     }
     .back_header{
         height: 375px;
@@ -784,7 +793,11 @@
     }
 }
 @media(max-width: 320px){
+<<<<<<< HEAD
     .container, .container-cer{
+=======
+    .container{
+>>>>>>> parent of 4f90475... поменял контейнеры в адаптивах
         max-width: 288px;
     }
     .frontend{
