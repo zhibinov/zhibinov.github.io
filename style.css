@@ -254,6 +254,10 @@
     height: 510px;
     text-align: center;
 }
+.container-cer{
+    max-width: 1066px;
+    margin: 0 auto;
+}
 .certificates_h{
     font-size: 36px;
     line-height: 42px;
