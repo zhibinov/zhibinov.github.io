@@ -159,19 +159,27 @@
     background: #FFFFFF;
     box-shadow: 0px 1px 11px 3px rgba(198, 198, 198, 0.27);
     margin-top: -51px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    
     font-size: 18px;
     line-height: 21px;
     color: #1B1C20;
     text-align: center;
 }
+.skil__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 28px;
+}
+.skil__card__small{
+    padding: 17px;
+}
 .row_2{
     margin-top: 19px;
 }
-.logo{
+/*.logo{
     padding: 27px 0 0 0;
 }
 .logo_ps{
@@ -179,7 +187,7 @@
 }
 .skil_text{
     padding-bottom: 28px;
-}
+}*/
 .my_works{
     height: 695px;
     background: #F2F2F2;
@@ -701,8 +709,14 @@
     .block1{
         width: 140px;
         height: 140px;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 14px;
+    }
+    .skil__card{
+        padding: 18px;
+    }
+    .skil__card__small{
+        padding: 18px;
     }
     .work1{
         width: 288px;
