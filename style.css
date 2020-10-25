@@ -448,6 +448,7 @@
         display: none; /* Скрываем подменю */
         margin-left: 0px; /* Сдвигаем подменю вправо */
         margin-top: 10px;
+        z-index: 10;
     }
     .viem_menu:hover .menu_block{
         display: block;
