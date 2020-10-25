@@ -271,9 +271,10 @@
 .minimized {
     cursor: pointer;
     width: 275px;
+}
+.slider_item{
     padding-bottom: 29px;
 }
-
 .minimized:hover {
     box-shadow: 0px 1px 10px 1px rgba(108, 141, 255, 0.38);
 }
@@ -663,9 +664,11 @@
         letter-spacing: 0.05em;
         padding: 30px 0 30px 0;
     }
+    .slider_item{
+        padding-bottom: 10px;;
+    }
     .minimized {
         width: 165px;
-        padding-bottom: 10px;
     }
     .pointer_f_r{
         padding-left: 205px;
