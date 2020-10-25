@@ -262,7 +262,6 @@
 }
 .certificates_box{
 	padding-bottom: 57px;
-    display: flex;
 	justify-content: center;
     align-items: center;
     box-sizing: border-box;
