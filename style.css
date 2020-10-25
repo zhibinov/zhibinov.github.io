@@ -14,11 +14,11 @@
 }
 .back_header{
     background-image: url(img/backgraund.png);
-    height: 855px;
+    height: 655px;
     background-color: #E5E5E5;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: cover;
 }
 .header{
     display: flex;
@@ -251,7 +251,7 @@
     margin-top: 37px;
 }*/
 .certificates{
-    height: 510px;
+    height: 415px;
     text-align: center;
 }
 .certificates_h{
@@ -261,127 +261,17 @@
     padding: 50px 0 37px 0;
 }
 .certificates_box{
-	padding-bottom: 57px;
-	justify-content: center;
+	justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
-    outline: none;
-}
-/*Слайдер*/
-.slick-slider{
-	min-width: 0;
-}
-/* Ограничивающая оболочка */
-.slick-list {
-    overflow: hidden;
-    max-width: 947px;
-    display: block !important;
-}
-/* Лента слайдов */
-.slick-track{
-	display: flex;
-	align-items: flex-start;
-}
-/* Слайд */
-.slick-slide{}
-/* Слайд активный */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-
-/* Стрелка */
-.slick-arrow{}
-/* Стрелка влево */
-.slick-arrow.slick-prev{}
-/* Стрелка вправо */
-.slick-arrow.slick-next{}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-
-/* Точки */
-.slick-dots{
-    display: none;
-}
-.slick-dots li{
-    display: none;
-}
-.slick-dots button{
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* Конкретный слайдер */
-.slider {
-    position: relative;
-    outline: none;
-    padding: 0 57px;
-}
-.slider .slick-arrow{
-	position: absolute;
-	top: 50%;
-	margin: -14px 0px 0px 0px;
-	z-index: 10;
-	font-size: 0;
-	width: 28px;
-    height: 28px;
-    border: none;
-    transform: rotate(-45deg);
-    outline: none;
-}
-.slider .slick-arrow.slick-next:hover{
-    -webkit-box-shadow: 5px 5px 5px 0px rgba(108, 141, 255, 0.38); 
-    box-shadow: 5px 5px 5px 0px rgba(108, 141, 255, 0.38);
-    cursor: pointer;
-}
-.slider .slick-arrow.slick-prev:hover{
-    -webkit-box-shadow: -5px -5px 5px 0px rgba(108, 141, 255, 0.38); 
-    box-shadow: -5px -5px 5px 0px rgba(108, 141, 255, 0.38);
-    cursor: pointer;
-}
-.slider .slick-arrow.slick-prev{
-	left: 0;
-    border-top: 2px solid #C4C4C4;
-    border-left: 2px solid #C4C4C4;
-    background: none;
-}
-.slider .slick-arrow.slick-next{
-    right: 0;
-    border-bottom: 2px solid #C4C4C4;
-    border-right: 2px solid #C4C4C4;
-    background: none;
-}
-.slider .slick-arrow.slick-disabled{
-	opacity: 0.2;
-}
-.slider .slick-dots{
-	align-items: center;
-	justify-content: center;
-}
-.slider .slick-dots li{
-	list-style: none;
-	margin: 0px 10px;
-}
-.slider .slick-dots button{
-	font-size: 0;
-	width: 10px;
-	height: 10px;
-	background-color: #fff;
-	border-radius: 50%;
-}
-.slider .slick-dots li.slick-active button{
-	background-color: transparent;
-	border: 1px solid #fff;
-}
-.slider_item {
-    outline: none;
-}
-.slider_item img{
-	max-width: 459px;
-}
 /* картинка на странице */
 .minimized {
-  cursor: pointer;
+    cursor: pointer;
+    width: 275px;
+    padding-bottom: 29px;
 }
 
 .minimized:hover {
@@ -518,6 +408,7 @@
     }
     .back_header{
         height: 1024px;
+        background-position: center;
     }
     .header_link{
         display: none;
@@ -659,6 +550,12 @@
         margin-top: 259px;
         justify-content: center;
     }
+    .certificates{
+        height: 715px;
+    }
+    .minimized {
+        width: 335px;
+    }
     .pointer_f_r{
         padding-left: 420px;
     }
@@ -758,7 +655,7 @@
         line-height: 12px;
     }
     .certificates{
-        height: 307px;
+        height: 375px;
     }
     .certificates_h{
         font-size: 20px;
@@ -766,16 +663,9 @@
         letter-spacing: 0.05em;
         padding: 30px 0 30px 0;
     }
-    .slider_item img{
-        max-width: 267px;
-    }
-    .slider .slick-arrow{
-        margin: -14px 0px 0px 0px;
-        width: 22px;
-        height: 22px;
-    }
-    .slider {
-        padding: 0 5px;
+    .minimized {
+        width: 165px;
+        padding-bottom: 10px;
     }
     .pointer_f_r{
         padding-left: 205px;
@@ -814,16 +704,11 @@
         width: 288px;
         height: 222px;
     }
-    .slider_item img{
-        max-width: 212px;
+    .certificates{
+        height: 325px;
     }
-    .slider .slick-arrow{
-        margin: -14px 0px 0px 0px;
-        width: 22px;
-        height: 22px;
-    }
-    .slider {
-        padding: 0 5px;
+    .minimized {
+        width: 135px;
     }
     .pointer_f_r{
         padding-left: 205px;
