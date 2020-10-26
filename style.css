@@ -206,10 +206,11 @@
 .work1{
     margin-top: 35px;
     width: 558px;
-    height: 548px;
+    height: 563px;
     background-color: #FFFFFF;
     background-image: url(img/luxtrade.png);
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -218,6 +219,8 @@
 }
 .work2{
     background-image: url(img/htmlcss.png);
+    background-size: 157%;
+    background-repeat: no-repeat;
 }
 .work1:hover{
     box-shadow: 0px 1px 10px 1px rgba(108, 141, 255, 0.38);
