@@ -1,29 +1,4 @@
 $(function () {
-    $('.slider').slick({
-        arrows: true,
-        dots: true,
-        slidesToShow: 2,
-        autoplay: true,
-        speed: 1000,
-        autoplaySpeed: 800,
-        responsive: [
-            {
-                breakpoint: 1025,
-                settings: {
-                    slidesToShow: 1
-                }
-            },
-            {
-                breakpoint: 300,
-                settings: {
-                    slidesToShow: 1
-                }
-            },
-        ]
-    });
-});
-
-$(function () {
     $('.minimized').click(function (event) {
         var i_path = $(this).attr('src');
         $('body').append('<div id="overlay"></div><div id="magnify"><img src="' + i_path + '"><div id="close-popup"><i></i></div></div>');
