@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeverApparel - Catalog</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="catalog.css">
+</head>
+
+<body>
+    <header class="b-header">
+        <div class="b-header__box">
+            <a href="tel:+78002503439" class="b-header__number"><span>8 (800) 250 34 39</span><br>
+                ЗВОНОК БЕСПЛАТНЫЙ</a>
+            <a href="#" class="b-header__where"><i class="fas fa-map-marker-alt"></i>ГДЕ КУПИТЬ</a>
+            <img src="img/severapparel_header.png" alt="" class="b-header__logo">
+            <div class="b-header__links-box">
+                <a href="#" class="b-header__link">RU</a>
+                <a href="#" class="b-header__link"><img src="img/man.svg" alt=""></a>
+                <a href="#" class="b-header__link"><img src="img/heart.svg" alt=""></a>
+                <a href="#" class="b-header__link"><img src="img/bascet.svg" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <nav class="b-navbar">
+        <a href="#" class="b-navbar__link">МУЖСКОЕ</a>
+        <a href="#" class="b-navbar__link">ЖЕНСКОЕ</a>
+        <a href="#" class="b-navbar__link">ДЕТСКОЕ</a>
+        <a href="#" class="b-navbar__link">АКСЕССУАРЫ</a>
+        <a href="#" class="b-navbar__link b-navbar__sale">SALE</a>
+        <a href="#" class="b-navbar__link">НОВОСТИ</a>
+        <a href="#" class="b-navbar__link">ДОСТАВКА</a>
+        <a href="#" class="b-navbar__link">ОПТ</a>
+    </nav>
+    <div class="b-path">
+        <div class="container">
+            <a href="#" class="b-path__link">Главная</a>
+            <i class="fas fa-long-arrow-alt-right"></i>
+            <a href="#" class="b-path__link">Мужчины</a>
+            <i class="fas fa-long-arrow-alt-right"></i>
+            <div class="b-path__text">Куртки<span>[302 товаров]</span></div>
+        </div>
+    </div>
+    <div class="b-main container">
+        <div class="b-options-column">
+            <div class="b-options-column__choise">
+                <div class="b-options-column__heading">ВЫ ВЫБРАЛИ <button>Сбросить</button></div>
+                <img src="img/shape.svg" alt="" class="b-options-column__shape">
+                <div class="b-options-column__option">
+                    <button class="b-options-column__button-cancel"><img src="img/cancel.svg" alt=""></button>
+                    <div class="b-options-column__option-name">БРЕНД: <span>Север</span></div>
+                </div>
+                <div class="b-options-column__option">
+                    <button class="b-options-column__button-cancel"><img src="img/cancel.svg" alt=""></button>
+                    <div class="b-options-column__option-name">ПОЛ: <span>Мужчины</span></div>
+                </div>
+                <div class="b-options-column__option">
+                    <button class="b-options-column__button-cancel"><img src="img/cancel.svg" alt=""></button>
+                    <div class="b-options-column__option-name">КАТЕГОРИЯ: <span>Куртки</span></div>
+                </div>
+                <div class="b-options-column__option">
+                    <button class="b-options-column__button-cancel"><img src="img/cancel.svg" alt=""></button>
+                    <div class="b-options-column__option-name">РАЗМЕР: <span>L</span></div>
+                </div>
+            </div>
+            <div class="b-options-column__heading b-options-column__heading_padd">МЕНЮ:</div>
+            <div class="accordion">
+                <div class="tab">
+                    <input type="checkbox" id="tab1" name="tab-group" class="accordion-input" checked>
+                    <label for="tab1" class="tab-title">БРЕНД</label>
+                    <section class="tab-content">
+                        <div class="checkbox">
+                            <input type="checkbox" id="check1" />
+                            <label for="check1"></label>
+                            СЕВЕР
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="check2" />
+                            <label for="check2"></label>
+                            CULT
+                        </div>
+                    </section>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" id="tab2" name="tab-group" class="accordion-input" checked>
+                    <label for="tab2" class="tab-title">ПОЛ</label>
+                    <section class="tab-content">
+                        <div class="checkbox">
+                            <input type="checkbox" id="check3" />
+                            <label for="check3"></label>
+                            Мужчины
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="check4" />
+                            <label for="check4"></label>
+                            Женщины
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="check5" />
+                            <label for="check5"></label>
+                            Дети
+                        </div>
+                    </section>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" id="tab3" name="tab-group" class="accordion-input" checked>
+                    <label for="tab3" class="tab-title">КАТЕГОРИЯ</label>
+                    <section class="tab-content">
+                        <div class="tab-category">
+                            <input type="radio" id="tab4" name="tab-group2" class="accordion-input-category" checked>
+                            <label for="tab4" class="tab-title-category">Одежда</label>
+                            <section class="tab-content-category">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="check6" />
+                                    <label for="check6"></label>
+                                    Футболки & Поло
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="check7" />
+                                    <label for="check7"></label>
+                                    Свитшоты
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="check8" />
+                                    <label for="check8"></label>
+                                    Кенгуру
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="check9" />
+                                    <label for="check9"></label>
+                                    Джоггеры
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="check10" />
+                                    <label for="check10"></label>
+                                    Куртки
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="check11" />
+                                    <label for="check11"></label>
+                                    Джинсы
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="check12" />
+                                    <label for="check12"></label>
+                                    Майки
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="check13" />
+                                    <label for="check13"></label>
+                                    Брюки Спортивные
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="check14" />
+                                    <label for="check14"></label>
+                                    Шорты
+                                </div>
+                            </section>
+
+                        </div>
+                        <div class="tab-category1">
+                            <input type="radio" id="tab5" name="tab-group2" class="accordion-input-category1">
+                            <label for="tab5" class="tab-title-category1">Аксессуары</label>
+                            <section class="tab-content-category1">
+                            </section>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" id="tab6" name="tab-group" class="accordion-input" checked>
+                    <label for="tab6" class="tab-title">РАЗМЕР</label>
+                    <form class="tab-content tab-content_color">
+                        <label class="radio">
+                            <input type="radio" name="color" />
+                            <div class="radio__text_size"></div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color" />
+                            <div class="radio__text_size radio__text_size-s"></div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color" />
+                            <div class="radio__text_size radio__text_size-m"></div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color" />
+                            <div class="radio__text_size radio__text_size-l"></div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color" />
+                            <div class="radio__text_size radio__text_size-xl"></div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color" />
+                            <div class="radio__text_size radio__text_size-2xl"></div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color" />
+                            <div class="radio__text_size radio__text_size-3xl"></div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color" />
+                            <div class="radio__text_size radio__text_size-4xl"></div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color" />
+                            <div class="radio__text_size radio__text_size-5xl"></div>
+                        </label>
+                    </form>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" id="tab7" name="tab-group" class="accordion-input" checked>
+                    <label for="tab7" class="tab-title">ЦВЕТ</label>
+                    <form class="tab-content tab-content_color">
+                        <label class="radio">
+                            <input type="radio" name="color" />
+                            <div class="radio__text"></div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color" />
+                            <div class="radio__text radio__text_brown"></div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color" />
+                            <div class="radio__text radio__text_red"></div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color" />
+                            <div class="radio__text radio__text_black"></div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color" />
+                            <div class="radio__text radio__text_blue"></div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color" />
+                            <div class="radio__text radio__text_purple"></div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color" />
+                            <div class="radio__text radio__text_yellow"></div>
+                        </label>
+                    </form>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" id="tab8" name="tab-group" class="accordion-input">
+                    <label for="tab8" class="tab-title">СЕЗОН</label>
+                    <section class="tab-content">
+                    </section>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" id="tab9" name="tab-group" class="accordion-input">
+                    <label for="tab9" class="tab-title">МАТЕРИАЛЫ</label>
+                    <section class="tab-content">
+                    </section>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" id="tab10" name="tab-group" class="accordion-input">
+                    <label for="tab10" class="tab-title tab-title_blue">НОВИНКИ</label>
+                    <section class="tab-content">
+                    </section>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" id="tab11" name="tab-group" class="accordion-input">
+                    <label for="tab11" class="tab-title tab-title_red">SALE</label>
+                    <section class="tab-content">
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="b-product-column">
+            <div class="b-product-column__options-box">
+                <select class="b-product-column__sorting">
+                    <option>Цена</option>
+                    <option>Популярность</option>
+                    <option>Релевантности</option>
+                </select>
+                <div class="b-product-column__quantity">
+                    Показать:
+                    <label class="b-product-column__radio">
+                        <input type="radio" name="quantity" checked />
+                        <div class="b-product-column__radio__text"></div>
+                    </label>
+                    |
+                    <label class="b-product-column__radio">
+                        <input type="radio" name="quantity" />
+                        <div class="b-product-column__radio__text b-product-column__radio__text24"></div>
+                    </label>
+                </div>
+                <form action="#" class="b-product-column__search">
+                    <input type="search" name="q" placeholder="Поиск" class="b-product-column__search-input">
+                    <button type="submit" class="b-product-column__search-button"><img src="img/search.svg"
+                            alt=""></button>
+                </form>
+            </div>
+            <div class="b-product-box">
+                <div class="b-product-card">
+                    <div class="b-product-card__img">
+                        <div class="b-product-card__promo">
+                            <div class="b-product-card__new">НОВИНКА</div>
+                            <div class="b-product-card__sale">-22%</div>
+                        </div>
+                        <label class="b-product-card__checkbox">
+                            <input type="checkbox" />
+                            <div class="b-product-card__checkbox-text"></div>
+                        </label>
+                        <span class="b-product-card__slide-button"></span>
+                        <span class="b-product-card__slide-button b-product-card__slide-button2"></span>
+                        <span class="b-product-card__slide-button b-product-card__slide-button3"></span>
+                        <div class="b-product-card__img-slide"></div>
+                    </div>
+                    <div class="b-product-card__main">
+                        <div class="b-product-card__name">Куртка "СЕВЕР"</div>
+                        <div class="b-product-card__code">Артикул: СЕВ921</div>
+                        <div class="b-product-card__price">9 532₽ <span>12 221₽</span></div>
+                        <div class="b-product-card__discount">-2689₽</div>
+                    </div>
+                    <div class="b-product-card__properties">
+                        <div data-name="color-slider" class="b-product-card__color-slider">
+                            <form class="b-product-card__tab-content">
+                                <div class='b-product-card__color-title'>Цвет&nbsp;-&nbsp;<p data-name="color-title">Не
+                                        выбран</p>
+                                </div>
+                                <div class="properties-slider">
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Серый' data-name="color-input"
+                                            data-color="gray" />
+                                        <div class="radio__text"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Коричневый' data-name="color-input"
+                                            data-color="brown" />
+                                        <div class="radio__text radio__text_brown"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Красный' data-name="color-input"
+                                            data-color="red" />
+                                        <div class="radio__text radio__text_red"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Черный' data-name="color-input"
+                                            data-color="black" />
+                                        <div class="radio__text radio__text_black"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Синий' data-name="color-input"
+                                            data-color="blue" />
+                                        <div class="radio__text radio__text_blue"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Фиолетовый' data-name="color-input"
+                                            data-color="purple" />
+                                        <div class="radio__text radio__text_purple"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Желтый' data-name="color-input"
+                                            data-color="yellow" />
+                                        <div class="radio__text radio__text_yellow"></div>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="b-product-card__size-slider">
+                            <div data-name="color-slider" class="b-product-card__color-slider">
+                                <form class="b-product-card__tab-content">
+                                    <div class='b-product-card__color-title'>Размер&nbsp;-&nbsp;<p
+                                            data-name="color-title">Не
+                                            выбран</p>
+                                    </div>
+                                    <div class="properties-slider">
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='XS' data-name="color-input"
+                                                data-color="gray" />
+                                            <div class="radio__text_size"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='S' data-name="color-input"
+                                                data-color="brown" />
+                                            <div class="radio__text_size radio__text_size-s"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='M' data-name="color-input"
+                                                data-color="red" />
+                                            <div class="radio__text_size radio__text_size-m"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='L' data-name="color-input"
+                                                data-color="black" />
+                                            <div class="radio__text_size radio__text_size-l"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='XL' data-name="color-input"
+                                                data-color="blue" />
+                                            <div class="radio__text_size radio__text_size-xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='2XL' data-name="color-input"
+                                                data-color="purple" />
+                                            <div class="radio__text_size radio__text_size-2xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='3XL' data-name="color-input"
+                                                data-color="yellow" />
+                                            <div class="radio__text_size radio__text_size-3xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='4XL' data-name="color-input"
+                                                data-color="purple" />
+                                            <div class="radio__text_size radio__text_size-4xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='5XL' data-name="color-input"
+                                                data-color="yellow" />
+                                            <div class="radio__text_size radio__text_size-5xl"></div>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="b-product-card__button-box">
+                            <div class="b-product-card__quantity" data-name="block">
+                                <button data-name="minus" class="b-product-card__button-minus"></button>
+                                <input type="text" data-name="value" value="0">
+                                <button data-name="plus" class="b-product-card__button-plus"></button>
+                            </div>
+                            <button class="b-product-card__button-buy">Купить</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="b-product-card">
+                    <div class="b-product-card__img">
+                        <div class="b-product-card__promo">
+                            <div class="b-product-card__new">НОВИНКА</div>
+                            <!--<div class="b-product-card__sale">-22%</div>-->
+                        </div>
+                        <label class="b-product-card__checkbox">
+                            <input type="checkbox" />
+                            <div class="b-product-card__checkbox-text"></div>
+                        </label>
+                        <span class="b-product-card__slide-button"></span>
+                        <span class="b-product-card__slide-button b-product-card__slide-button2"></span>
+                        <span class="b-product-card__slide-button b-product-card__slide-button3"></span>
+                        <div class="b-product-card__img-slide b-product-card__img-slide2"></div>
+                    </div>
+                    <div class="b-product-card__main">
+                        <div class="b-product-card__name">Куртка "СЕВЕР"</div>
+                        <div class="b-product-card__code">Артикул: СЕВ921</div>
+                        <div class="b-product-card__price">12 221₽</div>
+                        <div class="b-product-card__discount b-product-card__discount_opacity">-2689₽</div>
+                    </div>
+                    <div class="b-product-card__properties">
+                        <div data-name="color-slider" class="b-product-card__color-slider">
+                            <form class="b-product-card__tab-content">
+                                <div class='b-product-card__color-title'>Цвет&nbsp;-&nbsp;<p data-name="color-title">Не
+                                        выбран</p>
+                                </div>
+                                <div class="properties-slider">
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Серый' data-name="color-input"
+                                            data-color="gray" />
+                                        <div class="radio__text"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Коричневый' data-name="color-input"
+                                            data-color="brown" />
+                                        <div class="radio__text radio__text_brown"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Красный' data-name="color-input"
+                                            data-color="red" />
+                                        <div class="radio__text radio__text_red"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Черный' data-name="color-input"
+                                            data-color="black" />
+                                        <div class="radio__text radio__text_black"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Синий' data-name="color-input"
+                                            data-color="blue" />
+                                        <div class="radio__text radio__text_blue"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Фиолетовый' data-name="color-input"
+                                            data-color="purple" />
+                                        <div class="radio__text radio__text_purple"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Желтый' data-name="color-input"
+                                            data-color="yellow" />
+                                        <div class="radio__text radio__text_yellow"></div>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="b-product-card__size-slider">
+                            <div data-name="color-slider" class="b-product-card__color-slider">
+                                <form class="b-product-card__tab-content">
+                                    <div class='b-product-card__color-title'>Размер&nbsp;-&nbsp;<p
+                                            data-name="color-title">Не
+                                            выбран</p>
+                                    </div>
+                                    <div class="properties-slider">
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='XS' data-name="color-input"
+                                                data-color="gray" />
+                                            <div class="radio__text_size"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='S' data-name="color-input"
+                                                data-color="brown" />
+                                            <div class="radio__text_size radio__text_size-s"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='M' data-name="color-input"
+                                                data-color="red" />
+                                            <div class="radio__text_size radio__text_size-m"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='L' data-name="color-input"
+                                                data-color="black" />
+                                            <div class="radio__text_size radio__text_size-l"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='XL' data-name="color-input"
+                                                data-color="blue" />
+                                            <div class="radio__text_size radio__text_size-xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='2XL' data-name="color-input"
+                                                data-color="purple" />
+                                            <div class="radio__text_size radio__text_size-2xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='3XL' data-name="color-input"
+                                                data-color="yellow" />
+                                            <div class="radio__text_size radio__text_size-3xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='4XL' data-name="color-input"
+                                                data-color="purple" />
+                                            <div class="radio__text_size radio__text_size-4xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='5XL' data-name="color-input"
+                                                data-color="yellow" />
+                                            <div class="radio__text_size radio__text_size-5xl"></div>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="b-product-card__button-box">
+                            <div class="b-product-card__quantity" data-name="block">
+                                <button data-name="minus" class="b-product-card__button-minus"></button>
+                                <input type="text" data-name="value" value="0">
+                                <button data-name="plus" class="b-product-card__button-plus"></button>
+                            </div>
+                            <button class="b-product-card__button-buy">Купить</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="b-product-card">
+                    <div class="b-product-card__img">
+                        <div class="b-product-card__promo">
+                            <div class="b-product-card__new">НОВИНКА</div>
+                            <!--<div class="b-product-card__sale">-22%</div>-->
+                        </div>
+                        <label class="b-product-card__checkbox">
+                            <input type="checkbox" />
+                            <div class="b-product-card__checkbox-text"></div>
+                        </label>
+                        <span class="b-product-card__slide-button"></span>
+                        <span class="b-product-card__slide-button b-product-card__slide-button2"></span>
+                        <span class="b-product-card__slide-button b-product-card__slide-button3"></span>
+                        <div class="b-product-card__img-slide b-product-card__img-slide3"></div>
+                    </div>
+                    <div class="b-product-card__main">
+                        <div class="b-product-card__name">Куртка "СЕВЕР"</div>
+                        <div class="b-product-card__code">Артикул: СЕВ921</div>
+                        <div class="b-product-card__price">12 221₽</div>
+                        <div class="b-product-card__discount b-product-card__discount_opacity">-2689₽</div>
+                    </div>
+                    <div class="b-product-card__properties">
+                        <div data-name="color-slider" class="b-product-card__color-slider">
+                            <form class="b-product-card__tab-content">
+                                <div class='b-product-card__color-title'>Цвет&nbsp;-&nbsp;<p data-name="color-title">Не
+                                        выбран</p>
+                                </div>
+                                <div class="properties-slider">
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Серый' data-name="color-input"
+                                            data-color="gray" />
+                                        <div class="radio__text"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Коричневый' data-name="color-input"
+                                            data-color="brown" />
+                                        <div class="radio__text radio__text_brown"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Красный' data-name="color-input"
+                                            data-color="red" />
+                                        <div class="radio__text radio__text_red"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Черный' data-name="color-input"
+                                            data-color="black" />
+                                        <div class="radio__text radio__text_black"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Синий' data-name="color-input"
+                                            data-color="blue" />
+                                        <div class="radio__text radio__text_blue"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Фиолетовый' data-name="color-input"
+                                            data-color="purple" />
+                                        <div class="radio__text radio__text_purple"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Желтый' data-name="color-input"
+                                            data-color="yellow" />
+                                        <div class="radio__text radio__text_yellow"></div>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="b-product-card__size-slider">
+                            <div data-name="color-slider" class="b-product-card__color-slider">
+                                <form class="b-product-card__tab-content">
+                                    <div class='b-product-card__color-title'>Размер&nbsp;-&nbsp;<p
+                                            data-name="color-title">Не
+                                            выбран</p>
+                                    </div>
+                                    <div class="properties-slider">
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='XS' data-name="color-input"
+                                                data-color="gray" />
+                                            <div class="radio__text_size"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='S' data-name="color-input"
+                                                data-color="brown" />
+                                            <div class="radio__text_size radio__text_size-s"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='M' data-name="color-input"
+                                                data-color="red" />
+                                            <div class="radio__text_size radio__text_size-m"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='L' data-name="color-input"
+                                                data-color="black" />
+                                            <div class="radio__text_size radio__text_size-l"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='XL' data-name="color-input"
+                                                data-color="blue" />
+                                            <div class="radio__text_size radio__text_size-xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='2XL' data-name="color-input"
+                                                data-color="purple" />
+                                            <div class="radio__text_size radio__text_size-2xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='3XL' data-name="color-input"
+                                                data-color="yellow" />
+                                            <div class="radio__text_size radio__text_size-3xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='4XL' data-name="color-input"
+                                                data-color="purple" />
+                                            <div class="radio__text_size radio__text_size-4xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='5XL' data-name="color-input"
+                                                data-color="yellow" />
+                                            <div class="radio__text_size radio__text_size-5xl"></div>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="b-product-card__button-box">
+                            <div class="b-product-card__quantity" data-name="block">
+                                <button data-name="minus" class="b-product-card__button-minus"></button>
+                                <input type="text" data-name="value" value="0">
+                                <button data-name="plus" class="b-product-card__button-plus"></button>
+                            </div>
+                            <button class="b-product-card__button-buy">Купить</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="b-product-card">
+                    <div class="b-product-card__img">
+                        <div class="b-product-card__promo">
+                            <div class="b-product-card__new">НОВИНКА</div>
+                            <!--<div class="b-product-card__sale">-22%</div>-->
+                        </div>
+                        <label class="b-product-card__checkbox">
+                            <input type="checkbox" />
+                            <div class="b-product-card__checkbox-text"></div>
+                        </label>
+                        <span class="b-product-card__slide-button"></span>
+                        <span class="b-product-card__slide-button b-product-card__slide-button2"></span>
+                        <span class="b-product-card__slide-button b-product-card__slide-button3"></span>
+                        <div class="b-product-card__img-slide b-product-card__img-slide4"></div>
+                    </div>
+                    <div class="b-product-card__main">
+                        <div class="b-product-card__name">Куртка "СЕВЕР"</div>
+                        <div class="b-product-card__code">Артикул: СЕВ921</div>
+                        <div class="b-product-card__price">12 221₽</div>
+                        <div class="b-product-card__discount b-product-card__discount_opacity">-2689₽</div>
+                    </div>
+                    <div class="b-product-card__properties">
+                        <div data-name="color-slider" class="b-product-card__color-slider">
+                            <form class="b-product-card__tab-content">
+                                <div class='b-product-card__color-title'>Цвет&nbsp;-&nbsp;<p data-name="color-title">Не
+                                        выбран</p>
+                                </div>
+                                <div class="properties-slider">
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Серый' data-name="color-input"
+                                            data-color="gray" />
+                                        <div class="radio__text"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Коричневый' data-name="color-input"
+                                            data-color="brown" />
+                                        <div class="radio__text radio__text_brown"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Красный' data-name="color-input"
+                                            data-color="red" />
+                                        <div class="radio__text radio__text_red"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Черный' data-name="color-input"
+                                            data-color="black" />
+                                        <div class="radio__text radio__text_black"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Синий' data-name="color-input"
+                                            data-color="blue" />
+                                        <div class="radio__text radio__text_blue"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Фиолетовый' data-name="color-input"
+                                            data-color="purple" />
+                                        <div class="radio__text radio__text_purple"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Желтый' data-name="color-input"
+                                            data-color="yellow" />
+                                        <div class="radio__text radio__text_yellow"></div>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="b-product-card__size-slider">
+                            <div data-name="color-slider" class="b-product-card__color-slider">
+                                <form class="b-product-card__tab-content">
+                                    <div class='b-product-card__color-title'>Размер&nbsp;-&nbsp;<p
+                                            data-name="color-title">Не
+                                            выбран</p>
+                                    </div>
+                                    <div class="properties-slider">
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='XS' data-name="color-input"
+                                                data-color="gray" />
+                                            <div class="radio__text_size"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='S' data-name="color-input"
+                                                data-color="brown" />
+                                            <div class="radio__text_size radio__text_size-s"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='M' data-name="color-input"
+                                                data-color="red" />
+                                            <div class="radio__text_size radio__text_size-m"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='L' data-name="color-input"
+                                                data-color="black" />
+                                            <div class="radio__text_size radio__text_size-l"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='XL' data-name="color-input"
+                                                data-color="blue" />
+                                            <div class="radio__text_size radio__text_size-xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='2XL' data-name="color-input"
+                                                data-color="purple" />
+                                            <div class="radio__text_size radio__text_size-2xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='3XL' data-name="color-input"
+                                                data-color="yellow" />
+                                            <div class="radio__text_size radio__text_size-3xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='4XL' data-name="color-input"
+                                                data-color="purple" />
+                                            <div class="radio__text_size radio__text_size-4xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='5XL' data-name="color-input"
+                                                data-color="yellow" />
+                                            <div class="radio__text_size radio__text_size-5xl"></div>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="b-product-card__button-box">
+                            <div class="b-product-card__quantity" data-name="block">
+                                <button data-name="minus" class="b-product-card__button-minus"></button>
+                                <input type="text" data-name="value" value="0">
+                                <button data-name="plus" class="b-product-card__button-plus"></button>
+                            </div>
+                            <button class="b-product-card__button-buy">Купить</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="b-product-card">
+                    <div class="b-product-card__img">
+                        <div class="b-product-card__promo">
+                            <div class="b-product-card__new">НОВИНКА</div>
+                            <!--<div class="b-product-card__sale">-22%</div>-->
+                        </div>
+                        <label class="b-product-card__checkbox">
+                            <input type="checkbox" />
+                            <div class="b-product-card__checkbox-text"></div>
+                        </label>
+                        <span class="b-product-card__slide-button"></span>
+                        <span class="b-product-card__slide-button b-product-card__slide-button2"></span>
+                        <span class="b-product-card__slide-button b-product-card__slide-button3"></span>
+                        <div class="b-product-card__img-slide b-product-card__img-slide5"></div>
+                    </div>
+                    <div class="b-product-card__main">
+                        <div class="b-product-card__name">Куртка "СЕВЕР"</div>
+                        <div class="b-product-card__code">Артикул: СЕВ921</div>
+                        <div class="b-product-card__price">12 221₽</div>
+                        <div class="b-product-card__discount b-product-card__discount_opacity">-2689₽</div>
+                    </div>
+                    <div class="b-product-card__properties">
+                        <div data-name="color-slider" class="b-product-card__color-slider">
+                            <form class="b-product-card__tab-content">
+                                <div class='b-product-card__color-title'>Цвет&nbsp;-&nbsp;<p data-name="color-title">Не
+                                        выбран</p>
+                                </div>
+                                <div class="properties-slider">
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Серый' data-name="color-input"
+                                            data-color="gray" />
+                                        <div class="radio__text"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Коричневый' data-name="color-input"
+                                            data-color="brown" />
+                                        <div class="radio__text radio__text_brown"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Красный' data-name="color-input"
+                                            data-color="red" />
+                                        <div class="radio__text radio__text_red"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Черный' data-name="color-input"
+                                            data-color="black" />
+                                        <div class="radio__text radio__text_black"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Синий' data-name="color-input"
+                                            data-color="blue" />
+                                        <div class="radio__text radio__text_blue"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Фиолетовый' data-name="color-input"
+                                            data-color="purple" />
+                                        <div class="radio__text radio__text_purple"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Желтый' data-name="color-input"
+                                            data-color="yellow" />
+                                        <div class="radio__text radio__text_yellow"></div>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="b-product-card__size-slider">
+                            <div data-name="color-slider" class="b-product-card__color-slider">
+                                <form class="b-product-card__tab-content">
+                                    <div class='b-product-card__color-title'>Размер&nbsp;-&nbsp;<p
+                                            data-name="color-title">Не
+                                            выбран</p>
+                                    </div>
+                                    <div class="properties-slider">
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='XS' data-name="color-input"
+                                                data-color="gray" />
+                                            <div class="radio__text_size"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='S' data-name="color-input"
+                                                data-color="brown" />
+                                            <div class="radio__text_size radio__text_size-s"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='M' data-name="color-input"
+                                                data-color="red" />
+                                            <div class="radio__text_size radio__text_size-m"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='L' data-name="color-input"
+                                                data-color="black" />
+                                            <div class="radio__text_size radio__text_size-l"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='XL' data-name="color-input"
+                                                data-color="blue" />
+                                            <div class="radio__text_size radio__text_size-xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='2XL' data-name="color-input"
+                                                data-color="purple" />
+                                            <div class="radio__text_size radio__text_size-2xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='3XL' data-name="color-input"
+                                                data-color="yellow" />
+                                            <div class="radio__text_size radio__text_size-3xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='4XL' data-name="color-input"
+                                                data-color="purple" />
+                                            <div class="radio__text_size radio__text_size-4xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='5XL' data-name="color-input"
+                                                data-color="yellow" />
+                                            <div class="radio__text_size radio__text_size-5xl"></div>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="b-product-card__button-box">
+                            <div class="b-product-card__quantity" data-name="block">
+                                <button data-name="minus" class="b-product-card__button-minus"></button>
+                                <input type="text" data-name="value" value="0">
+                                <button data-name="plus" class="b-product-card__button-plus"></button>
+                            </div>
+                            <button class="b-product-card__button-buy">Купить</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="b-product-card">
+                    <div class="b-product-card__img">
+                        <div class="b-product-card__promo">
+                            <div class="b-product-card__new">НОВИНКА</div>
+                            <!--<div class="b-product-card__sale">-22%</div>-->
+                        </div>
+                        <label class="b-product-card__checkbox">
+                            <input type="checkbox" />
+                            <div class="b-product-card__checkbox-text"></div>
+                        </label>
+                        <span class="b-product-card__slide-button"></span>
+                        <span class="b-product-card__slide-button b-product-card__slide-button2"></span>
+                        <span class="b-product-card__slide-button b-product-card__slide-button3"></span>
+                        <div class="b-product-card__img-slide b-product-card__img-slide6"></div>
+                    </div>
+                    <div class="b-product-card__main">
+                        <div class="b-product-card__name">Куртка "СЕВЕР"</div>
+                        <div class="b-product-card__code">Артикул: СЕВ921</div>
+                        <div class="b-product-card__price">12 221₽</div>
+                        <div class="b-product-card__discount b-product-card__discount_opacity">-2689₽</div>
+                    </div>
+                    <div class="b-product-card__properties">
+                        <div data-name="color-slider" class="b-product-card__color-slider">
+                            <form class="b-product-card__tab-content">
+                                <div class='b-product-card__color-title'>Цвет&nbsp;-&nbsp;<p data-name="color-title">Не
+                                        выбран</p>
+                                </div>
+                                <div class="properties-slider">
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Серый' data-name="color-input"
+                                            data-color="gray" />
+                                        <div class="radio__text"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Коричневый' data-name="color-input"
+                                            data-color="brown" />
+                                        <div class="radio__text radio__text_brown"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Красный' data-name="color-input"
+                                            data-color="red" />
+                                        <div class="radio__text radio__text_red"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Черный' data-name="color-input"
+                                            data-color="black" />
+                                        <div class="radio__text radio__text_black"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Синий' data-name="color-input"
+                                            data-color="blue" />
+                                        <div class="radio__text radio__text_blue"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Фиолетовый' data-name="color-input"
+                                            data-color="purple" />
+                                        <div class="radio__text radio__text_purple"></div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="color" value='Желтый' data-name="color-input"
+                                            data-color="yellow" />
+                                        <div class="radio__text radio__text_yellow"></div>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="b-product-card__size-slider">
+                            <div data-name="color-slider" class="b-product-card__color-slider">
+                                <form class="b-product-card__tab-content">
+                                    <div class='b-product-card__color-title'>Размер&nbsp;-&nbsp;<p
+                                            data-name="color-title">Не
+                                            выбран</p>
+                                    </div>
+                                    <div class="properties-slider">
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='XS' data-name="color-input"
+                                                data-color="gray" />
+                                            <div class="radio__text_size"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='S' data-name="color-input"
+                                                data-color="brown" />
+                                            <div class="radio__text_size radio__text_size-s"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='M' data-name="color-input"
+                                                data-color="red" />
+                                            <div class="radio__text_size radio__text_size-m"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='L' data-name="color-input"
+                                                data-color="black" />
+                                            <div class="radio__text_size radio__text_size-l"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='XL' data-name="color-input"
+                                                data-color="blue" />
+                                            <div class="radio__text_size radio__text_size-xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='2XL' data-name="color-input"
+                                                data-color="purple" />
+                                            <div class="radio__text_size radio__text_size-2xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='3XL' data-name="color-input"
+                                                data-color="yellow" />
+                                            <div class="radio__text_size radio__text_size-3xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='4XL' data-name="color-input"
+                                                data-color="purple" />
+                                            <div class="radio__text_size radio__text_size-4xl"></div>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="color" value='5XL' data-name="color-input"
+                                                data-color="yellow" />
+                                            <div class="radio__text_size radio__text_size-5xl"></div>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="b-product-card__button-box">
+                            <div class="b-product-card__quantity" data-name="block">
+                                <button data-name="minus" class="b-product-card__button-minus"></button>
+                                <input type="text" data-name="value" value="0">
+                                <button data-name="plus" class="b-product-card__button-plus"></button>
+                            </div>
+                            <button class="b-product-card__button-buy">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="b-product-button">Показать еще 12</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $('.properties-slider').each(function (k, v) {
+            $(this).slick({
+                variableWidth: true,
+                dots: false,
+                arrows: true,
+            });
+            console.log(this);
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

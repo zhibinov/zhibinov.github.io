@@ -180,26 +180,27 @@
     margin-top: 19px;
 }
 .my_works{
-    height: 695px;
     background: #F2F2F2;
     text-align: center;
+    padding: 29px 0;
 }
 .my_works_h{
     font-size: 36px;
     line-height: 42px;
     color: #1B1C20;
-    padding-top: 29px;
+    margin-bottom: 35px;
 }
 .my_works_block{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 30px;
 }
 .work1{
-    margin-top: 35px;
     width: 558px;
-    height: 563px;
+    height: 266px;
     background-color: #FFFFFF;
-    background-image: url(img/luxtrade.png);
+    background-image: url(img/work1.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -208,16 +209,28 @@
     text-decoration: none;
     box-shadow: 0px 1px 11px 3px rgba(198, 198, 198, 0.27);
 }
+.work1_big-size{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 563px;
+}
 .work2{
+    background-image: url(img/rost.png);
+}
+.work3{
+    background-image: url(img/brand.png);
+}
+.work4{
+    background-image: url(img/luxtrade.png);
+}
+.work5{
     background-image: url(img/htmlcss.png);
-    background-size: 157%;
-    background-repeat: no-repeat;
 }
 .work1:hover{
     box-shadow: 0px 1px 10px 1px rgba(108, 141, 255, 0.38);
 }
 .work1:hover .description{
-    display: block;
+    display: flex;
     -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -244,19 +257,20 @@
   
     
 .description{
-    height: 122px;
-    background: #F2F2F2;
+    background: white;
     width: 100%;
-    margin-top: 406px;
+    margin-top: 136px;
     text-align: center;
     color: #1B1C20;
-    padding-top: 13px;
+    padding: 20px 0;
     box-sizing: border-box;
-    display: flex;
     flex-direction: column;
     text-decoration: none;
     display: none;
     align-items: center;
+}
+.description1{
+    margin-top: 386px;
 }
 .description_h{
     font-weight: bold;
@@ -264,10 +278,17 @@
 .description_work{
     text-align: center;
     max-width: 300px;
+    margin: 0 auto;
+}
+.description__link{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.description__link:hover{
+    color: #6C8DFF;
 }
 .description_work_block{
-    display: flex;
-    justify-content: center;
     padding-top: 11px;
 }
 /*.works_buton{

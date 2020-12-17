@@ -1,0 +1,197 @@
+<!-- Вёрстка сайта - Павел Жибинов - https: //zhibinov.github.io -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Проф вёрстка - Single Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="checkout-style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__logo-search">
+                <a href="../index.html" class="logo_link">
+                    <img src="img/logo.png" alt="logo" class="logo">
+                    <div class="logo-text">BRAN<span>D</span></div>
+                </a>
+                <form action="#" class="header-search-form">
+                    <a href="#" class="browse">Browse<i class="fas fa-caret-down"></i></a>
+                    <input type="text" placeholder="Search for Item...">
+                    <button class="search-button"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="header__bascet">
+                <a href="#"><img src="img/bascet.svg" alt="bascet" class="bascet"></a>
+                <a href="#" class="my-account">My Account<i class="fas fa-caret-down"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="navbar">
+        <a href="#">HOME</a>
+        <a href="#">MAN</a>
+        <a href="#">WOMAN</a>
+        <a href="#">KIDS</a>
+        <a href="#">ACCOSERIESE</a>
+        <a href="#">FEATURED</a>
+        <a href="#">HOT DEALS</a>
+    </div>
+    <div class="transparent">
+        <div class="container">
+            <div class="transparent__heading">New Arrivals</div>
+            <div class="transparent__path">Home / Men / <span>New Arrivals</span></div>
+        </div>
+    </div>
+    <div class="checkout">
+        <div class="container">
+            <div class="checkout__heading">01. Shipping Adress</div>
+            <div class="checkout__box">
+                <form class="checkout__column">
+                    <div class="checkout__text">
+                        <div class="checkout__text_heading">Check as a guest or register</div>
+                        Register with us for future convenience
+                    </div>
+                    <div class="form_radio">
+                        <input id="radio-1" type="radio" name="radio" value="1" checked>
+                        <label for="radio-1">checkout as guest</label>
+                    </div>
+
+                    <div class="form_radio">
+                        <input id="radio-2" type="radio" name="radio" value="2">
+                        <label for="radio-2">register</label>
+                    </div>
+                    <div class="checkout__text">
+                        <div class="checkout__text_heading">Check as a guest or register</div>
+                        Register with us for future convenience <br>
+                        <br>
+                        <i class="fas fa-angle-double-right"></i> Fast and easy checkout <br>
+                        <i class="fas fa-angle-double-right"></i> Easy access to your order history and status
+                    </div>
+                    <button type="submit">Continue</button>
+                </form>
+                <form class="checkout__column">
+                    <div class="checkout__text">
+                        <div class="checkout__text_heading">Check as a guest or register</div>
+                        Register with us for future convenience
+                    </div>
+                    <label for="email" class="checkout__email-label">EMAIL ADDRESS <span>*</span></label>
+                    <input id="email" type="email" class="checkout__email-input">
+                    <label for="password" class="checkout__email-label">PASSWORD <span>*</span></label>
+                    <input id="password" type="password" class="checkout__email-input">
+                    <div class="checkout__warning">* Required Fileds</div>
+                    <div class="checkout__button-block">
+                        <button type="submit">Log in </button>
+                        <a href="#">Forgot Password ?</a>
+                    </div>
+                </form>
+            </div>
+            <hr class="checkout__hr">
+            <div class="checkout__heading">02. BILLING INFORMATION</div>
+            <hr class="checkout__hr checkout__hr_mt">
+            <div class="checkout__heading">03. SHIPPING INFORMATION</div>
+            <hr class="checkout__hr checkout__hr_mt">
+            <div class="checkout__heading">04. SHIPPING METHOD</div>
+            <hr class="checkout__hr checkout__hr_mt">
+            <div class="checkout__heading">05. PAYMENT METHOD</div>
+            <hr class="checkout__hr checkout__hr_mt">
+            <div class="checkout__heading">06. ORDER REVIEW</div>
+            <hr class="checkout__hr checkout__hr_mt">
+        </div>
+    </div>
+    <div class="subscribe">
+        <div class="container">
+            <img src="img/avatar.png" alt="photo" class="avatar">
+            <div class="review">
+                <div class="review__text">
+                    "Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                    a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium"
+                </div>
+                <div class="review__name">
+                    Bin Burhan<br>
+                    <span>Dhaka, Bd</span>
+                </div>
+                <div class="review__button-box">
+                    <div class="review__button"></div>
+                    <div class="review__button"></div>
+                    <div class="review__button"></div>
+                </div>
+            </div>
+            <img src="img/shape.svg" alt="shape" class="shape">
+            <div class="subscribe__form">
+                <div class="subscribe__form__text">
+                    SUBSCRIBE<br>
+                    <span>FOR OUR NEWLETTER AND PROMOTION</span>
+                </div>
+                <form action="#" class="subscribe-email-form">
+                    <input type="email" placeholder="Enter Your Email">
+                    <button class="search-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="links-block container">
+        <div class="links-block__text">
+            <div class="links-block__text__logo">
+                <img src="img/logo.png" alt="logo" class="logo">
+                <div class="logo-text">
+                    BRAN<span>D</span>
+                </div>
+            </div>
+            Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate
+            multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes
+            and cross-unit partnerships. <br><br>
+
+            Efficiently plagiarize 24/365 action items and focused infomediaries.
+            Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+        </div>
+        <div class="links-block__small-links">
+            <div class="links-block__links">
+                <div class="links-block__links__heading">COMPANY</div>
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">How It Works</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="links-block__links">
+                <div class="links-block__links__heading">INFORMATION</div>
+                <a href="#">Tearms & Condition</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">How to Buy</a>
+                <a href="#">How to Sell</a>
+                <a href="#">Promotion</a>
+            </div>
+            <div class="links-block__links">
+                <div class="links-block__links__heading">SHOP CATEGORY</div>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Child</a>
+                <a href="#">Apparel</a>
+                <a href="#">Brows All</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__text">© 2017 Brand All Rights Reserved.</div>
+            <div class="footer__links-box">
+                <a href="http://www.facebook.com/" class="footer__link"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/" class="footer__link"><i class="fab fa-twitter"></i></a>
+                <a href="https://ru.linkedin.com/" class="footer__link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.pinterest.com/" class="footer__link"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://ru.wikipedia.org/wiki/Google%2B" class="footer__link"><i
+                        class="fab fa-google-plus-g"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
