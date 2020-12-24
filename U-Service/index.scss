@@ -27,6 +27,25 @@
 
 .container {
     margin: 0 32px;
+
+    @media (min-width: 1441px) {
+        margin: 0 auto;
+        max-width: 1376px;
+    }
+}
+
+.container4k-slider {
+    @media (min-width: 1441px) {
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+}
+
+.container4k {
+    @media (min-width: 1441px) {
+        margin: 0 auto;
+        max-width: 1440px;
+    }
 }
 
 .b-burger-box {
@@ -411,6 +430,11 @@
     background-size: contain;
     margin-top: -20px;
     height: 650px;
+
+    @media (min-width: 1441px) {
+        margin: -20px auto 0 auto;
+        max-width: 1376px;
+    }
 
     @media (max-width: 1261px) {
         margin-top: 0;

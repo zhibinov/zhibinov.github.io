@@ -29,6 +29,27 @@
   margin: 0 32px;
 }
 
+@media (min-width: 1441px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1376px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .container4k-slider {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .container4k {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}
+
 .b-burger-box {
   display: none;
   margin-top: 13px;
@@ -499,6 +520,13 @@
   background-size: contain;
   margin-top: -20px;
   height: 650px;
+}
+
+@media (min-width: 1441px) {
+  .b-top {
+    margin: -20px auto 0 auto;
+    max-width: 1376px;
+  }
 }
 
 @media (max-width: 1261px) {
