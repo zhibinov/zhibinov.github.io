@@ -1543,6 +1543,10 @@
   display: none;
 }
 
+.b-review__slide-img {
+  width: 282px;
+}
+
 @media (max-width: 1160px) {
   .b-review__slide-img {
     width: 235px;
