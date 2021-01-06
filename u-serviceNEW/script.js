@@ -80,3 +80,26 @@ let navbar = document.querySelector('.b-nav-box')
 burger.addEventListener('click', function (event) {
     navbar.classList.toggle('b-nav__options_block');
 });
+
+let close = document.querySelector('.b-pop-up__header-button');
+let link = document.querySelectorAll('.link');
+let popUp = document.querySelector('.b-pop-up');
+link.forEach(element => linkUp(element));
+function linkUp(item) {
+    item.addEventListener('click', function (event) {
+        popUp.style.display = 'block';
+    });
+}
+close.addEventListener('click', function (event) {
+    popUp.style.display = 'none';
+});
+
+let lotteryButton = document.querySelector('.b-garanty__lottery-button');
+let lotteryPop = document.querySelector('.b-loterry-pop');
+let lotteryClose = document.querySelector('.b-loterry-pop__header-button')
+lotteryButton.addEventListener('click', function (event) {
+    lotteryPop.style.display = 'block';
+});
+lotteryClose.addEventListener('click', function (event) {
+    lotteryPop.style.display = 'none';
+});
