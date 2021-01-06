@@ -35,7 +35,7 @@
     }
 
     @media(max-width: 560px) {
-        max-width: 375px;
+        max-width: 360px;
     }
 }
 
@@ -1720,6 +1720,7 @@
     font-size: 30px;
     line-height: 37px;
     color: #1F1F1F;
+    text-decoration: none;
 
     @media(max-width: 980px) {
         font-size: 17px;
