@@ -103,3 +103,7 @@ lotteryButton.addEventListener('click', function (event) {
 lotteryClose.addEventListener('click', function (event) {
     lotteryPop.style.display = 'none';
 });
+
+$('#btn-example6').click(function () {
+    $('#example6 ul').playSpin();
+});

@@ -788,6 +788,69 @@
   }
 }
 
+.b-top__text-small {
+  font-size: 18px;
+  line-height: 21px;
+  color: #1F1F1F;
+  margin-top: 25px;
+  margin-bottom: 55px;
+}
+
+.b-top__text-small span {
+  font-weight: bold;
+}
+
+@media (max-width: 560px) {
+  .b-top__text-small {
+    text-align: center;
+  }
+}
+
+.b-top__garanty-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 55px;
+}
+
+.b-top__garanty-text {
+  max-width: 371px;
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1F1F1F;
+}
+
+.b-top__garanty-text span {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.b-top__section-button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #4285F4;
+  border-radius: 23px;
+  width: 269px;
+  height: 41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
 .b-top__select-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -960,6 +1023,58 @@
     font-size: 12px;
     line-height: 14px;
   }
+}
+
+.b-price__heading {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #1F1F1F;
+}
+
+.b-price__text {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #1F1F1F;
+}
+
+.b-price__button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.b-price__button {
+  background: #F2F2F2;
+  border-radius: 23px;
+  border: none;
+  width: 178px;
+  height: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  line-height: 21px;
+  color: #1F1F1F;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+.b-price__button_p10 {
+  padding: 8px;
 }
 
 .b-why {
