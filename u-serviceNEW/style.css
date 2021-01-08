@@ -396,6 +396,7 @@
   line-height: 17px;
   color: #1F1F1F;
   text-decoration: none;
+  padding: 15px 0;
 }
 
 @media (max-width: 1160px) {
@@ -437,6 +438,10 @@
   }
 }
 
+.b-nav__link:hover .b-nav__options_1 {
+  display: block;
+}
+
 @media (max-width: 740px) {
   .b-nav__line {
     display: none;
@@ -462,15 +467,19 @@
   }
 }
 
+.b-nav__options:hover {
+  visibility: visible;
+}
+
 .b-nav__options_1,
 .b-nav__options_2,
 .b-nav__options_3,
 .b-nav__options_4 {
-  display: none;
+  visibility: hidden;
 }
 
 .b-nav__options_block {
-  display: block;
+  visibility: visible;
 }
 
 @media (max-width: 740px) {
@@ -493,6 +502,7 @@
 @media (max-width: 740px) {
   .b-nav__options-box {
     border-bottom: 1px solid #E5E5E5;
+    margin-right: 0;
   }
 }
 
@@ -529,7 +539,7 @@
   line-height: 17px;
   color: #1F1F1F;
   text-decoration: none;
-  margin-bottom: 28px;
+  padding-bottom: 28px;
 }
 
 @media (max-width: 1160px) {
@@ -541,12 +551,12 @@
 
 @media (max-width: 740px) {
   .b-nav__category-link {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
   }
 }
 
 .b-nav__category-link:first-child {
-  margin-top: 21px;
+  padding-top: 21px;
 }
 
 @media (max-width: 740px) {
@@ -605,6 +615,69 @@
   .b-nav__options-link:hover {
     font-size: 12px;
   }
+}
+
+.b-nav-740 {
+  display: none;
+}
+
+.b-nav-740__1level {
+  background: #E5E5E5;
+}
+
+.b-nav-740__1level .container {
+  padding: 10px 0;
+}
+
+.b-nav-740__links-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.b-nav-740__link {
+  font-size: 12px;
+  line-height: 14px;
+  color: #1F1F1F;
+  text-decoration: none;
+}
+
+.b-nav-740__link-blank {
+  font-size: 12px;
+  line-height: 14px;
+  color: #1F1F1F;
+  text-decoration: none;
+  display: block;
+}
+
+.b-nav-740__link-blank:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.b-nav-740__2level {
+  background: #F2F2F2;
+  display: none;
+}
+
+.b-nav-740__2level .container {
+  padding: 10px 0 0 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.b-nav-740__3level {
+  background: #F2F2F2;
+  display: none;
+}
+
+.b-nav-740__3level .container {
+  padding: 10px 0 0 0;
 }
 
 .b-wrapper {
@@ -3551,5 +3624,9 @@
   border: none;
   cursor: pointer;
   margin-top: 23px;
+}
+
+.display_block {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
