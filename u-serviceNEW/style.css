@@ -2140,16 +2140,86 @@
   }
 }
 
+.slotwrapper {
+  background: url(img/lottery_wraper.svg) no-repeat;
+  padding-top: 15px;
+  height: 167px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-size: contain;
+  overflow: hidden;
+  display: inline-block;
+}
+
+@media (max-width: 740px) {
+  .slotwrapper {
+    height: 153px;
+  }
+}
+
+@media (max-width: 560px) {
+  .slotwrapper {
+    height: 102px;
+  }
+}
+
+.slotwrapper ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  float: left;
+}
+
+.slotwrapper ul {
+  width: 200px;
+  height: 200px;
+  font-size: 200px;
+  line-height: 200px;
+  text-align: center;
+}
+
+@media (max-width: 740px) {
+  .slotwrapper ul {
+    width: 180px;
+  }
+}
+
+@media (max-width: 560px) {
+  .slotwrapper ul {
+    width: 120px;
+  }
+}
+
+.slotwrapper ul li img {
+  vertical-align: top;
+}
+
+.b-garanty__lottery-img {
+  width: 148px;
+  height: 140px;
+}
+
 @media (max-width: 740px) {
   .b-garanty__lottery-img {
-    max-width: 540px;
+    height: 130px;
   }
 }
 
 @media (max-width: 560px) {
   .b-garanty__lottery-img {
-    max-width: 360px;
+    height: 77px;
+    width: 120px;
   }
+}
+
+.b-garanty__button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .b-garanty__lottery-button {
@@ -2229,6 +2299,7 @@
     background: url(img/map_540.png) no-repeat;
     height: 350px;
     padding-top: 239px;
+    background-size: cover;
   }
   .b-map .container {
     display: -webkit-box;
@@ -2245,6 +2316,7 @@
     background: url(img/map_375.png) no-repeat;
     height: 233px;
     padding-top: 159px;
+    background-size: cover;
   }
 }
 
@@ -3082,7 +3154,7 @@
   background: white;
   position: fixed;
   z-index: 111;
-  top: calc(100vh - 90px);
+  bottom: 0;
   width: 100%;
   display: none;
 }
@@ -3090,12 +3162,6 @@
 @media (max-width: 980px) {
   .b-footer-720__white {
     display: block;
-  }
-}
-
-@media (max-width: 560px) {
-  .b-footer-720__white {
-    top: calc(100vh - 60px);
   }
 }
 
@@ -3363,7 +3429,6 @@
 
 .b-loterry-pop {
   width: 434px;
-  height: 250px;
   background: #F2F2F2;
   border-radius: 15px;
   -webkit-box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);

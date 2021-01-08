@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/components/slotmachine/css/slotmachine.css" type="text/css">
+    <style>
+        ._3emE9--dark-theme .-S-tR--ff-downloader {
+            background: rgba(30, 30, 30, .93);
+            border: 1px solid rgba(82, 82, 82, .54);
+            box-shadow: 0 4px 7px rgba(30, 30, 30, .55);
+            color: #fff
+        }
+
+        ._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn {
+            background: #3d4b52
+        }
+
+        ._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover {
+            background: #131415
+        }
+
+        ._3emE9--dark-theme .-S-tR--ff-downloader ._10vpG--footer {
+            background: rgba(30, 30, 30, .93)
+        }
+
+        ._2mDEx--white-theme .-S-tR--ff-downloader {
+            background: #fff;
+            border: 1px solid rgba(82, 82, 82, .54);
+            box-shadow: 0 4px 7px rgba(30, 30, 30, .55);
+            color: #314c75
+        }
+
+        ._2mDEx--white-theme .-S-tR--ff-downloader ._6_Mtt--header {
+            font-weight: 700
+        }
+
+        ._2mDEx--white-theme .-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice {
+            border: 0;
+            color: rgba(0, 0, 0, .88)
+        }
+
+        ._2mDEx--white-theme .-S-tR--ff-downloader ._10vpG--footer {
+            background: #fff
+        }
+
+        .-S-tR--ff-downloader {
+            display: block;
+            overflow: hidden;
+            position: fixed;
+            bottom: 20px;
+            right: 7.1%;
+            width: 330px;
+            height: 180px;
+            background: rgba(30, 30, 30, .93);
+            border-radius: 2px;
+            color: #fff;
+            z-index: 99999999;
+            border: 1px solid rgba(82, 82, 82, .54);
+            box-shadow: 0 4px 7px rgba(30, 30, 30, .55);
+            transition: .5s
+        }
+
+        .-S-tR--ff-downloader._3M7UQ--minimize {
+            height: 62px
+        }
+
+        .-S-tR--ff-downloader._3M7UQ--minimize .nxuu4--file-info,
+        .-S-tR--ff-downloader._3M7UQ--minimize ._6_Mtt--header {
+            display: none
+        }
+
+        .-S-tR--ff-downloader ._6_Mtt--header {
+            padding: 10px;
+            font-size: 17px;
+            font-family: sans-serif
+        }
+
+        .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn {
+            float: right;
+            background: #f1ecec;
+            height: 20px;
+            width: 20px;
+            text-align: center;
+            padding: 2px;
+            margin-top: -10px;
+            cursor: pointer
+        }
+
+        .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover {
+            background: #e2dede
+        }
+
+        .-S-tR--ff-downloader ._13XQ2--error {
+            color: red;
+            padding: 10px;
+            font-size: 12px;
+            line-height: 19px
+        }
+
+        .-S-tR--ff-downloader ._2dFLA--container {
+            position: relative;
+            height: 100%
+        }
+
+        .-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info {
+            padding: 6px 15px 0;
+            font-family: sans-serif
+        }
+
+        .-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info div {
+            margin-bottom: 5px;
+            width: 100%;
+            overflow: hidden
+        }
+
+        .-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice {
+            margin-top: 21px;
+            font-size: 11px
+        }
+
+        .-S-tR--ff-downloader ._10vpG--footer {
+            width: 100%;
+            bottom: 0;
+            position: absolute;
+            font-weight: 700
+        }
+
+        .-S-tR--ff-downloader ._10vpG--footer ._2V73d--loader {
+            animation: n0BD1--rotation 3.5s linear forwards;
+            position: absolute;
+            top: -120px;
+            left: calc(50% - 35px);
+            border-radius: 50%;
+            border: 5px solid #fff;
+            border-top-color: #a29bfe;
+            height: 70px;
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar {
+            width: 100%;
+            height: 18px;
+            background: #dfe6e9;
+            border-radius: 5px
+        }
+
+        .-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar ._1FVu9--progress-bar {
+            height: 100%;
+            background: #8bc34a;
+            border-radius: 5px
+        }
+
+        .-S-tR--ff-downloader ._10vpG--footer ._2KztS--status {
+            margin-top: 10px
+        }
+
+        .-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1XilH--state {
+            float: left;
+            font-size: .9em;
+            letter-spacing: 1pt;
+            text-transform: uppercase;
+            width: 100px;
+            height: 20px;
+            position: relative
+        }
+
+        .-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1jiaj--percentage {
+            float: right
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="slots_bg">
+        <div class="wrapper">
+            <div id="lottery">
+                <h2>Беспроигрышная лотерея</h2>
+                <p class="gift_text">Подарок с любым ремонтом</p>
+                <div class="machineContainer">
+                    <div id="machine1" class="slotMachine" style="overflow: hidden;">
+                        <div class="slotMachineContainer" style="margin-top: -158px;">
+                            <div class="slots" style="background-image:url('upload/lottery/case.jpg')" data-s="7"
+                                data-c="0" data-n="Чехол"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/5-discount.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/film.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/cord.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/charger.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/10-discount.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/case.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/5-discount.jpg')" data-s="2"
+                                data-c="5" data-n="5% скидка на ремонт"></div>
+                        </div>
+                    </div>
+                    <div id="machine2" class="slotMachine" style="overflow: hidden;">
+                        <div class="slotMachineContainer" style="margin-top: -158px;">
+                            <div class="slots" style="background-image:url('upload/lottery/case.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/5-discount.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/film.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/cord.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/charger.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/10-discount.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/case.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/5-discount.jpg')"></div>
+                        </div>
+                    </div>
+                    <div id="machine3" class="slotMachine" style="overflow: hidden;">
+                        <div class="slotMachineContainer" style="margin-top: -158px;">
+                            <div class="slots" style="background-image:url('upload/lottery/case.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/5-discount.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/film.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/cord.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/charger.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/10-discount.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/case.jpg')"></div>
+                            <div class="slots" style="background-image:url('upload/lottery/5-discount.jpg')"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <span class="res"></span>
+                        <button class="slotMachineButton start">Испытать удачу!</button>
+                        <button class="gift slot_modal_call">Получить подарок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="assets/components/slotmachine/js/jquery.slotmachine.js"></script>
+    <script type="text/javascript" src="assets/components/slotmachine/js/slots.min.js"></script>
+    <style>
+        .slotMachineBlurFast {
+            -webkit-filter: blur(5px);
+            -moz-filter: blur(5px);
+            -o-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: blur(5px);
+            filter: url("data:image/svg+xml;utf8,<svg version="1.1" xmlns="http: //www.w3.org/2000/svg" width="0" height="0"><filter id="slotMachineBlurFilterFast"><feGaussianBlur stdDeviation="5" ></feGaussianBlur></filter></svg>#slotMachineBlurFilterFast");filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius="5")}.slotMachineBlurMedium{-webkit-filter: blur(3px);-moz-filter: blur(3px);-o-filter: blur(3px);-ms-filter: blur(3px);filter: blur(3px);filter: url("data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="0" height="0"><filter id="slotMachineBlurFilterMedium"><feGaussianBlur stdDeviation="3" ></feGaussianBlur></filter></svg>#slotMachineBlurFilterMedium");filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius="3")}.slotMachineBlurSlow{-webkit-filter: blur(1px);-moz-filter: blur(1px);-o-filter: blur(1px);-ms-filter: blur(1px);filter: blur(1px);filter: url("data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="0" height="0"><filter id="slotMachineBlurFilterSlow"><feGaussianBlur stdDeviation="1" ></feGaussianBlur></filter></svg>#slotMachineBlurFilterSlow");filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius="1")}.slotMachineGradient{-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(25%, rgba(0,0,0,1)), color-stop(75%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,0)) );mask: url("data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="0" height="0"><mask id="slotMachineFadeMask" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox"><linearGradient id="slotMachineFadeGradient" gradientUnits="objectBoundingBox" x="0" y="0"><stop stop-color="white" stop-opacity="0" offset="0"></stop><stop stop-color="white" stop-opacity="1" offset="0.25"></stop><stop stop-color="white" stop-opacity="1" offset="0.75"></stop><stop stop-color="white" stop-opacity="0" offset="1"></stop></linearGradient><rect x="0" y="-1" width="1" height="1" transform="rotate(90)" fill="url(#slotMachineFadeGradient)"></rect></mask></svg>#slotMachineFadeMask");}
+    </style>
+</body>
+
+</html>

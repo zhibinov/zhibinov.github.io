@@ -465,8 +465,31 @@
                     <p class="b-garanty__lottery-text">Нажмите на синюю кнопку ниже и получите бесплатный подарок при
                         ремонте. Если не
                         получится с первого раза, можно попробовать сколько угодно раз - это бесплатно</p>
-                    <img src="img/lottery.svg" alt="lottery" class="b-garanty__lottery-img">
-                    <button class="b-garanty__lottery-button">Испытать удачу</button>
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+                            <div class="b-garanty__slotwrapper slotwrapper" id="example6">
+                                <ul id="slot1" class="b-garanty__lottery-ul">
+                                    <li><img src="img/slot1.svg" alt="slot" class="b-garanty__lottery-img" /></li>
+                                    <li><img src="img/slot2.svg" alt="slot" class="b-garanty__lottery-img" /></li>
+                                    <li><img src="img/slot3.svg" alt="slot" class="b-garanty__lottery-img" /></li>
+                                </ul>
+                                <ul id="slot2" class="b-garanty__lottery-ul">
+                                    <li><img src="img/slot2.svg" alt="slot" class="b-garanty__lottery-img" /></li>
+                                    <li><img src="img/slot3.svg" alt="slot" class="b-garanty__lottery-img" /></li>
+                                    <li><img src="img/slot1.svg" alt="slot" class="b-garanty__lottery-img" /></li>
+                                </ul>
+                                <ul id="slot3" class="b-garanty__lottery-ul">
+                                    <li><img src="img/slot3.svg" alt="slot" class="b-garanty__lottery-img" /></li>
+                                    <li><img src="img/slot1.svg" alt="slot" class="b-garanty__lottery-img" /></li>
+                                    <li><img src="img/slot2.svg" alt="slot" class="b-garanty__lottery-img" /></li>
+                                </ul>
+                            </div>
+                            <div class="b-garanty__button-box">
+                                <button type="button" class="b-garanty__lottery-button btn btn-success btn-lg"
+                                    id="btn-example6">Испытать удачу</button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="b-garanty__lottery-description">* Если в наличии не окажется нужного аксессуара, можно
                         заменить приз на аналогичный</div>
                 </div>
@@ -775,47 +798,45 @@
             </div>
         </div>
     </div>
-    <div class="b-loterry-pop">
+    <div class="b-loterry-pop b-loterry-pop__case">
         <div class="b-loterry-pop__header">
             <p class="b-pop-up__header-text">Забрать свой приз</p>
             <button class="b-loterry-pop__header-button"><img src="img/close.svg" alt="close"></button>
         </div>
-        <div class="b-pop-up__contacts">
-            <p class="b-pop-up__text">Введите свой номер телефона:</p>
+        <div class="b-pop-up__contacts b-loterry-pop__contacts">
+            <p class="b-pop-up__text">Вы выиграли чехол!<br>Введите свой номер телефона:</p>
+            <input type="text" class="b-loterry-pop__input" placeholder="+7 (xxx) xxx-xx-xx">
+            <button type="submit" class="b-loterry-pop__button">Получить смс</button>
+        </div>
+    </div>
+    <div class="b-loterry-pop b-loterry-pop__glass">
+        <div class="b-loterry-pop__header">
+            <p class="b-pop-up__header-text">Забрать свой приз</p>
+            <button class="b-loterry-pop__header-button"><img src="img/close.svg" alt="close"></button>
+        </div>
+        <div class="b-pop-up__contacts b-loterry-pop__contacts">
+            <p class="b-pop-up__text">Вы выиграли защитное стекло!<br>Введите свой номер телефона:</p>
+            <input type="text" class="b-loterry-pop__input" placeholder="+7 (xxx) xxx-xx-xx">
+            <button type="submit" class="b-loterry-pop__button">Получить смс</button>
+        </div>
+    </div>
+    <div class="b-loterry-pop b-loterry-pop__film">
+        <div class="b-loterry-pop__header">
+            <p class="b-pop-up__header-text">Забрать свой приз</p>
+            <button class="b-loterry-pop__header-button"><img src="img/close.svg" alt="close"></button>
+        </div>
+        <div class="b-pop-up__contacts b-loterry-pop__contacts">
+            <p class="b-pop-up__text">Вы выиграли невидимую бронеплёнку!<br>Введите свой номер телефона:</p>
             <input type="text" class="b-loterry-pop__input" placeholder="+7 (xxx) xxx-xx-xx">
             <button type="submit" class="b-loterry-pop__button">Получить смс</button>
         </div>
     </div>
     <!--слот машина-->
-    <div class="panel panel-primary">
-        <div class="panel-body">
-            <div class="slotwrapper" id="example6">
-                <ul>
-                    <li><img src="img/slot1.svg" /></li>
-                    <li><img src="img/slot2.svg" /></li>
-                    <li><img src="img/slot3.svg" /></li>
-                </ul>
-                <ul>
-                    <li><img src="img/slot2.svg" /></li>
-                    <li><img src="img/slot3.svg" /></li>
-                    <li><img src="img/slot1.svg" /></li>
-                </ul>
-                <ul>
-                    <li><img src="img/slot3.svg" /></li>
-                    <li><img src="img/slot1.svg" /></li>
-                    <li><img src="img/slot2.svg" /></li>
-                </ul>
-            </div>
-            <div>
-                <button type="button" class="btn btn-success btn-lg" id="btn-example6">Start Spin!</button>
-            </div>
-        </div>
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="js/slotmachine.min.js"></script>
+    <script src="js/slotmachine.js"></script>
     <!--слот машина-->
-    <script src='script.js'></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
