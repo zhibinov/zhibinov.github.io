@@ -674,6 +674,96 @@ let boxIpod = document.querySelector('.b-price__ipod-box');
 let boxMacbook = document.querySelector('.b-price__macbook-box');
 let boxApplewatch = document.querySelector('.b-price__applewatch-box');
 
+buttonIphone.addEventListener('click', function (event) {
+    boxIphone.classList.toggle('display_flex');
+    boxIpad.classList.remove('display_flex');
+    boxImac.classList.remove('display_flex');
+    boxIpod.classList.remove('display_flex');
+    boxMacbook.classList.remove('display_flex');
+    boxApplewatch.classList.remove('display_flex');
+    buttonIphone.classList.toggle('b-price__button-activ');
+    buttonIpad.classList.remove('b-price__button-activ');
+    buttonImac.classList.remove('b-price__button-activ');
+    buttonIpod.classList.remove('b-price__button-activ');
+    buttonMacbook.classList.remove('b-price__button-activ');
+    buttonApplewatch.classList.remove('b-price__button-activ');
+});
+
+buttonIpad.addEventListener('click', function (event) {
+    boxIphone.classList.remove('display_flex');
+    boxIpad.classList.toggle('display_flex');
+    boxImac.classList.remove('display_flex');
+    boxIpod.classList.remove('display_flex');
+    boxMacbook.classList.remove('display_flex');
+    boxApplewatch.classList.remove('display_flex');
+    buttonIphone.classList.remove('b-price__button-activ');
+    buttonIpad.classList.toggle('b-price__button-activ');
+    buttonImac.classList.remove('b-price__button-activ');
+    buttonIpod.classList.remove('b-price__button-activ');
+    buttonMacbook.classList.remove('b-price__button-activ');
+    buttonApplewatch.classList.remove('b-price__button-activ');
+});
+
+buttonImac.addEventListener('click', function (event) {
+    boxIphone.classList.remove('display_flex');
+    boxIpad.classList.remove('display_flex');
+    boxImac.classList.toggle('display_flex');
+    boxIpod.classList.remove('display_flex');
+    boxMacbook.classList.remove('display_flex');
+    boxApplewatch.classList.remove('display_flex');
+    buttonIphone.classList.remove('b-price__button-activ');
+    buttonIpad.classList.remove('b-price__button-activ');
+    buttonImac.classList.toggle('b-price__button-activ');
+    buttonIpod.classList.remove('b-price__button-activ');
+    buttonMacbook.classList.remove('b-price__button-activ');
+    buttonApplewatch.classList.remove('b-price__button-activ');
+});
+
+buttonIpod.addEventListener('click', function (event) {
+    boxIphone.classList.remove('display_flex');
+    boxIpad.classList.remove('display_flex');
+    boxImac.classList.remove('display_flex');
+    boxIpod.classList.toggle('display_flex');
+    boxMacbook.classList.remove('display_flex');
+    boxApplewatch.classList.remove('display_flex');
+    buttonIphone.classList.remove('b-price__button-activ');
+    buttonIpad.classList.remove('b-price__button-activ');
+    buttonImac.classList.remove('b-price__button-activ');
+    buttonIpod.classList.toggle('b-price__button-activ');
+    buttonMacbook.classList.remove('b-price__button-activ');
+    buttonApplewatch.classList.remove('b-price__button-activ');
+});
+
+buttonMacbook.addEventListener('click', function (event) {
+    boxIphone.classList.remove('display_flex');
+    boxIpad.classList.remove('display_flex');
+    boxImac.classList.remove('display_flex');
+    boxIpod.classList.remove('display_flex');
+    boxMacbook.classList.toggle('display_flex');
+    boxApplewatch.classList.remove('display_flex');
+    buttonIphone.classList.remove('b-price__button-activ');
+    buttonIpad.classList.remove('b-price__button-activ');
+    buttonImac.classList.remove('b-price__button-activ');
+    buttonIpod.classList.remove('b-price__button-activ');
+    buttonMacbook.classList.toggle('b-price__button-activ');
+    buttonApplewatch.classList.remove('b-price__button-activ');
+});
+
+buttonApplewatch.addEventListener('click', function (event) {
+    boxIphone.classList.remove('display_flex');
+    boxIpad.classList.remove('display_flex');
+    boxImac.classList.remove('display_flex');
+    boxIpod.classList.remove('display_flex');
+    boxMacbook.classList.remove('display_flex');
+    boxApplewatch.classList.toggle('display_flex');
+    buttonIphone.classList.remove('b-price__button-activ');
+    buttonIpad.classList.remove('b-price__button-activ');
+    buttonImac.classList.remove('b-price__button-activ');
+    buttonIpod.classList.remove('b-price__button-activ');
+    buttonMacbook.classList.remove('b-price__button-activ');
+    buttonApplewatch.classList.toggle('b-price__button-activ');
+});
+
 let buttonAll = document.querySelector('.b-price__button-all');
 let buttonMore = document.querySelectorAll('.b-price__button-more');
 buttonAll.addEventListener('click', function (event) {
