@@ -379,11 +379,6 @@
   }
 }
 
-.b-nav {
-  border-bottom: 1px solid #AAAAAA;
-  background: #E5E5E5;
-}
-
 .b-nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,7 +463,7 @@
 }
 
 .b-nav__options {
-  background: #F2F2F2;
+  background: white;
   position: absolute;
   width: 100%;
   z-index: 10;
@@ -644,7 +639,7 @@
 }
 
 .b-nav-740__1level {
-  background: #E5E5E5;
+  background: white;
 }
 
 .b-nav-740__1level .container {
@@ -684,7 +679,7 @@
 }
 
 .b-nav-740__2level {
-  background: #F2F2F2;
+  background: white;
   display: none;
 }
 
@@ -694,7 +689,7 @@
 }
 
 .b-nav-740__3level {
-  background: #F2F2F2;
+  background: white;
   display: none;
 }
 

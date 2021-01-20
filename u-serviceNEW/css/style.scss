@@ -301,8 +301,6 @@
 }
 
 .b-nav {
-    border-bottom: 1px solid #AAAAAA;
-    background: #E5E5E5;
 
     .container {
         display: flex;
@@ -368,7 +366,7 @@
 }
 
 .b-nav__options {
-    background: #F2F2F2;
+    background: white;
     position: absolute;
     width: 100%;
     z-index: 10;
@@ -509,7 +507,7 @@
 }
 
 .b-nav-740__1level {
-    background: #E5E5E5;
+    background: white;
 
     .container {
         padding: 10px 0;
@@ -543,7 +541,7 @@
 }
 
 .b-nav-740__2level {
-    background: #F2F2F2;
+    background: white;
     display: none;
 
     .container {
@@ -553,7 +551,7 @@
 }
 
 .b-nav-740__3level {
-    background: #F2F2F2;
+    background: white;
     display: none;
 
     .container {
