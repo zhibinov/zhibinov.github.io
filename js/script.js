@@ -1,20 +1,102 @@
-$(function () {
-    $('.minimized').click(function (event) {
-        var i_path = $(this).attr('src');
-        $('body').append('<div id="overlay"></div><div id="magnify"><img src="' + i_path + '"><div id="close-popup"><i></i></div></div>');
-        $('#magnify').css({
-            left: ($(document).width() - $('#magnify').outerWidth()) / 2,
-            // top: ($(document).height() - $('#magnify').outerHeight())/2 upd: 24.10.2016
-            top: ($(window).height() - $('#magnify').outerHeight()) / 2
-        });
-        $('#overlay, #magnify').fadeIn('fast');
-    });
+'use strict';
 
-    $('body').on('click', '#close-popup, #overlay', function (event) {
-        event.preventDefault();
+let burgerButton = document.querySelector('.b-header__burger');
+let burgerMenu = document.querySelector('.b-header__burger-menu');
 
-        $('#overlay, #magnify').fadeOut('fast', function () {
-            $('#close-popup, #magnify, #overlay').remove();
-        });
+burgerButton.addEventListener('click', function (event) {
+    burgerMenu.classList.toggle('display_flex');
+});
+
+var mySwiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    direction: 'horizontal',
+    loop: false,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        993: {
+            slidesPerView: 2,
+        }
+    },
+});
+
+let slide1 = document.querySelectorAll('.slide1');
+let slide2 = document.querySelectorAll('.slide2');
+let slide3 = document.querySelectorAll('.slide3');
+let slide4 = document.querySelectorAll('.slide4');
+let slide5 = document.querySelectorAll('.slide5');
+let slide6 = document.querySelectorAll('.slide6');
+let zoom1 = document.querySelector('.b-sertificate-zoom1');
+let zoom2 = document.querySelector('.b-sertificate-zoom2');
+let zoom3 = document.querySelector('.b-sertificate-zoom3');
+let zoom4 = document.querySelector('.b-sertificate-zoom4');
+let zoom5 = document.querySelector('.b-sertificate-zoom5');
+let zoom6 = document.querySelector('.b-sertificate-zoom6');
+
+slide1.forEach(element => zoomFunc1(element));
+function zoomFunc1(item) {
+    item.addEventListener('click', function (event) {
+        zoom1.classList.toggle('display_block');
     });
+}
+
+slide2.forEach(element => zoomFunc2(element));
+function zoomFunc2(item) {
+    item.addEventListener('click', function (event) {
+        zoom2.classList.toggle('display_block');
+    });
+}
+
+slide3.forEach(element => zoomFunc3(element));
+function zoomFunc3(item) {
+    item.addEventListener('click', function (event) {
+        zoom3.classList.toggle('display_block');
+    });
+}
+
+slide4.forEach(element => zoomFunc4(element));
+function zoomFunc4(item) {
+    item.addEventListener('click', function (event) {
+        zoom4.classList.toggle('display_block');
+    });
+}
+
+slide5.forEach(element => zoomFunc5(element));
+function zoomFunc5(item) {
+    item.addEventListener('click', function (event) {
+        zoom5.classList.toggle('display_block');
+    });
+}
+
+slide6.forEach(element => zoomFunc6(element));
+function zoomFunc6(item) {
+    item.addEventListener('click', function (event) {
+        zoom6.classList.toggle('display_block');
+    });
+}
+
+zoom1.addEventListener('click', function (event) {
+    zoom1.classList.remove('display_block');
+});
+
+zoom2.addEventListener('click', function (event) {
+    zoom2.classList.remove('display_block');
+});
+
+zoom3.addEventListener('click', function (event) {
+    zoom3.classList.remove('display_block');
+});
+
+zoom4.addEventListener('click', function (event) {
+    zoom4.classList.remove('display_block');
+});
+
+zoom5.addEventListener('click', function (event) {
+    zoom5.classList.remove('display_block');
+});
+
+zoom6.addEventListener('click', function (event) {
+    zoom6.classList.remove('display_block');
 });
