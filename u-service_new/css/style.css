@@ -19,6 +19,10 @@
   outline: none;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1140px;
