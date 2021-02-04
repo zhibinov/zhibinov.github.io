@@ -1,0 +1,88 @@
+
+.tcalInput {
+	cursor: pointer;
+}
+/* container of calendar's pop-up */
+#tcal {
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	width: 264px;
+	background-color: white;
+	margin-top: 30px;
+	padding: 19px 23px;
+	box-shadow: 5px 3px 20px rgba(0, 0, 0, 0.05);
+	border-radius: 2px;
+}
+#tcalControls {
+	border-collapse: collapse;
+	border: 0;
+	width: 100%;
+}
+#tcalControls td {
+	border-collapse: collapse;
+	border: 0;
+	padding: 0;
+	width: 16px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+#tcalControls th {
+	border-collapse: collapse;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+
+	font-family: 'Noto Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 170%;
+	text-align: center;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #173343;
+}
+#tcalPrevMonth { background-image: url('../img/prev_m.svg'); }
+#tcalNextMonth { background-image: url('../img/next_m.svg'); }
+
+/* table containing week days header and calendar grid */
+#tcalGrid {
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 22px;
+}
+#tcalGrid th {
+	border-collapse: collapse;
+	padding: 3px 0 14px;
+
+	font-family: 'Noto Sans';
+	font-size: 12px;
+	line-height: 170%;
+	text-align: center;
+	letter-spacing: 0.04em;
+	color: #93A0B9;
+	mix-blend-mode: normal;
+	opacity: 0.6;
+}
+#tcalGrid td {
+	border-collapse: collapse;
+	padding: 2px 0;
+	width: 14%;
+	cursor: pointer;
+	font-family: 'Noto Sans';
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 170%;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #173343;
+}		
+#tcalGrid td.tcalOtherMonth { color: #93A0B9; }
+#tcalGrid td.tcalSelected {
+	color: #FFFFFF;
+	background: url(../img/date.svg) center no-repeat;
+	border-radius: 50%;
+}		
