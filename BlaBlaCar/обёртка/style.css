@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'gt-eesti';
+    src: url(GTEestiProText-Medium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.b-wrapper{
+    margin-top: calc(50vh - 125px) ;
+    margin-right: auto;
+    margin-left: auto;
+    width: 614px;
+}
+.b-box{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1pt 4pt, rgb(0 0 0 / 8%) 0px 2pt 8pt;
+    border-radius: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+    color: rgb(5, 71, 82);
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'gt-eesti', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+}
+.b-box__road{
+    position: absolute;
+    left: 75px;
+    top: 20px;
+}
+.b-box__row{
+    display: flex;
+    justify-content: space-between;
+}
+.b-box__time-city{
+    display: flex;
+    margin-bottom: 45px;
+}
+.b-box__time{
+    margin-right: 40px;
+    width: 40px;
+}
+.b-box__avatar{
+    display: flex;
+    align-items: center;
+}
+.b-box__avatar img{
+    margin-right: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
