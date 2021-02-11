@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GL-CRANE - Главная</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="b-header">
+        <div class="b-header__container">
+            <img src="img/logo.svg" alt="logo">
+            <div class="b-header__block">
+                <div class="b-header__contacts">
+                    <a href="tel:+780080034332" class="b-header__number">8(800) 800-343-32</a>
+                    <a href="mailto:info@glcrane.ru" class="b-header__mail">info<span>@</span>glcrane.ru</a>
+                </div>
+                <button class="b-header__burger" onclick="openMenu()"><img src="img/menu-burger.svg"
+                        alt="menu"></button>
+            </div>
+        </div>
+        <div class="b-header__burger-menu">
+            <div class="b-header__close-row">
+                <button class="b-header__close-button" onclick="closeMenu()"><img src="img/close.svg"
+                        alt="close"></button>
+            </div>
+            <p class="b-header__row">Аренда</p>
+            <p class="b-header__row">Продажа</p>
+            <p class="b-header__row">Запчасти</p>
+            <p class="b-header__row">Услуги</p>
+            <p class="b-header__row">О компании</p>
+            <p class="b-header__row">Блог</p>
+            <p class="b-header__row">Контакты</p>
+        </div>
+    </header>
+    <main class="b-main">
+        <div class="b-main__text-box">
+            <div class="b-main__text">
+                <h1 class="b-main__heading">Аренда и продажа
+                    <span>без</span>
+                    башенных кранов
+                    <img src="img/arrow_main.svg" alt="arrow">
+                </h1>
+                <p class="b-main__text-description">
+                    Москва и Московская область. Индивидуальные варианты для клиентов из других субъектов России.
+                </p>
+                <form action="#" class="b-main__form">
+                    <input type="text" class="b-main__input" placeholder="+7">
+                    <input type="submit" class="b-main__button" value="Хочу исправный кран">
+                </form>
+            </div>
+        </div>
+        <div class="b-main__img-box"></div>
+    </main>
+    <nav class="b-buttons">
+        <a href="#" class="b-buttons__button b-buttons__button_right">
+            <svg width="72" height="24" viewBox="0 0 72 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M71.0607 13.0607C71.6464 12.4749 71.6464 11.5251 71.0607 10.9393L61.5147 1.3934C60.9289 0.807611 59.9792 0.807611 59.3934 1.3934C58.8076 1.97919 58.8076 2.92893 59.3934 3.51472L67.8787 12L59.3934 20.4853C58.8076 21.0711 58.8076 22.0208 59.3934 22.6066C59.9792 23.1924 60.9289 23.1924 61.5147 22.6066L71.0607 13.0607ZM0 13.5H70V10.5H0V13.5Z"
+                    fill="#DC3B18" />
+            </svg>
+            Аренда</a>
+        <a href="#" class="b-buttons__button b-buttons__button_center">
+            <svg width="72" height="24" viewBox="0 0 72 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M71.0607 13.0607C71.6464 12.4749 71.6464 11.5251 71.0607 10.9393L61.5147 1.3934C60.9289 0.807611 59.9792 0.807611 59.3934 1.3934C58.8076 1.97919 58.8076 2.92893 59.3934 3.51472L67.8787 12L59.3934 20.4853C58.8076 21.0711 58.8076 22.0208 59.3934 22.6066C59.9792 23.1924 60.9289 23.1924 61.5147 22.6066L71.0607 13.0607ZM0 13.5H70V10.5H0V13.5Z"
+                    fill="#DC3B18" />
+            </svg>
+            Продажа</a>
+        <a href="#" class="b-buttons__button">
+            <svg width="72" height="24" viewBox="0 0 72 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M71.0607 13.0607C71.6464 12.4749 71.6464 11.5251 71.0607 10.9393L61.5147 1.3934C60.9289 0.807611 59.9792 0.807611 59.3934 1.3934C58.8076 1.97919 58.8076 2.92893 59.3934 3.51472L67.8787 12L59.3934 20.4853C58.8076 21.0711 58.8076 22.0208 59.3934 22.6066C59.9792 23.1924 60.9289 23.1924 61.5147 22.6066L71.0607 13.0607ZM0 13.5H70V10.5H0V13.5Z"
+                    fill="#DC3B18" />
+            </svg>
+            Запчасти</a>
+    </nav>
+    <article class="b-principles">
+        <div class="container">
+            <h2 class="b-principles__heading">Принципы нашей работы</h2>
+            <div class="b-principles__card-box">
+                <div class="b-principles__card">
+                    <img src="img/card1.png" alt="photo">
+                    <h3 class="b-principles__card-heading">Мобильное обслуживание 24/7</h3>
+                    <p class="b-principles__card-text">Бригада техников работает круглосуточно. Если у вас поломка в
+                        разгар
+                        рабочего процесса, звоните. Мы отреагируем оперативно.</p>
+                </div>
+                <div class="b-principles__card">
+                    <img src="img/card2.png" alt="photo">
+                    <h3 class="b-principles__card-heading">Следим за техникой</h3>
+                    <p class="b-principles__card-text">Внимательно обслуживаем и храним технику и запчасти. Техника
+                        должна
+                        работать, а не простаивать.</p>
+                </div>
+                <div class="b-principles__card">
+                    <img src="img/card3.png" alt="photo">
+                    <h3 class="b-principles__card-heading">Предлагаем оптимальные решения</h3>
+                    <p class="b-principles__card-text">Хорошо разбираемся в рынке. Предлагаем, то что лучше подойдёт для
+                        решения задачи.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="b-services">
+        <div class="container">
+            <h4 class="b-services__heading">Услуги</h4>
+            <p class="b-services__text">За сутки смонтируем башенный кран. Устраним большую часть поломок на месте.
+                Привезём
+                нужные запчасти. Проведём полное техническое обслуживание техники.</p>
+        </div>
+    </article>
+    <nav class="b-services-nav">
+        <a href="#" class="b-services-nav__link">
+            <svg width="93" height="38" viewBox="0 0 93 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M91.7678 20.7678C92.7441 19.7915 92.7441 18.2085 91.7678 17.2322L75.8579 1.32233C74.8816 0.34602 73.2986 0.34602 72.3223 1.32233C71.346 2.29864 71.346 3.88155 72.3223 4.85786L86.4645 19L72.3223 33.1421C71.346 34.1184 71.346 35.7014 72.3223 36.6777C73.2986 37.654 74.8816 37.654 75.8579 36.6777L91.7678 20.7678ZM0 21.5H90V16.5H0V21.5Z"
+                    fill="#DC3B18" />
+            </svg>
+            Монтаж и демонтаж кранов
+        </a>
+        <a href="#" class="b-services-nav__link">
+            <svg width="93" height="38" viewBox="0 0 93 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M91.7678 20.7678C92.7441 19.7915 92.7441 18.2085 91.7678 17.2322L75.8579 1.32233C74.8816 0.34602 73.2986 0.34602 72.3223 1.32233C71.346 2.29864 71.346 3.88155 72.3223 4.85786L86.4645 19L72.3223 33.1421C71.346 34.1184 71.346 35.7014 72.3223 36.6777C73.2986 37.654 74.8816 37.654 75.8579 36.6777L91.7678 20.7678ZM0 21.5H90V16.5H0V21.5Z"
+                    fill="#DC3B18" />
+            </svg>
+            Техническое обслуживание
+        </a>
+        <a href="#" class="b-services-nav__link">
+            <svg width="93" height="38" viewBox="0 0 93 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M91.7678 20.7678C92.7441 19.7915 92.7441 18.2085 91.7678 17.2322L75.8579 1.32233C74.8816 0.34602 73.2986 0.34602 72.3223 1.32233C71.346 2.29864 71.346 3.88155 72.3223 4.85786L86.4645 19L72.3223 33.1421C71.346 34.1184 71.346 35.7014 72.3223 36.6777C73.2986 37.654 74.8816 37.654 75.8579 36.6777L91.7678 20.7678ZM0 21.5H90V16.5H0V21.5Z"
+                    fill="#DC3B18" />
+            </svg>
+            Аренда строительной спецтехники
+        </a>
+        <div class="b-services-nav__pattern"></div>
+    </nav>
+    <article class="b-form">
+        <div class="container">
+            <div class="b-form__text-box">
+                <h4 class="b-form__heading">Подберём оптимальный кран под вашу задачу</h4>
+                <p class="b-form__text">Мы обязательно найдём кран, который вам подойдёт. Если у нас нет такого крана,
+                    мы
+                    порекомендуем надёжного партнёра.</p>
+            </div>
+            <form action="#" class="b-form__form-box">
+                <input type="text" class="b-form__input" placeholder="Имя">
+                <input type="text" class="b-form__input" placeholder="Номер телефона *">
+                <input type="submit" class="b-form__submit" value="Подберите мне отличный кран">
+            </form>
+        </div>
+    </article>
+    <article class="b-news">
+        <div class="container">
+            <h5 class="b-news__heading">Новости и события</h5>
+            <div class="b-news__card-box">
+                <a href="#" class="b-news__card">
+                    <img src="img/picture1.png" alt="photo">
+                    <h6 class="b-news__card-heading">
+                        Доставили кран Comansa на стройку в Челябинск
+                    </h6>
+                    <p class="b-news__card-text">
+                        Comansa 500 уже вовсю помогает трудовому коллективу «СпецТрансСтройМонтаж» в возведении
+                        бизнес-центра в Приморском районе.
+                    </p>
+                    <div class="b-news__date-box">
+                        <p class="b-news__date">12/02/2021</p>
+                        <img src="img/line-arrow.svg" alt="line">
+                    </div>
+                </a>
+                <a href="#" class="b-news__card">
+                    <img src="img/picture2.png" alt="photo">
+                    <h6 class="b-news__card-heading">
+                        Расширили линейку кранов. Легендарные Raimondi доступны в аренду
+                    </h6>
+                    <p class="b-news__card-text">
+                        Raimondi Cranes - производитель тяжелого грузоподъемного оборудования, который уже более 150 лет
+                        отмечает свое превосходство в Европе.
+                    </p>
+                    <div class="b-news__date-box">
+                        <p class="b-news__date">12/02/2021</p>
+                        <img src="img/line-arrow.svg" alt="line">
+                    </div>
+                </a>
+                <a href="#" class="b-news__card">
+                    <img src="img/picture3.png" alt="photo">
+                    <h6 class="b-news__card-heading">
+                        Открыли офис в Ярославле
+                    </h6>
+                    <p class="b-news__card-text">
+                        Расширяем географию предоставления услуг. Новый офис покрывает нужды клиентов из Ярославской,
+                        Костромской и Вологодской областей.
+                    </p>
+                    <div class="b-news__date-box">
+                        <p class="b-news__date">12/02/2021</p>
+                        <img src="img/line-arrow.svg" alt="line">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </article>
+    <footer class="b-footer">
+        <div class="container">
+            <div class="b-footer__link-row">
+                <div class="b-footer__links">
+                    <a href="#" class="b-footer__link">Главная</a>
+                    <a href="#" class="b-footer__link">Аренда</a>
+                    <a href="#" class="b-footer__link">Продажа</a>
+                    <a href="#" class="b-footer__link">Запчасти</a>
+                    <a href="#" class="b-footer__link">Услуги</a>
+                    <a href="#" class="b-footer__link">О компании</a>
+                    <a href="#" class="b-footer__link">Блог</a>
+                    <a href="#" class="b-footer__link">Контакты</a>
+                </div>
+                <a href="tel:+780080034332" class="b-footer__phone">8(800) 800-343-32</a>
+            </div>
+            <a href="mailto:info@glcrane.ru" class="b-footer__mail">info<span>@</span>glcrane.ru</a>
+            <div class="b-footer__copy-row">
+                <p class="b-footer__copy">© 2020 ООО «ГЛ-РЭМО» </p>
+                <a href="#" class="b-footer__privacy">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
