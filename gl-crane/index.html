@@ -24,22 +24,32 @@
                     <a href="tel:+780080034332" class="b-header__number">8(800) 800-343-32</a>
                     <a href="mailto:info@glcrane.ru" class="b-header__mail">info<span>@</span>glcrane.ru</a>
                 </div>
-                <button class="b-header__burger" onclick="openMenu()"><img src="img/menu-burger.svg"
-                        alt="menu"></button>
+                <button class="b-header__burger" onclick="openMenu()">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 14V9H0V14H50ZM50 44V39H0V44H50Z" fill="white" />
+                        <path d="M50 24V29H0V24H50Z" fill="#DC3B18" />
+                    </svg>
+                </button>
             </div>
         </div>
         <div class="b-header__burger-menu">
             <div class="b-header__close-row">
-                <button class="b-header__close-button" onclick="closeMenu()"><img src="img/close.svg"
-                        alt="close"></button>
+                <button class="b-header__close-button" onclick="closeMenu()">
+                    <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M38.8909 3.53554L35.3553 8.22544e-06L0 35.3553L3.53553 38.8909L38.8909 3.53554Z"
+                            fill="#DC3B18" />
+                        <path d="M39.3553 35.3553L35.8198 38.8909L0.464466 3.53553L4 0L39.3553 35.3553Z"
+                            fill="#DC3B18" />
+                    </svg>
+                </button>
             </div>
-            <p class="b-header__row">Аренда</p>
-            <p class="b-header__row">Продажа</p>
-            <p class="b-header__row">Запчасти</p>
-            <p class="b-header__row">Услуги</p>
-            <p class="b-header__row">О компании</p>
-            <p class="b-header__row">Блог</p>
-            <p class="b-header__row">Контакты</p>
+            <a href="#" class="b-header__row">Аренда</a>
+            <a href="#" class="b-header__row">Продажа</a>
+            <a href="#" class="b-header__row">Запчасти</a>
+            <a href="#" class="b-header__row">Услуги</a>
+            <a href="#" class="b-header__row">О компании</a>
+            <a href="#" class="b-header__row">Блог</a>
+            <a href="#" class="b-header__row">Контакты</a>
         </div>
     </header>
     <main class="b-main">
@@ -54,7 +64,7 @@
                     Москва и Московская область. Индивидуальные варианты для клиентов из других субъектов России.
                 </p>
                 <form action="#" class="b-main__form">
-                    <input type="text" class="b-main__input" placeholder="+7">
+                    <input type="text" class="b-main__input" placeholder="">
                     <input type="submit" class="b-main__button" value="Хочу исправный кран">
                 </form>
             </div>
@@ -214,7 +224,7 @@
         <div class="container">
             <div class="b-footer__link-row">
                 <div class="b-footer__links">
-                    <a href="#" class="b-footer__link">Главная</a>
+                    <a href="#" class="b-footer__link b-footer__link_gray">Главная</a>
                     <a href="#" class="b-footer__link">Аренда</a>
                     <a href="#" class="b-footer__link">Продажа</a>
                     <a href="#" class="b-footer__link">Запчасти</a>

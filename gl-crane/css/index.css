@@ -11,8 +11,10 @@
 }
 
 .b-header {
-  position: relative;
+  position: fixed;
   background: #141414;
+  width: 100%;
+  z-index: 10;
 }
 
 .b-header__container {
@@ -69,6 +71,10 @@
   cursor: pointer;
 }
 
+.b-header__burger:hover svg path {
+  fill: #E95635;
+}
+
 .b-header__burger-menu {
   width: 0;
   position: absolute;
@@ -102,6 +108,10 @@
   cursor: pointer;
 }
 
+.b-header__close-button:hover path {
+  fill: #E95635;
+}
+
 .b-header__row {
   height: 89px;
   width: 100%;
@@ -118,6 +128,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
+}
+
+.b-header__row:hover {
+  color: #E95635;
 }
 
 .open {
@@ -234,8 +249,8 @@
   font-size: 20px;
   line-height: 150%;
   color: #FFFFFF;
-  padding-left: 30px;
-  background: #141414;
+  padding-left: 60px;
+  background: url(../img/number_back.png) left no-repeat;
 }
 
 .b-main__input::-webkit-input-placeholder {
@@ -585,6 +600,10 @@
   text-decoration: none;
 }
 
+.b-news__card:hover .b-news__card-heading {
+  color: #E95635;
+}
+
 .b-news__card-heading {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -648,12 +667,16 @@
   color: #FFFFFF;
 }
 
+.b-footer__link_gray {
+  opacity: 0.5;
+}
+
 .b-footer__link:not(:last-child) {
   margin-right: 50px;
 }
 
 .b-footer__link:hover {
-  opacity: 0.5;
+  color: #E95635;
 }
 
 .b-footer__phone {
@@ -663,6 +686,10 @@
   font-family: 'IBM Plex Mono', monospace;
   color: #DC3B18;
   text-decoration: none;
+}
+
+.b-footer__phone:hover {
+  color: #E95635;
 }
 
 .b-footer__mail {
@@ -683,6 +710,10 @@
 
 .b-footer__mail span {
   color: #DC3B18;
+}
+
+.b-footer__mail:hover {
+  color: #E95635;
 }
 
 .b-footer__copy-row {
