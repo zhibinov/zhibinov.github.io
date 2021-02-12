@@ -17,3 +17,17 @@ function closeMenu() {
     burgerMenu.classList.remove("open");
     burgerMenu.classList.remove("shadow");
 }
+
+var tel = document.getElementsByClassName('imaskjs__input_tel');
+for (var i = 0; i < tel.length; i++) {
+    new IMask(tel[i], {
+        mask: '+{7} 000 - 000 - 00 - 00',
+    });
+}
+
+var tel1 = document.getElementsByClassName('imaskjs__input_tel1');
+for (var i = 0; i < tel1.length; i++) {
+    new IMask(tel1[i], {
+        mask: '+{7} 000 - 000 - 00 - 00',
+    });
+}

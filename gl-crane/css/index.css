@@ -17,6 +17,11 @@
   z-index: 10;
 }
 
+.b-header-plug {
+  height: 134px;
+  background: #141414;
+}
+
 .b-header__container {
   padding: 13px 40px 11px 40px;
   -webkit-box-sizing: border-box;
@@ -249,8 +254,8 @@
   font-size: 20px;
   line-height: 150%;
   color: #FFFFFF;
-  padding-left: 60px;
-  background: url(../img/number_back.png) left no-repeat;
+  padding-left: 30px;
+  background: #141414;
 }
 
 .b-main__input::-webkit-input-placeholder {
@@ -313,20 +318,20 @@
   line-height: 120%;
   color: #FFFFFF;
   text-decoration: none;
-  padding-left: 31px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-grid-columns: 131px 349px;
+      grid-template-columns: 131px 349px;
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .b-buttons__button svg {
-  margin-right: 30px;
+  margin-left: 31px;
   background: none;
 }
 
@@ -334,15 +339,19 @@
   background: #DC3B18;
 }
 
-.b-buttons__button:hover svg path {
-  fill: #FFFFFF;
+.b-buttons__button:hover svg {
+  margin-left: 51px;
 }
 
-.b-buttons__button_right {
+.b-buttons__button:hover svg path {
+  fill: #FFFFFF;
+  opacity: 0.5;
+}
+
+.b-buttons__button_left {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-right: 259px;
 }
 
 .b-buttons__button_center {
@@ -456,6 +465,7 @@
 
 .b-services-nav__link:hover svg path {
   fill: #FFFFFF;
+  opacity: 0.5;
 }
 
 .b-services-nav__pattern {
@@ -739,5 +749,28 @@
   line-height: 120%;
   color: #FFFFFF;
   opacity: 0.8;
+}
+
+.b-rent {
+  background: #141414;
+  padding-top: 90px;
+  padding-bottom: 140px;
+}
+
+.b-rent__heading {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.b-rent__text {
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin-top: 30px;
+  margin-bottom: 88px;
 }
 /*# sourceMappingURL=index.css.map */

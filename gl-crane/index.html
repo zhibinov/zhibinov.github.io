@@ -52,6 +52,7 @@
             <a href="#" class="b-header__row">Контакты</a>
         </div>
     </header>
+    <div class="b-header-plug"></div>
     <main class="b-main">
         <div class="b-main__text-box">
             <div class="b-main__text">
@@ -64,7 +65,7 @@
                     Москва и Московская область. Индивидуальные варианты для клиентов из других субъектов России.
                 </p>
                 <form action="#" class="b-main__form">
-                    <input type="text" class="b-main__input" placeholder="">
+                    <input type="text" class="b-main__input imaskjs__input_tel" placeholder="+7">
                     <input type="submit" class="b-main__button" value="Хочу исправный кран">
                 </form>
             </div>
@@ -72,7 +73,7 @@
         <div class="b-main__img-box"></div>
     </main>
     <nav class="b-buttons">
-        <a href="#" class="b-buttons__button b-buttons__button_right">
+        <a href="#" class="b-buttons__button b-buttons__button_left">
             <svg width="72" height="24" viewBox="0 0 72 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M71.0607 13.0607C71.6464 12.4749 71.6464 11.5251 71.0607 10.9393L61.5147 1.3934C60.9289 0.807611 59.9792 0.807611 59.3934 1.3934C58.8076 1.97919 58.8076 2.92893 59.3934 3.51472L67.8787 12L59.3934 20.4853C58.8076 21.0711 58.8076 22.0208 59.3934 22.6066C59.9792 23.1924 60.9289 23.1924 61.5147 22.6066L71.0607 13.0607ZM0 13.5H70V10.5H0V13.5Z"
@@ -166,7 +167,7 @@
             </div>
             <form action="#" class="b-form__form-box">
                 <input type="text" class="b-form__input" placeholder="Имя">
-                <input type="text" class="b-form__input" placeholder="Номер телефона *">
+                <input type="text" class="b-form__input imaskjs__input_tel1" placeholder="Номер телефона *">
                 <input type="submit" class="b-form__submit" value="Подберите мне отличный кран">
             </form>
         </div>
@@ -242,6 +243,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
     <script src="js/script.js"></script>
 </body>
 

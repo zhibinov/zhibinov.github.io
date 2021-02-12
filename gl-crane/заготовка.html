@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GL-CRANE - Главная</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/png">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="b-header">
+        <div class="b-header__container">
+            <img src="img/logo.svg" alt="logo">
+            <div class="b-header__block">
+                <div class="b-header__contacts">
+                    <a href="tel:+780080034332" class="b-header__number">8(800) 800-343-32</a>
+                    <a href="mailto:info@glcrane.ru" class="b-header__mail">info<span>@</span>glcrane.ru</a>
+                </div>
+                <button class="b-header__burger" onclick="openMenu()">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 14V9H0V14H50ZM50 44V39H0V44H50Z" fill="white" />
+                        <path d="M50 24V29H0V24H50Z" fill="#DC3B18" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="b-header__burger-menu">
+            <div class="b-header__close-row">
+                <button class="b-header__close-button" onclick="closeMenu()">
+                    <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M38.8909 3.53554L35.3553 8.22544e-06L0 35.3553L3.53553 38.8909L38.8909 3.53554Z"
+                            fill="#DC3B18" />
+                        <path d="M39.3553 35.3553L35.8198 38.8909L0.464466 3.53553L4 0L39.3553 35.3553Z"
+                            fill="#DC3B18" />
+                    </svg>
+                </button>
+            </div>
+            <a href="#" class="b-header__row">Аренда</a>
+            <a href="#" class="b-header__row">Продажа</a>
+            <a href="#" class="b-header__row">Запчасти</a>
+            <a href="#" class="b-header__row">Услуги</a>
+            <a href="#" class="b-header__row">О компании</a>
+            <a href="#" class="b-header__row">Блог</a>
+            <a href="#" class="b-header__row">Контакты</a>
+        </div>
+    </header>
+    <article class="b-form">
+        <div class="container">
+            <div class="b-form__text-box">
+                <h4 class="b-form__heading">Подберём оптимальный кран под вашу задачу</h4>
+                <p class="b-form__text">Мы обязательно найдём кран, который вам подойдёт. Если у нас нет такого крана,
+                    мы
+                    порекомендуем надёжного партнёра.</p>
+            </div>
+            <form action="#" class="b-form__form-box">
+                <input type="text" class="b-form__input" placeholder="Имя">
+                <input type="text" class="b-form__input" placeholder="Номер телефона *">
+                <input type="submit" class="b-form__submit" value="Подберите мне отличный кран">
+            </form>
+        </div>
+    </article>
+    <footer class="b-footer">
+        <div class="container">
+            <div class="b-footer__link-row">
+                <div class="b-footer__links">
+                    <a href="#" class="b-footer__link b-footer__link_gray">Главная</a>
+                    <a href="#" class="b-footer__link">Аренда</a>
+                    <a href="#" class="b-footer__link">Продажа</a>
+                    <a href="#" class="b-footer__link">Запчасти</a>
+                    <a href="#" class="b-footer__link">Услуги</a>
+                    <a href="#" class="b-footer__link">О компании</a>
+                    <a href="#" class="b-footer__link">Блог</a>
+                    <a href="#" class="b-footer__link">Контакты</a>
+                </div>
+                <a href="tel:+780080034332" class="b-footer__phone">8(800) 800-343-32</a>
+            </div>
+            <a href="mailto:info@glcrane.ru" class="b-footer__mail">info<span>@</span>glcrane.ru</a>
+            <div class="b-footer__copy-row">
+                <p class="b-footer__copy">© 2020 ООО «ГЛ-РЭМО» </p>
+                <a href="#" class="b-footer__privacy">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

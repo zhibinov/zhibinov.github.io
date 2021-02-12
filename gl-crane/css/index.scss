@@ -17,6 +17,11 @@
     z-index: 10;
 }
 
+.b-header-plug {
+    height: 134px;
+    background: #141414;
+}
+
 .b-header__container {
     padding: 13px 40px 11px 40px;
     box-sizing: border-box;
@@ -218,8 +223,8 @@
     font-size: 20px;
     line-height: 150%;
     color: #FFFFFF;
-    padding-left: 60px;
-    background: url(../img/number_back.png) left no-repeat;
+    padding-left: 30px;
+    background: #141414;
 }
 
 .b-main__input::placeholder {
@@ -258,14 +263,14 @@
     line-height: 120%;
     color: #FFFFFF;
     text-decoration: none;
-    padding-left: 31px;
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: 131px 349px;
     height: 100%;
     box-sizing: border-box;
 
     svg {
-        margin-right: 30px;
+        margin-left: 31px;
         background: none;
     }
 }
@@ -273,14 +278,18 @@
 .b-buttons__button:hover {
     background: #DC3B18;
 
-    svg path {
-        fill: #FFFFFF;
+    svg {
+        margin-left: 51px;
+
+        path {
+            fill: #FFFFFF;
+            opacity: 0.5;
+        }
     }
 }
 
-.b-buttons__button_right {
+.b-buttons__button_left {
     justify-content: flex-end;
-    padding-right: 259px;
 }
 
 .b-buttons__button_center {
@@ -381,6 +390,7 @@
 
         path {
             fill: #FFFFFF;
+            opacity: 0.5;
         }
     }
 }
@@ -610,4 +620,27 @@
     line-height: 120%;
     color: #FFFFFF;
     opacity: 0.8;
+}
+
+.b-rent {
+    background: #141414;
+    padding-top: 90px;
+    padding-bottom: 140px;
+}
+
+.b-rent__heading {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.b-rent__text {
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-top: 30px;
+    margin-bottom: 88px;
 }
