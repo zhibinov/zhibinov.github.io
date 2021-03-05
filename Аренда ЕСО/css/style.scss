@@ -563,7 +563,7 @@
 
     img {
         @media(max-width: 424px) {
-            max-width: 100px;
+            max-width: 70px;
             max-height: 50px;
         }
 
@@ -940,6 +940,7 @@
 
     @media(max-width: 991px) {
         flex-direction: column;
+        margin-bottom: 0;
     }
 }
 

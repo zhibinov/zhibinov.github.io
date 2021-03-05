@@ -779,7 +779,7 @@
 
 @media (max-width: 424px) {
   .b-main__card img {
-    max-width: 100px;
+    max-width: 70px;
     max-height: 50px;
   }
 }
@@ -1279,6 +1279,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 0;
   }
 }
 
