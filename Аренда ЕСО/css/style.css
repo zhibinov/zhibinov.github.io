@@ -521,6 +521,9 @@
   line-height: 25px;
   color: #333333;
   margin-top: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .b-main__submit:hover {
@@ -2392,6 +2395,9 @@
   border-radius: 5px;
   background: none;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .b-application__submit:hover {
@@ -2734,6 +2740,9 @@
   color: #333333;
   margin-top: 66px;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 @media (max-width: 575px) {
