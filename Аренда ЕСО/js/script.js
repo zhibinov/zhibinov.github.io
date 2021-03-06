@@ -57,35 +57,25 @@ close.addEventListener('click', function (event) {
     popUp.style.display = 'none';
 });
 
-const answer1 = document.querySelector('.answer1');
 const answer2 = document.querySelector('.answer2');
 const answer3 = document.querySelector('.answer3');
 const answer4 = document.querySelector('.answer4');
 const answer5 = document.querySelector('.answer5');
 
-const button1 = document.querySelector('.button1');
 const button2 = document.querySelector('.button2');
 const button3 = document.querySelector('.button3');
 const button4 = document.querySelector('.button4');
 const button5 = document.querySelector('.button5');
 
-const plus1 = document.querySelector('.plus1');
 const plus2 = document.querySelector('.plus2');
 const plus3 = document.querySelector('.plus3');
 const plus4 = document.querySelector('.plus4');
 const plus5 = document.querySelector('.plus5');
 
-const minus1 = document.querySelector('.minus1');
 const minus2 = document.querySelector('.minus2');
 const minus3 = document.querySelector('.minus3');
 const minus4 = document.querySelector('.minus4');
 const minus5 = document.querySelector('.minus5');
-
-button1.addEventListener('click', function (event) {
-    answer1.classList.toggle('display_block');
-    plus1.classList.toggle('display_block');
-    minus1.classList.toggle('display_block');
-});
 
 button2.addEventListener('click', function (event) {
     answer2.classList.toggle('display_block');

@@ -154,7 +154,17 @@
 
 @media (max-width: 991px) {
   .b-header__tel {
-    display: none;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 424px) {
+  .b-header__tel {
+    font-size: 16px;
+    line-height: 20px;
+    height: 25px;
+    margin: 0;
   }
 }
 
@@ -551,6 +561,12 @@
   .b-main__or {
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .b-main__or img {
+    display: none;
   }
 }
 
