@@ -15,6 +15,9 @@ link.addEventListener('click', copyLink);
 const swiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     loop: true,
+    autoplay: {
+        delay: 10000,
+    },
     pagination: {
         el: '.swiper-pagination',
     },
