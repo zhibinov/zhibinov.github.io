@@ -17,13 +17,7 @@
 
 .container {
   margin: 0 auto;
-  max-width: 1140px;
-}
-
-@media (max-width: 1199px) {
-  .container {
-    max-width: 960px;
-  }
+  max-width: 960px;
 }
 
 @media (max-width: 991px) {
@@ -156,8 +150,6 @@
 
 .b-link__link {
   text-decoration: none;
-  width: 390px;
-  height: 75px;
   background-color: #2f88f6;
   background: url(../img/link.png) center no-repeat;
   background-size: contain;
@@ -173,20 +165,14 @@
           justify-content: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 28.7px;
   line-height: 9px;
   font-weight: 700;
   letter-spacing: 0.025em;
   color: #ffffff;
   padding-right: 50px;
-}
-
-@media (max-width: 767px) {
-  .b-link__link {
-    width: 300px;
-    height: 50px;
-    font-size: 16px;
-  }
+  width: 300px;
+  height: 50px;
+  font-size: 16px;
 }
 
 @media (max-width: 575px) {
@@ -200,13 +186,7 @@
   line-height: 7px;
   font-weight: 400;
   color: #a3a7ac;
-  font-size: 20px;
-}
-
-@media (max-width: 767px) {
-  .b-link__text {
-    font-size: 16px;
-  }
+  font-size: 16px;
 }
 
 .b-what {
@@ -228,7 +208,6 @@
 
 @media (max-width: 767px) {
   .b-what .container {
-    padding: 20px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -239,8 +218,8 @@
 .b-what iframe {
   border-radius: 10px;
   border: none;
-  width: 440px;
-  height: 300px;
+  width: 350px;
+  height: 200px;
 }
 
 @media (max-width: 991px) {
@@ -260,7 +239,7 @@
   color: #ffffff;
   font-weight: 400;
   color: #b3b7bc;
-  max-width: 600px;
+  max-width: 550px;
   font-size: 20px;
   line-height: 24px;
 }
@@ -583,15 +562,9 @@
   font-weight: 700;
   font-weight: 400;
   color: #b3b7bc;
-  max-width: 600px;
+  max-width: 500px;
   font-size: 20px;
   line-height: 24px;
-}
-
-@media (max-width: 1199px) {
-  .b-communication__text-box {
-    max-width: 500px;
-  }
 }
 
 @media (max-width: 991px) {
