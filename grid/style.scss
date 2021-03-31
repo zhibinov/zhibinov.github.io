@@ -21,6 +21,10 @@ body {
     grid-template-rows: auto;
     grid-gap: 0px;
     margin-bottom: 20px;
+
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .BLOCK-WITHOUT-REGIONS {
@@ -96,16 +100,14 @@ body {
 }
 
 
-.BLOCK-WITHOUT-REGIONS div {
-    align-self: flex-start;
-}
+.BLOCK-WITHOUT-REGIONS div {}
 
 .BLOCK-WITH_FLAG,
 .BLOCK-WITH_FLAG_WITHOUT_SECONDNAME {
     grid-area: region;
     display: grid;
-    grid-template-columns: 120px 100px 100px;
-    grid-template-rows: 25px 25px 25px;
+    // grid-template-columns: 120px 100px 100px;
+    // grid-template-rows: 25px 25px 25px;
     grid-gap: 0px;
 
 }
@@ -116,6 +118,10 @@ body {
     display: grid;
     grid-template-columns: 120px 100px 100px;
     grid-gap: 0px;
+
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .BLOCK-WITH_FLAG {
@@ -126,7 +132,8 @@ body {
 }
 
 .BLOCK-WITH_FLAG_WITHOUT_SECONDNAME {
-    grid-template-rows: 25px 25px 25px;
+    grid-template-rows: 30px 30px;
+    grid-row-gap: 10px;
     grid-template-areas:
         "flag region_name region_name"
         "flag count_places count_days"
@@ -147,6 +154,7 @@ body {
         "ss_camps"
         "ss_ethno-parks"
         "ss_art-parks";
+    align-self: center;
 }
 
 .BLOCK-WITH_PLACES_INNER-REG {
@@ -154,7 +162,7 @@ body {
     display: grid;
     grid-template-columns: 200px auto;
     grid-template-rows: auto 1fr;
-    grid-gap: 2px;
+    // grid-gap: 2px;
     grid-template-areas: "inner_region cities"
         "inner_region ss_nature"
         "inner_region ss_beaches"
@@ -163,14 +171,22 @@ body {
         "inner_region ss_camps"
         "inner_region ss_ethno-parks"
         "inner_region ss_art-parks";
+
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr auto;
+    }
 }
 
-.item-flag {
-    grid-area: flag;
-}
+
 
 .item-cities {
     grid-area: cities;
+}
+
+.BLOCK-WITH_FLAG_WITHOUT_SECONDNAME .item-region_name {
+    display: grid;
+    height: 100%;
+    align-items: flex-end;
 }
 
 .item-region_name {
@@ -276,6 +292,7 @@ body {
 
 .item-ss-art-parks {
     grid-area: ss_art-parks;
+    line-height: 25px;
 }
 
 .item-ss-art-parks::before {
@@ -347,4 +364,9 @@ body {
 
 .item-inner_region {
     grid-area: inner_region;
+}
+
+.item-flag {
+    grid-area: flag;
+    align-self: auto !important;
 }

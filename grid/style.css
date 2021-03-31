@@ -25,6 +25,14 @@ body {
   margin-bottom: 20px;
 }
 
+@media (max-width: 576px) {
+  .BLOCK-WITHOUT-REGIONS,
+  .BLOCK-WITH-REGIONS {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 .BLOCK-WITHOUT-REGIONS {
       grid-template-areas: "region  places";
 }
@@ -39,11 +47,6 @@ body {
   padding: 5px 5px 5px 5px;
 }
 
-.BLOCK-WITHOUT-REGIONS div {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
 .BLOCK-WITH_FLAG,
 .BLOCK-WITH_FLAG_WITHOUT_SECONDNAME {
   -ms-grid-row: 1;
@@ -52,10 +55,6 @@ body {
   grid-area: region;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 120px 100px 100px;
-      grid-template-columns: 120px 100px 100px;
-  -ms-grid-rows: 25px 25px 25px;
-      grid-template-rows: 25px 25px 25px;
   grid-gap: 0px;
 }
 
@@ -70,6 +69,14 @@ body {
   -ms-grid-columns: 120px 100px 100px;
       grid-template-columns: 120px 100px 100px;
   grid-gap: 0px;
+}
+
+@media (max-width: 576px) {
+  .BLOCK-WITH_FLAG,
+  .BLOCK-WITH_FLAG_WITHOUT_SECONDNAME {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .BLOCK-WITH_FLAG {
@@ -79,8 +86,9 @@ body {
 }
 
 .BLOCK-WITH_FLAG_WITHOUT_SECONDNAME {
-  -ms-grid-rows: 25px 25px 25px;
-      grid-template-rows: 25px 25px 25px;
+  -ms-grid-rows: 30px 30px;
+      grid-template-rows: 30px 30px;
+  grid-row-gap: 10px;
       grid-template-areas: "flag region_name region_name" "flag count_places count_days" "flag . .";
 }
 
@@ -96,6 +104,8 @@ body {
       grid-template-rows: repeat(auto);
   grid-gap: 0px;
       grid-template-areas: "cities" "ss_nature" "ss_beaches" "ss_ruins" "ss_trekking" "ss_camps" "ss_ethno-parks" "ss_art-parks";
+  -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .BLOCK-WITH_PLACES_INNER-REG {
@@ -106,21 +116,29 @@ body {
       grid-template-columns: 200px auto;
   -ms-grid-rows: auto 1fr;
       grid-template-rows: auto 1fr;
-  grid-gap: 2px;
       grid-template-areas: "inner_region cities" "inner_region ss_nature" "inner_region ss_beaches" "inner_region ss_ruins" "inner_region ss_trekking" "inner_region ss_camps" "inner_region ss_ethno-parks" "inner_region ss_art-parks";
 }
 
-.item-flag {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  grid-area: flag;
+@media (max-width: 576px) {
+  .BLOCK-WITH_PLACES_INNER-REG {
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
+  }
 }
 
 .item-cities {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: cities;
+}
+
+.BLOCK-WITH_FLAG_WITHOUT_SECONDNAME .item-region_name {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .item-region_name {
@@ -244,6 +262,7 @@ body {
   -ms-grid-row: 8;
   -ms-grid-column: 2;
   grid-area: ss_art-parks;
+  line-height: 25px;
 }
 
 .item-ss-art-parks::before {
@@ -321,5 +340,15 @@ body {
   -ms-grid-row-span: 8;
   -ms-grid-column: 1;
   grid-area: inner_region;
+}
+
+.item-flag {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: flag;
+  -ms-flex-item-align: auto !important;
+      -ms-grid-row-align: auto !important;
+      align-self: auto !important;
 }
 /*# sourceMappingURL=style.css.map */
