@@ -11,6 +11,9 @@ var mySwiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
     direction: 'horizontal',
     loop: false,
+    autoplay: {
+        delay: 4000,
+    },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -28,12 +31,16 @@ let slide3 = document.querySelectorAll('.slide3');
 let slide4 = document.querySelectorAll('.slide4');
 let slide5 = document.querySelectorAll('.slide5');
 let slide6 = document.querySelectorAll('.slide6');
+let slide7 = document.querySelectorAll('.slide7');
+let slide8 = document.querySelectorAll('.slide8');
 let zoom1 = document.querySelector('.b-sertificate-zoom1');
 let zoom2 = document.querySelector('.b-sertificate-zoom2');
 let zoom3 = document.querySelector('.b-sertificate-zoom3');
 let zoom4 = document.querySelector('.b-sertificate-zoom4');
 let zoom5 = document.querySelector('.b-sertificate-zoom5');
 let zoom6 = document.querySelector('.b-sertificate-zoom6');
+let zoom7 = document.querySelector('.b-sertificate-zoom7');
+let zoom8 = document.querySelector('.b-sertificate-zoom8');
 
 slide1.forEach(element => zoomFunc1(element));
 function zoomFunc1(item) {
@@ -76,6 +83,18 @@ function zoomFunc6(item) {
         zoom6.classList.toggle('display_block');
     });
 }
+slide7.forEach(element => zoomFunc7(element));
+function zoomFunc7(item) {
+    item.addEventListener('click', function (event) {
+        zoom7.classList.toggle('display_block');
+    });
+}
+slide8.forEach(element => zoomFunc8(element));
+function zoomFunc8(item) {
+    item.addEventListener('click', function (event) {
+        zoom8.classList.toggle('display_block');
+    });
+}
 
 zoom1.addEventListener('click', function (event) {
     zoom1.classList.remove('display_block');
@@ -99,4 +118,12 @@ zoom5.addEventListener('click', function (event) {
 
 zoom6.addEventListener('click', function (event) {
     zoom6.classList.remove('display_block');
+});
+
+zoom7.addEventListener('click', function (event) {
+    zoom7.classList.remove('display_block');
+});
+
+zoom8.addEventListener('click', function (event) {
+    zoom8.classList.remove('display_block');
 });
