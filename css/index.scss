@@ -473,6 +473,8 @@
 
 .b-work__img-size {
     width: 412px;
+    height: 90%;
+    object-fit: cover;
 
     @media (max-width:576px) {
         width: 375px;

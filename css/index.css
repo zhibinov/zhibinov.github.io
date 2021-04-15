@@ -627,6 +627,9 @@
 
 .b-work__img-size {
   width: 412px;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 576px) {
