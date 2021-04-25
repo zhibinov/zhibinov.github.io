@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
+@import "./_zeroCSS.scss";
+@import "./_header.scss";
+@import "./_structure.scss";
+@import "./_proof.scss";
+@import "./_jurnal.scss";
+@import "./_physicians.scss";
+@import "./_pharmacist.scss";
+@import "./_banner__right.scss";
+@import "./_fonts.scss";
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}

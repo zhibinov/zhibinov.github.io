@@ -1,0 +1,109 @@
+.pharmacist {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f3f3f3;
+    &__video {
+        max-width: 2626px;
+        display: block;
+    }
+    button {
+        border: none;
+    }
+
+    @media (max-width: 5000px) {
+        margin-top: 132px;
+        padding: 173px 16px 427px 16px;
+        & > h4 {
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 172px;
+            line-height: 125.6%;
+            color: #0064f9;
+        }
+        & > p {
+            font-family: "Oswald", sans-serif;
+            font-weight: 300;
+            font-size: 88px;
+            line-height: 127.6%;
+            color: #404040;
+        }
+
+        &__video {
+            max-width: 2626px;
+            width: 100%;
+            margin: 100px auto;
+            display: block;
+        }
+        button {
+            font-family: sans-serif;
+            font-size: 70px;
+            line-height: 127.6%;
+            letter-spacing: -0.06em;
+            color: #ffffff;
+            width: 729.96px;
+            height: 149.74px;
+            background: #ff1a0d;
+            border-radius: 4px;
+        }
+    }
+    @media (max-width: 3000px) {
+        margin-top: 116px;
+        padding: 130px 16px 130px 16px;
+        & > h4 {
+            font-size: 70px;
+        }
+        & > p {
+            font-size: 62px;
+        }
+
+        &__video {
+            margin: 70px auto;
+            width: 1864px;
+            height: 1057px;
+        }
+        button {
+            font-size: 46px;
+            width: 487px;
+            height: 100px;
+        }
+    }
+    @media (max-width: 1500px) {
+        padding: 30px 16px 30px 16px;
+        & > h4 {
+            font-size: 27px;
+        }
+        & > p {
+            font-size: 24px;
+        }
+        &__video {
+            margin-top: 26px;
+            width: 718px;
+            height: 407px;
+        }
+        button {
+            font-size: 18px;
+            width: 195px;
+            height: 40px;
+        }
+    }
+    @media (max-width: 750px) {
+        margin-top: 29px;
+        & > h4 {
+            font-size: 22px;
+        }
+        & > p {
+            font-size: 20px;
+        }
+        &__video {
+            margin: 13px auto;
+            width: 300px;
+            height: auto;
+        }
+        button {
+            display: none;
+        }
+    }
+}

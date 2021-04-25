@@ -1,0 +1,146 @@
+.physicians {
+    text-align: center;
+    letter-spacing: -0.03em;
+    font-family: Arial;
+    margin-top: 311px;
+    & > h2 {
+        font-weight: bold;
+        font-size: 186px;
+        color: #0064f9;
+    }
+    & > h3 {
+        font-weight: bold;
+        font-size: 112px;
+        color: #ff6600;
+    }
+    &__video {
+        margin-top: 117px;
+        .text {
+            & > h4 {
+                margin-top: 65px;
+                font-size: 84px;
+                color: #333333;
+            }
+            & > p {
+                font-size: 64px;
+                color: #8a8a8a;
+            }
+        }
+        display: flex;
+        justify-content: space-evenly;
+    }
+    @media (max-width: 3500px) {
+        margin-top: 206px;
+        & > h2 {
+            font-size: 120px;
+        }
+        & > h3 {
+            font-size: 72px;
+        }
+        &__video {
+            margin-top: 76px;
+            .video {
+                width: 1100px;
+            }
+            .text {
+                & > h4 {
+                    margin-top: 65px;
+                    font-size: 54px;
+                }
+                & > p {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    @media (max-width: 2300px) {
+        &__video {
+            margin-top: 76px;
+            .video {
+                width: 900px;
+            }
+        }
+    }
+    @media (max-width: 1900px) {
+        margin-top: 81px;
+        & > h2 {
+            font-size: 60px;
+        }
+        & > h3 {
+            font-size: 42px;
+        }
+        &__video {
+            margin-top: 76px;
+            .video {
+                width: 600px;
+            }
+            .text {
+                & > h4 {
+                    margin-top: 65px;
+                    font-size: 34px;
+                }
+                & > p {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1500px) {
+        margin-top: 81px;
+        & > h2 {
+            font-size: 46px;
+        }
+        & > h3 {
+            font-size: 28px;
+        }
+        &__video {
+            margin-top: 29px;
+            .video {
+                width: 420px;
+            }
+            .text {
+                & > h4 {
+                    margin-top: 16px;
+                    font-size: 21px;
+                }
+                & > p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    @media (max-width: 900px) {
+        &__video {
+            .video {
+                width: 320px;
+            }
+        }
+    }
+    @media (max-width: 780px) {
+        margin-top: 30px;
+        padding: 0 16px;
+        & > h2 {
+            font-size: 25px;
+        }
+        & > h3 {
+            font-size: 22px;
+        }
+        &__video {
+            margin: 0;
+            flex-direction: column;
+            .video {
+                margin-top: 44px;
+                width: 100%;
+            }
+            .text {
+                & > h4 {
+                    margin-top: 16px;
+                    font-size: 21px;
+                }
+                & > p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
