@@ -1,15 +1,17 @@
 .proof {
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__video {
-        max-width: 2626px;
-        display: block;
+    @media (max-width: 3840px) {
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__video {
+            max-width: 2626px;
+            display: block;
+        }
     }
-    @media (max-width: 4000px) {
+    @media (max-width: 3840px) {
         margin-top: 132px;
         &__h2 {
             font-weight: bold;
@@ -37,7 +39,7 @@
             display: block;
         }
     }
-    @media (max-width: 2600px) {
+    @media (max-width: 2560px) {
         margin-top: 116px;
         &__h2 {
             font-size: 134px;
@@ -51,27 +53,19 @@
 
         &__video {
             margin: 70px auto;
-            width: 1864px;
+            max-width: 1864px;
             height: 1057px;
         }
     }
-    @media (max-width: 2100px) {
-        &__h2 {
-            font-size: 134px;
-        }
-        &__h4 {
-            font-size: 70px;
-        }
-        &__p {
-            font-size: 62px;
-        }
+    @media (max-width: 1960px) {
+
         &__video {
-            margin-top: 70px;
-            width: 1064px;
-            height: 657px;
+            margin: 70px auto;
+            max-width: 1864px;
+            width: 100%;
         }
     }
-    @media (max-width: 1500px) {
+    @media (max-width: 1440px) {
         margin-top: 29px;
         &__h2 {
             font-size: 52px;
@@ -88,8 +82,9 @@
             height: 407px;
         }
     }
-    @media (max-width: 750px) {
+    @media (max-width: 768px) {
         margin-top: 29px;
+        padding: 16px;
         &__h2 {
             font-size: 58px;
             color: #3432ff;
@@ -110,7 +105,7 @@
         }
         &__video {
             margin: 13px auto;
-            width: 300px;
+            width: 100%;
             height: auto;
         }
     }

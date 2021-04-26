@@ -1,35 +1,42 @@
 .physicians {
-    text-align: center;
-    letter-spacing: -0.03em;
-    font-family: Arial;
-    margin-top: 311px;
-    & > h2 {
-        font-weight: bold;
-        font-size: 186px;
-        color: #0064f9;
-    }
-    & > h3 {
-        font-weight: bold;
-        font-size: 112px;
-        color: #ff6600;
-    }
-    &__video {
-        margin-top: 117px;
-        .text {
-            & > h4 {
-                margin-top: 65px;
-                font-size: 84px;
-                color: #333333;
-            }
-            & > p {
-                font-size: 64px;
-                color: #8a8a8a;
+    @media (max-width: 3840px) {
+        text-align: center;
+        letter-spacing: -0.03em;
+        font-family: Arial;
+        margin-top: 311px;
+        & > h2 {
+            font-weight: bold;
+            font-size: 186px;
+            color: #0064f9;
+        }
+        & > h3 {
+            font-weight: bold;
+            font-size: 112px;
+            color: #ff6600;
+        }
+        &__video {
+            margin-top: 117px;
+            display: flex;
+            justify-content: space-evenly;
+            &-text {
+                margin: 10px;
+                .video {
+                    max-width: 1706px;
+                    width: 100%;
+                }
+                & > h4 {
+                    margin-top: 65px;
+                    font-size: 84px;
+                    color: #333333;
+                }
+                & > p {
+                    font-size: 64px;
+                    color: #8a8a8a;
+                }
             }
         }
-        display: flex;
-        justify-content: space-evenly;
     }
-    @media (max-width: 3500px) {
+    @media (max-width: 2560px) {
         margin-top: 206px;
         & > h2 {
             font-size: 120px;
@@ -39,12 +46,13 @@
         }
         &__video {
             margin-top: 76px;
-            .video {
-                width: 1100px;
-            }
-            .text {
+            &-text {
+                .video {
+                    max-width: 1102px;
+                    width: 100%;
+                }
                 & > h4 {
-                    margin-top: 65px;
+                    margin-top: 42px;
                     font-size: 54px;
                 }
                 & > p {
@@ -53,39 +61,32 @@
             }
         }
     }
-    @media (max-width: 2300px) {
-        &__video {
-            margin-top: 76px;
-            .video {
-                width: 900px;
-            }
-        }
-    }
-    @media (max-width: 1900px) {
-        margin-top: 81px;
+    @media (max-width: 1440px) {
+        margin-top: 106px;
         & > h2 {
-            font-size: 60px;
+            font-size: 50px;
         }
         & > h3 {
-            font-size: 42px;
+            font-size: 32px;
         }
         &__video {
-            margin-top: 76px;
-            .video {
-                width: 600px;
-            }
-            .text {
+            margin-top: 56px;
+            &-text {
+                .video {
+                    max-width: 602px;
+                    width: 100%;
+                }
                 & > h4 {
-                    margin-top: 65px;
+                    margin-top: 32px;
                     font-size: 34px;
                 }
                 & > p {
-                    font-size: 25px;
+                    font-size: 20px;
                 }
             }
         }
     }
-    @media (max-width: 1500px) {
+    @media (max-width: 1024px) {
         margin-top: 81px;
         & > h2 {
             font-size: 46px;
@@ -95,10 +96,11 @@
         }
         &__video {
             margin-top: 29px;
-            .video {
-                width: 420px;
-            }
-            .text {
+            &-text {
+                .video {
+                    max-width: 422px;
+                    width: 100%;
+                }
                 & > h4 {
                     margin-top: 16px;
                     font-size: 21px;
@@ -109,16 +111,32 @@
             }
         }
     }
-    @media (max-width: 900px) {
+    @media (max-width: 768px) {
+        margin-top: 40px;
+        & > h2 {
+            font-size: 36px;
+        }
+        & > h3 {
+            font-size: 18px;
+        }
         &__video {
-            .video {
-                width: 320px;
+            margin-top: 29px;
+            &-text {
+                .video {
+                    width: 260px;
+                }
+                & > h4 {
+                    margin-top: 16px;
+                    font-size: 21px;
+                }
+                & > p {
+                    font-size: 16px;
+                }
             }
         }
     }
-    @media (max-width: 780px) {
+    @media (max-width: 555px) {
         margin-top: 30px;
-        padding: 0 16px;
         & > h2 {
             font-size: 25px;
         }
@@ -126,19 +144,20 @@
             font-size: 22px;
         }
         &__video {
-            margin: 0;
+            margin-top: 44px;
             flex-direction: column;
-            .video {
-                margin-top: 44px;
-                width: 100%;
-            }
-            .text {
+            &-text {
+                padding: 0 16px;
+                .video {
+                    width: 100%;
+                }
                 & > h4 {
-                    margin-top: 16px;
+                    margin-top: 29px;
                     font-size: 21px;
                 }
                 & > p {
                     font-size: 16px;
+                    margin-bottom: 11px;
                 }
             }
         }

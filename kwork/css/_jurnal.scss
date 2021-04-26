@@ -1,82 +1,56 @@
 .jurnal {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    &__text {
-        & > h2 {
-            font-family: 'Oswald', sans-serif;
-            font-weight: bold;
-            font-size: 136px;
-            line-height: 105.6%;
-            text-transform: uppercase;
-            color: #ff7043;
-        }
-        & > h4 {
-            font-family: 'Oswald', sans-serif;
-            font-weight: bold;
-            font-size: 88px;
-            line-height: 127.6%;
-            text-transform: uppercase;
-            color: #06407d;
-        }
-        & > h6 {
-            font-family: Arial;
-            font-weight: bold;
-            font-size: 62px;
-            line-height: 127.6%;
-            color: #06407d;
-        }
-        & > p,
-        a {
-            font-family: Arial;
-            font-size: 62px;
-            line-height: 127.6%;
-            color: #06407d;
-        }
-    }
-
-    @media (max-width: 5000px) {
+    @media (max-width: 3840px) {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
         margin-top: 372px;
+        padding: 0 242px;
         &__text {
-            width: 1736px;
+            width: 50%;
+            & > h2 {
+                font-family: "Oswald", sans-serif;
+                font-weight: bold;
+                font-size: 136px;
+                line-height: 105.6%;
+                text-transform: uppercase;
+                color: #ff7043;
+            }
+            & > h4 {
+                font-family: "Oswald", sans-serif;
+                font-weight: bold;
+                font-size: 88px;
+                line-height: 127.6%;
+                text-transform: uppercase;
+                color: #06407d;
+                margin: 26px 0 42px 0;
+            }
+            & > h6 {
+                font-family: Arial;
+                font-weight: bold;
+                font-size: 62px;
+                line-height: 127.6%;
+                color: #06407d;
+                margin-bottom: 0;
+            }
+            & > p,
+            a {
+                font-family: Arial;
+                font-size: 62px;
+                line-height: 127.6%;
+                color: #06407d;
+            }
             & > p {
                 margin: 37px 0;
             }
         }
         &__img {
-            width: 1894px;
+            width: 50%;
         }
     }
-    @media (max-width: 3800px) {
-        margin-top: 304px;
-        &__text {
-            width: 1145px;
-            & > h2 {
-                font-size: 90px;
-            }
-            & > h4 {
-                font-size: 58px;
-                margin: 18px 0 28px 0;
-            }
-            & > h6 {
-                font-size: 40px;
-            }
-            & > p,
-            a {
-                font-size: 40px;
-            }
-            & > p {
-                margin: 17px 0;
-            }
-        }
-        &__img {
-            width: 1250px;
-        }
-    }
-    @media (max-width: 2500px) {
+    @media (max-width: 2560px) {
         margin-top: 102px;
+        padding: 0 219px;
         &__text {
-            width: 900px;
             & > h2 {
                 font-size: 80px;
             }
@@ -95,14 +69,11 @@
                 margin: 17px 0;
             }
         }
-        &__img {
-            width: 900px;
-        }
     }
-    @media (max-width: 1900px) {
-        margin-top: 114px;
+    @media (max-width: 1440px) {
+        margin-top: 0;
+        padding: 0 60px;
         &__text {
-            width: 450px;
             & > h2 {
                 font-size: 36px;
             }
@@ -121,17 +92,10 @@
                 margin: 11px 0;
             }
         }
-        &__img {
-            width: 491px;
-        }
     }
-    @media (max-width: 950px) {
-        margin-top: 4px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    @media (max-width: 1024px) {
+        padding: 0 26px;
         &__text {
-            width: 100%;
             padding: 0 22px;
             & > h2 {
                 font-size: 36px;
@@ -151,12 +115,13 @@
                 margin: 11px 0;
             }
         }
-        &__img {
-            width: 100%;
-        }
     }
-    @media (max-width: 450px) {
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
         &__text {
+            width: 100%;
             & > h2 {
                 font-size: 27px;
             }

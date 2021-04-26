@@ -1,31 +1,33 @@
 .structure {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 488px;
-    background: #F7F7F7;
-    &__left {
-        font-family: 'Oswald', sans-serif;
-        font-weight: 300;
-        font-size: 60px;
-        line-height: 127.6%;
-        text-transform: uppercase;
-        color: #9a9898;
-        & > h4 {
-            font-weight: inherit;
-            &:last-child {
-                margin-top: 90px;
+    @media (max-width: 3840px) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 488px;
+        background: #f7f7f7;
+        &__left {
+            font-family: "Oswald", sans-serif;
+            font-weight: 300;
+            font-size: 60px;
+            line-height: 127.6%;
+            text-transform: uppercase;
+            color: #9a9898;
+            & > h4 {
+                font-weight: inherit;
+                &:last-child {
+                    margin-top: 90px;
+                }
+            }
+        }
+        &__right {
+            & > .img {
+                &:last-child {
+                    margin: 35px 0 0 0;
+                }
             }
         }
     }
-    &__right {
-        & > .img {
-            &:last-child {
-                margin: 35px 0 0 0;
-            }
-        }
-    }
-    @media (max-width: 2500px) {
+    @media (max-width: 2560px) {
         height: 326px;
         &__left {
             font-size: 38px;
@@ -40,7 +42,7 @@
             }
         }
     }
-    @media (max-width: 1500px) {
+    @media (max-width: 1440px) {
         height: 130px;
         &__left {
             font-size: 16px;

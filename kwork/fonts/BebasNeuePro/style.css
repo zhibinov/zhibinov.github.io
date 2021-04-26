@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: local('Bebas Neue Pro Bold Italic'), local('Bebas-Neue-Pro-Bold-Italic'),
+        url('BebasNeuePro-BoldItalic.woff2') format('woff2'),
+        url('BebasNeuePro-BoldItalic.woff') format('woff'),
+        url('BebasNeuePro-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }

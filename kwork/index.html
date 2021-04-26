@@ -10,28 +10,26 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__baner">
-                <div class="header__baner-info">
+    <div class="wrapper container">
+        <header class="header container">
+            <div class="header__box">
+                <div class="header__box-info">
                     <h3 class="title">Doctor-Pharmacist Formulated</h3>
-                    <h1 class="main__title">Hair Growth</h1>
-                    <h2 class="sub__title">Booster</h2>
-                    <h3 class="title smal">NATURAL & EFFECTIVE</h3>
+                    <h1 class="main__title">Hair Growth <br>
+                        <span class="sub__title">Booster</span>
+                    </h1>
+                    <h3 class="title__small">NATURAL & EFFECTIVE</h3>
                     <div class="options">
-                        <picture class="botl">
-                            <source srcset="img/Header/botttle@1x.webp 1x,img/Header/botttle@2x.webp
-                            2x,img/Header/botttle@3x.webp 3x">
-                            <img src="img/Header/botttle.png"
-                                srcset="img/Header/botttle@2x.png 2x, img/Header/botttle@3x.png 3x" alt="Logos">
-                        </picture>
+
+                        <img class="bottle" src="img/Header/botttle.png" alt="Logos">
                         <div class="options__feild">
                             <div class="options__feild-item">
                                 <img class="check" src="img/Header/icons/ok.svg" alt="">
                                 <div class="text">
                                     <h3>Fight Hair Loss</h3>
                                     <p>100% Natural formula helps combat hair loss, receding
-                                        hairline, while improving hair growth. </p>
+                                        hairline, while improving hair growth.
+                                    </p>
                                 </div>
                             </div>
                             <div class="options__feild-item">
@@ -39,15 +37,16 @@
                                 <div class="text">
                                     <h3>Regrow Hair</h3>
                                     <p>Stimulate and support hair follicles to boost instant and
-                                        sustained hair regrowth. </p>
+                                        sustained hair regrowth.
+                                    </p>
                                 </div>
                             </div>
                             <div class="options__feild-item">
                                 <img class="check" src="img/Header/icons/ok.svg" alt="">
                                 <div class="text">
                                     <h3>Increase Thickness</h3>
-                                    <p>Provide hair follicles with the nutrients they require to
-                                        produce thicker, fully, stronger hair. </p>
+                                    <p>Provide hair follicles with the nutrients they require to produce thicker, fully,
+                                        stronger hair.</p>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="header__baner-form">
+                <div class="header__box-form">
                     <div class="title">
                         Request your risk
                         free bottle
@@ -72,10 +71,33 @@
                         <ul class="form__ul">
                             <li class="form__ul-li">
                                 <img class="icon" src="img/Header/icons/flag1.svg" alt="icon">
-                                <select class="input select" name="country" id="country">
-                                    <option value="Country">Country</option>
-                                </select>
-                                <span class="doted"></span>
+                                <form>
+                                    <div class="__select input" data-state="">
+                                        <div class="__select__title" data-default="Country">Country <span></span></div>
+                                        <div class="__select__content">
+                                            <input id="singleSelect0" class="__select__input" type="radio"
+                                                name="singleSelect" checked />
+                                            <label for="singleSelect0" class="__select__label">Country
+                                                <span></span></label>
+                                            <input id="singleSelect1" class="__select__input" type="radio"
+                                                name="singleSelect" />
+                                            <label for="singleSelect1" class="__select__label">Option 1
+                                                <span></span></label>
+                                            <input id="singleSelect2" class="__select__input" type="radio"
+                                                name="singleSelect" disabled />
+                                            <label for="singleSelect2" class="__select__label">Option 2
+                                                (disabled) <span></span></label>
+                                            <input id="singleSelect3" class="__select__input" type="radio"
+                                                name="singleSelect" />
+                                            <label for="singleSelect3" class="__select__label">Option 3
+                                                <span></span></label>
+                                            <input id="singleSelect4" class="__select__input" type="radio"
+                                                name="singleSelect" />
+                                            <label for="singleSelect4" class="__select__label">Option 4
+                                                <span></span></label>
+                                        </div>
+                                    </div>
+                                </form>
                             </li>
                             <li class="form__ul-li">
                                 <img class="icon" src="img/Header/icons/user1.svg" alt="icon">
@@ -125,7 +147,7 @@
                 </div>
             </div>
         </header>
-        <section class="structure">
+        <section class="structure container">
             <div class="structure__left">
                 <h4>Does not contain:</h4>
                 <p>GMO, gluten, dairy, or soy </p>
@@ -136,7 +158,7 @@
                 <img class="img" src="img/Header/icons/see.png" alt="As SEEN ON">
             </div>
         </section>
-        <section class="proof">
+        <section class="proof container">
             <h2 class="proof__h2">THE PROOF</h2>
             <h4 class="proof__h4">Does hair rescue rx work? see for yourself...</h4>
             <p class="proof__p">NOTE: All Before and After photos are form real Hair Rescue Rx users.They are totally,
@@ -144,18 +166,20 @@
                 NOT PHOTOSHOPPED.</p>
             <video class="proof__video" src="" controls poster="img/Proof/placeholder1.png"></video>
         </section>
-        <section class="jurnal">
+        <section class="jurnal container">
             <div class="jurnal__text">
                 <h2>Revolutionary Break- <br> Through!</h2>
                 <h4>the new hAIR GROWTH PRODUCT THAT IS <br> SWEEPING THE NATION</h4>
-                <p><a href="##">Eveybody is talking about Hair Rescue Rx</a> from doctors’ offices
-                    and medical labs to hair salons. </p>
+                <p><a href="##">Eveybody is talking about Hair Rescue Rx</a> from doctors’ offices and medical labs to
+                    hair salons. </p>
                 <p>A highly effective hair loss complex contains a combination
                     of top researched natural ingredients that successfully
                     address the issues of hair loss almost instantly.</p>
+                &nbsp;
                 <p>Taking once daily, Hair Rescue Rx targets and repairs the
                     hair follicles directly resulting in fuller, thicker, and stronger
                     hair from the roots.</p>
+                &nbsp;
                 <p>This Hair Loss Supplement is a revolutionary breakthrough
                     that has the Media in a frenzy!</p>
                 <h6>Hair Rescue Rx is here to stay because of the great
@@ -168,32 +192,168 @@
                 <img src="img/Proof/j@1x.png" srcset="img/Proof/j@2x.png 2x, img/Proof/j@3x.png 3x" alt="Logos">
             </picture>
         </section>
-        <section class="physicians">
+        <section class="physicians container">
             <h2>THE PHYSICIANS CHOICE</h2>
             <h3>#1 HAIR GROWTH SUPPLEMENT ON THE MARKET TODAY!</h3>
             <div class="physicians__video">
-                <div class="video__one text">
+                <div class="physicians__video-text">
                     <video class="video" src="" controls poster="img/Physicians/placeholder1.png"></video>
                     <h4>Dr. M. Mehra, MD</h4>
                     <p>Medical Doctor, USA</p>
                 </div>
-                <div class="video__two text">
+                <div class="physicians__video-text">
                     <video class="video" src="" controls poster="img/Physicians/placeholder2.png"></video>
                     <h4>Dr. A. Carmack, MD</h4>
                     <p>Medical Doctor, USA</p>
                 </div>
             </div>
         </section>
-        <section class="pharmacist">
+        <section class="pharmacist container">
             <h4>PHARMACIST-RECOMMENDED</h4>
             <p>Watch T. Burman, Registered Pharmacist, NY, USA Explains the Science Behind Hair Rescue Rx</p>
             <video class="pharmacist__video" src="" controls poster="img/Physicians/placeholder3.png"></video>
             <button>RUSH MY ORDER</button>
         </section>
-        <section class="banner__right">
-            
+        <section class="banner container">
+            <div class="banner__text">
+                <h2 class="banner__text-h2">How <span>hair Rescue Rx</span> <br>
+                    Works?</h2>
+                <img class="banner__text-img" src="img/girls/HairWoman.png" alt="girle">
+                <p>We formulated Hair Rescue Rx with high-quality
+                    ingredients to provide you with a great product
+                    and great results! </p>
+                <ul class="banner__text-ul">
+                    <li>
+                        <div class="list">
+                            <img class="list__img" src="img/Header/icons/listIMG1.svg" alt="List IMG">
+                            <div class="list__text">
+                                <h6>FIGHT HAIR LOSS</h6>
+                                <p>Provides nutrients to target the underlying causes
+                                    of hair loss</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list">
+                            <img class="list__img" src="img/Header/icons/listIMG1.svg" alt="List IMG">
+                            <div class="list__text">
+                                <h6>REGROW HAIR</h6>
+                                <p>Reactivates hair follicles to stimulate healthy hair growth</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list">
+                            <img class="list__img" src="img/Header/icons/listIMG1.svg" alt="List IMG">
+                            <div class="list__text">
+                                <h6>INCREASE VOLUME</h6>
+                                <p>Helps repair existing damage and restore
+                                    and revive dull, and fine hair.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <p>Hair Rescue Rx nourishes the scalp and hair
+                    follicles from within, reducing hair fall and
+                    promoting the growth of your existing hair.</p>
+            </div>
+            <img class="banner__img" src="img/girls/HairWoman.png" alt="g">
+        </section>
+        <section class="expect container">
+            <div class="expect__blue">
+                <h2>The Easiest Way To Grow Long, Strong & Thick HAIR!
+                    Act Now, while supplies last! Get your bottle today!</h2>
+                <button>RUSH MY ORDER</button>
+            </div>
+            <div class="expect__content">
+                <!-- <img src="img/girls/g1.png" alt="g"> -->
+                <div class="expect__content-text">
+                    <h2>what to expect</h2>
+                    <span>It’s not a long way to go...</span>
+                    <img class="hiden" src="img/girls/g1.png" alt="g">
+                    <p>In a 90-day study, 96% of Hair Rescue
+                        Rx users said Hair Rescue Rx helped**</p>
+                    <ul class="expect__content-ul">
+                        <li>
+                            <img src="img/Header/icons/ok2.svg" alt="ok">
+                            <p>Add Thickness</p>
+                        </li>
+                        <li>
+                            <img src="img/Header/icons/ok2.svg" alt="ok">
+                            <p>Increase Volume</p>
+                        </li>
+                        <li>
+                            <img src="img/Header/icons/ok2.svg" alt="ok">
+                            <p>Reduce Hair Loss</p>
+                        </li>
+                        <li>
+                            <img src="img/Header/icons/ok2.svg" alt="ok">
+                            <p>Grow Their Hair Faster</p>
+                        </li>
+                    </ul>
+                    <p> <strong>Bottom Line:</strong> It Works and <br>
+                        it’s Great for your Hair!</p>
+                </div>
+            </div>
+            <div class="expect__blue">
+                <h2>Due To extremely high media demand Stocks Are Very
+                    Limited! Order Now & Reserve Your Bottle Today!</h2>
+                <button>RUSH MY ORDER</button>
+            </div>
+        </section>
+        <section class="banner2 banner container">
+            <div class="msc"></div>
+            <div class="banner__text banner2-text">
+                <h2 class="banner__text-h2 baner2-h2">
+                    <span>WHY HAIR RESCUE RX</span> <br>
+                    IS SO EFFECTIVE?
+                </h2>
+                <img class="banner__text-img" src="img/girls/gh.png" alt="girle">
+                <p class="baner2-p">Hair Rescue Rx contains the most
+                    powerful ingredients that have been
+                    clinically tested and proven to work.</p>
+                <ul class="banner__text-ul">
+                    <li>
+                        <div class="list list2">
+                            <img class="list__img" src="img/Header/icons/ok3.svg" alt="List IMG">
+                            <div class="list__text">
+                                <h6>Pure & Effective</h6>
+                                <p>Hair Rescue Rx is manufactured in the USA in
+                                    a Good Manufacturing Practices facility and
+                                    tested Independently by 3rd Party Labs for
+                                    quality and purity.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list list2">
+                            <img class="list__img" src="img/Header/icons/ok3.svg" alt="List IMG">
+                            <div class="list__text">
+                                <h6>Targeted Treatment</h6>
+                                <p>Our formula combines highly concentrated
+                                    ingredients such as Horsetail, MSM, Privet,
+                                    Nettle, Biotin to address every stage of the
+                                    hair's growth cycle.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list list2">
+                            <img class="list__img list2-img" src="img/Header/icons/ok3.svg" alt="List IMG">
+                            <div class="list__text list2-text">
+                                <h6>Science & Nature</h6>
+                                <p>Hair Rescue Rx complex is the result of
+                                    extensive research, years of testing, and
+                                    optimal ratios of clinically studied natural ingredients.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <img class="banner__img" src="img/girls/gh.png" alt="g">
         </section>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
