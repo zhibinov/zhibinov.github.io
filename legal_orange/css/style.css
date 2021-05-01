@@ -789,6 +789,8 @@ a {
   line-height: 70px;
   color: rgba(34, 51, 51, 0.09);
   margin-right: -20px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .b-program__details:not(:last-child) {
@@ -805,8 +807,8 @@ a {
 }
 
 .b-program__details[open] .b-program__summary ~ * {
-  -webkit-animation: sweep 0.5s linear;
-          animation: sweep 0.5s linear;
+  -webkit-animation: sweep 0.5s ease-in-out;
+          animation: sweep 0.5s ease-in-out;
 }
 
 @-webkit-keyframes sweep {
@@ -1072,6 +1074,7 @@ a {
 
 .b-price__link {
   color: #FFFFFF;
+  text-decoration: underline;
 }
 
 .b-price__link:hover {

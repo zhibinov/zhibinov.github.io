@@ -589,6 +589,7 @@ a {
         line-height: 70px;
         color: rgba(34, 51, 51, 0.09);
         margin-right: -20px;
+        transition: 1s;
     }
 }
 
@@ -609,7 +610,7 @@ a {
 }
 
 .b-program__details[open] .b-program__summary~* {
-    animation: sweep 0.5s linear;
+    animation: sweep 0.5s ease-in-out;
 }
 
 @keyframes sweep {
@@ -816,6 +817,7 @@ a {
 
 .b-price__link {
     color: #FFFFFF;
+    text-decoration: underline;
 }
 
 .b-price__link:hover {
