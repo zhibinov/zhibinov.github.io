@@ -33,96 +33,189 @@ for (var i = 0; i < elements.length; i++) {
   });
 }
 
-$("#demo_0").ionRangeSlider({
-    min: 30000,
-    max: 500000,
-    from: 30000,
-    step: 500,
-    skin: "round"
+$(".js-range-slider").ionRangeSlider({
+  min: 30000,
+  max: 500000,
+  from: 30000,
+  step: 500,
+  skin: "round"
 });
 
 let handle = document.querySelector('.irs-handle');
 let single = document.querySelector('.irs-single');
 
-handle.addEventListener('mouseover', function(){
-    single.style.color = '#000000';
+handle.addEventListener('mouseover', function () {
+  single.style.color = '#000000';
 })
 
-let download = document.querySelector('.b-main__download-box');
-let buttonDownload = document.querySelector('.b-main__button-download');
-let description = document.querySelector('.b-main__description');
-let downloadText = document.querySelector('.b-main__download-text');
-let del = document.querySelector('.b-main__del');
+const downloadBlock = document.querySelector('.b-main__download-block');
 
-download.addEventListener('click', function(){
-  buttonDownload.classList.add('display_none');
-  description.classList.add('display_none');
-  downloadText.classList.add('display_flex');
-})
+downloadBlock.addEventListener('click', (event) => {
+  event.currentTarget.childNodes.forEach(el => console.log(el));
+  const delDownload = event.currentTarget.childNodes.forEach(el => el.querySelector(".b-main__del"));
+  // const delDownload = document.querySelector('.b-main__del');
+  const downloadBox = document.querySelector('.b-main__download-box');
+  const forms = document.querySelectorAll('form');
+  const inputFile = document.querySelectorAll('.b-main__input-file');
 
-del.addEventListener('click', function(){
-  buttonDownload.classList.remove('display_none');
-  description.classList.remove('display_none');
-  downloadText.classList.remove('display_flex');
-})
+  inputFile.forEach(function (el) {
 
-const selectSingle = document.querySelector('.b-main__select');
-const selectSingle_title = selectSingle.querySelector('.b-main__select-title');
-const selectSingle_labels = selectSingle.querySelectorAll('.b-main__select-label');
+    let textSelector = document.querySelector('.b-main__download-text');
+    let fileList;
 
-selectSingle_title.addEventListener('click', () => {
-  if ('active' === selectSingle.getAttribute('data-state')) {
-    selectSingle.setAttribute('data-state', '');
-  } else {
-    selectSingle.setAttribute('data-state', 'active');
-  }
+    // Событие выбора файла(ов) 
+    el.addEventListener('change', function (e) {
+
+      downloadBox.style.display = 'none';
+      delDownload.style.display = 'block';
+
+      // создаём массив файлов 
+      fileList = [];
+      for (let i = 0; i < el.files.length; i++) {
+        fileList.push(el.files[i]);
+      }
+
+      // вызов функции для каждого файла 
+      fileList.forEach(file => {
+        uploadFile(file);
+
+      });
+
+      console.log(fileList);
+
+      delDownload.addEventListener('click', function () {
+        fileList.splice(0, 1);
+        console.log(fileList);
+        downloadBox.style.display = 'flex';
+        delDownload.style.display = 'none';
+        textSelector.textContent = ' ';
+      });
+    });
+
+    // Проверяем размер файлов и выводим название 
+    const uploadFile = (file) => {
+
+      // файла <5 Мб 
+      if (file.size > 10 * 1024 * 1024) {
+        alert('Файл должен быть не более 10 МБ.');
+        return;
+
+      }
+
+      // Показ загружаемых файлов 
+      if (file && file.length > 1) {
+        if (file.length <= 4) {
+          textSelector.textContent = `Выбрано ${file.length} файла`;
+        }
+        if (file.length > 4) {
+          textSelector.textContent = `Выбрано ${file.length} файлов`;
+        }
+      } else {
+        textSelector.textContent = file.name + ' ' + Math.round((file.size / 1024)) + ' kb';
+      }
+
+    }
+  });
+
+  // Отправка формы на сервер 
+  // const postData = async (url, fData) => { // имеет асинхронные операции 
+
+  // начало отправки 
+  // здесь можно оповестить пользователя о начале отправки 
+
+  // ждём ответ, только тогда наш код пойдёт дальше 
+  //   let fetchResponse = await fetch(url, {
+  //     method: 'POST',
+  //     body: fData
+  //   });
+
+  // ждём окончания операции 
+  //   return await fetchResponse.text();
+  // };
+
+  // if (forms) {
+  //   forms.forEach(el => {
+  //     el.addEventListener('submit', function (e) {
+  //       e.preventDefault();
+
+  // создание объекта FormData 
+  //       let fData = new FormData();
+
+  // Добавление всех input, кроме type="file" 
+  //       el.querySelectorAll('input:not([type="file"])').forEach(input => {
+  //         fData.append(input.name, input.value);
+  //       });
+
+  // Добавление файлов input type file 
+  //       let file = el.querySelector('.b-main__input-file');
+  //       for (let i = 0; i < (file.files.length); i++) {
+  //         fData.append('files[]', file.files[i]); // добавляем файлы в объект FormData() 
+  //       }
+
+  // Отправка на сервер 
+  //       postData('./mail.php', fData)
+  //         .then(fetchResponse => {
+  //           console.log('Данные успешно отправлены!');
+  //           console.log(fetchResponse);
+  //         })
+  //         .catch(function (error) {
+  //           console.log('Ошибка!');
+  //           console.log(error);
+  //         });
+  //     });
+  //   });
+  // };
+
 });
 
-for (let i = 0; i < selectSingle_labels.length; i++) {
-  selectSingle_labels[i].addEventListener('click', (evt) => {
-    selectSingle_title.textContent = evt.target.textContent;
-    selectSingle_title.style.color = '#000000';
-    selectSingle.setAttribute('data-state', '');
-  });
-}
+
+
+
 
 let errorMessage = document.querySelector('.b-main__error');
 let innInput = document.querySelector('.imaskjs__input_inn');
 let sumInput = document.querySelector('.imaskjs__input_sum');
 let phoneInput = document.querySelector('.imaskjs__input_tel');
-let mailInput = document.querySelector('.b-main__input-mail')
+let mailInput = document.querySelector('.b-main__input-mail');
 let validMail = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+let choice = document.querySelector('.b-main__choice');
 
-function validate_form (){
-  valid = true;
-  if (document.contact_form.inn.value == ""){
-    innInput.classList.add('placeholder_error');
-    let placeholderError = document.querySelector('.placeholder_error');
-    innInput.placeholder = 'Обязательное поле!';
-    innInput.style.border = '2px solid #CF543C';
-    errorMessage.style.visibility = 'visible';
-    valid = false;
+// function validate_form() {
+//   valid = true;
+//   if (document.contact_form.inn.value == "") {
+//     innInput.classList.add('placeholder_error');
+//     let placeholderError = document.querySelector('.placeholder_error');
+//     innInput.placeholder = 'Обязательное поле!';
+//     innInput.style.border = '2px solid #CF543C';
+//     errorMessage.style.visibility = 'visible';
+//     valid = false;
 
-  }else if (document.contact_form.sum.value == ""){
-    sumInput.classList.add('placeholder_error');
-    let placeholderError = document.querySelector('.placeholder_error');
-    sumInput.placeholder = 'Обязательное поле!';
-    sumInput.style.border = '2px solid #CF543C';
-    errorMessage.style.visibility = 'visible';
-    valid = false;
+//   } else if (document.contact_form.sum.value == "") {
+//     sumInput.classList.add('placeholder_error');
+//     let placeholderError = document.querySelector('.placeholder_error');
+//     sumInput.placeholder = 'Обязательное поле!';
+//     sumInput.style.border = '2px solid #CF543C';
+//     errorMessage.style.visibility = 'visible';
+//     valid = false;
 
-  /*}else if (single.style.color !== 'rgb(0, 0, 0)'){
-    errorMessage.style.visibility = 'visible';
-    valid = false;
-    закоментил, так как в дизайне нет стиля сообщения, в случае ошибки, а поле помеченно, как обязательное
-    */
+//     /*}else if (single.style.color !== 'rgb(0, 0, 0)'){
+//       errorMessage.style.visibility = 'visible';
+//       valid = false;
+//       закоментил, так как в дизайне нет стиля сообщения, в случае ошибки, а поле помеченно, как обязательное
+//       */
 
-  }else if  ( ( document.contact_form.singleSelect[0].checked == false ) && ( document.contact_form.singleSelect[1].checked == false ) && ( document.contact_form.singleSelect[2].checked == false ) &&( document.contact_form.singleSelect[3].checked == false )){
-    selectSingle_title.style.border = '2px solid #CF543C';
-    errorMessage.style.visibility = 'visible';
-    valid = false;
-  }
+//   } else if ((document.contact_form.singleSelect[0].checked == false) && (document.contact_form.singleSelect[1].checked == false) && (document.contact_form.singleSelect[2].checked == false) && (document.contact_form.singleSelect[3].checked == false)) {
+//     selectSingle_title.style.border = '2px solid #CF543C';
+//     errorMessage.style.visibility = 'visible';
+//     valid = false;
+//   }
 
-  return valid;      
-}
+//   return valid;
+// };
+$(function () {
+  $("#number")
+    .selectmenu()
+    .selectmenu("menuWidget")
+    .addClass("overflow");
+});
 
