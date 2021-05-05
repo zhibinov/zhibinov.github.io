@@ -567,6 +567,9 @@
   position: relative;
   -webkit-perspective: 1000px;
           perspective: 1000px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .b-work_1 {
@@ -610,21 +613,6 @@
   text-align: center;
 }
 
-@media (max-width: 1200px) {
-  .b-work__img_big {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    padding-top: 200px;
-  }
-}
-
-@media (max-width: 992px) {
-  .b-work__img_big {
-    padding-top: 0;
-  }
-}
-
 .b-work__img-size {
   width: 412px;
   height: 90%;
@@ -646,6 +634,9 @@
 
 .b-work__img-size_big {
   width: 522px;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 1200px) {
@@ -671,63 +662,14 @@
           transform: rotateY(180deg);
 }
 
-@media (max-width: 1200px) {
-  .b-work:hover .b-work__img {
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
 .b-work:hover .b-work__description {
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg);
 }
 
-@media (max-width: 1200px) {
-  .b-work:hover .b-work__description {
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
 .b-work__description {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-}
-
-@media (max-width: 1200px) {
-  .b-work__description {
-    -webkit-transform: none;
-            transform: none;
-    width: 450px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    padding-bottom: 30px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(32.86%, #FFFFFF), to(rgba(255, 255, 255, 0)));
-    background: linear-gradient(360deg, #FFFFFF 32.86%, rgba(255, 255, 255, 0) 100%);
-  }
-}
-
-@media (max-width: 576px) {
-  .b-work__description {
-    width: unset;
-  }
-}
-
-@media (max-width: 576px) {
-  .b-work__description {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-}
-
-@media (max-width: 400px) {
-  .b-work__description {
-    padding-bottom: 10px;
-  }
 }
 
 .b-work__description_big {

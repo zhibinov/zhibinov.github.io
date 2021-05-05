@@ -431,6 +431,8 @@
     align-items: center;
     position: relative;
     perspective: 1000px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .b-work_1 {
@@ -461,14 +463,14 @@
 }
 
 .b-work__img_big {
-    @media (max-width:1200px) {
-        justify-content: start;
-        padding-top: 200px;
-    }
+    // @media (max-width:1200px) {
+    //     justify-content: start;
+    //     padding-top: 200px;
+    // }
 
-    @media (max-width:992px) {
-        padding-top: 0;
-    }
+    // @media (max-width:992px) {
+    //     padding-top: 0;
+    // }
 }
 
 .b-work__img-size {
@@ -487,6 +489,8 @@
 
 .b-work__img-size_big {
     width: 522px;
+    height: 90%;
+    object-fit: cover;
 
     @media (max-width:1200px) {
         width: 450px;
@@ -504,43 +508,43 @@
 .b-work:hover .b-work__img {
     transform: rotateY(180deg);
 
-    @media (max-width:1200px) {
-        transform: none;
-    }
+    // @media (max-width:1200px) {
+    //     transform: none;
+    // }
 }
 
 .b-work:hover .b-work__description {
     transform: rotateY(360deg);
 
-    @media (max-width:1200px) {
-        transform: none;
-    }
+    // @media (max-width:1200px) {
+    //     transform: none;
+    // }
 }
 
 .b-work__description {
     transform: rotateY(180deg);
 
-    @media (max-width:1200px) {
-        transform: none;
-        width: 450px;
-        justify-content: flex-end;
-        padding-bottom: 30px;
-        box-sizing: border-box;
-        background: linear-gradient(360deg, #FFFFFF 32.86%, rgba(255, 255, 255, 0) 100%);
-    }
+    // @media (max-width:1200px) {
+    //     transform: none;
+    //     width: 450px;
+    //     justify-content: flex-end;
+    //     padding-bottom: 30px;
+    //     box-sizing: border-box;
+    //     background: linear-gradient(360deg, #FFFFFF 32.86%, rgba(255, 255, 255, 0) 100%);
+    // }
 
-    @media (max-width:576px) {
-        width: unset;
-    }
+    // @media (max-width:576px) {
+    //     width: unset;
+    // }
 
-    @media (max-width:576px) {
-        padding-right: 10px;
-        padding-left: 10px;
-    }
+    // @media (max-width:576px) {
+    //     padding-right: 10px;
+    //     padding-left: 10px;
+    // }
 
-    @media (max-width:400px) {
-        padding-bottom: 10px;
-    }
+    // @media (max-width:400px) {
+    //     padding-bottom: 10px;
+    // }
 }
 
 .b-work__description_big {
