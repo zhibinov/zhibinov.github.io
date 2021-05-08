@@ -523,6 +523,8 @@
 
 .b-work__description {
     transform: rotateY(180deg);
+    padding: 10px;
+    box-sizing: border-box;
 
     // @media (max-width:1200px) {
     //     transform: none;
