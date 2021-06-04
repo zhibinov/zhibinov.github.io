@@ -90,7 +90,7 @@ summary::marker {
     line-height: 39px;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
-    color: #E40000;
+    color: #b81711;
     text-transform: uppercase;
 
     @media (max-width: 1199px) {
@@ -198,6 +198,10 @@ summary::marker {
     align-items: flex-end;
     margin-right: 15px;
 
+    @media (max-width: 424px) {
+        margin-right: 0;
+    }
+
     svg {
         position: absolute;
         top: 0;
@@ -210,6 +214,16 @@ summary::marker {
         svg path {
             fill: #E40000;
         }
+    }
+}
+
+.b-header__bascet_m {
+    margin-right: 15px;
+}
+
+.b-header__bascet_m:last-child {
+    @media (max-width: 424px) {
+        margin-right: 0;
     }
 }
 
@@ -394,19 +408,12 @@ summary::marker {
         flex-direction: column-reverse;
         justify-content: space-between;
         height: 83px;
+        align-items: center;
     }
 }
 
 .b-header-mobile__buttons-top {
     display: flex;
-}
-
-.b-header__bascet_m {
-    margin-right: 15px;
-
-    // @media (max-width: 424px) {
-    //     margin-right: 0;
-    // }
 }
 
 .b-header-mobile__button {
@@ -419,6 +426,11 @@ summary::marker {
     height: 30px;
     transition: 0.5s;
     position: relative;
+    width: 30px;
+
+    @media (max-width: 424px) {
+        margin-right: -30px;
+    }
 
     & svg:nth-child(2) {
         margin-bottom: 2px;
@@ -475,6 +487,7 @@ summary::marker {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: Oswald;
 
     svg {
         display: none;
@@ -485,6 +498,11 @@ summary::marker {
 .b-nav-740__link {
     text-decoration: none;
     color: #000000;
+    font-family: Oswald;
+}
+
+.b-nav-740__link_elsmi {
+    text-transform: none;
 }
 
 .b-nav-740__details[open] .b-nav-740__summary~* {
@@ -569,6 +587,7 @@ summary::marker {
 
 .b-main__tagline {
     color: #D10015;
+    font-style: italic;
 }
 
 .b-main__link {

@@ -108,7 +108,7 @@ summary::marker {
   line-height: 39px;
   font-weight: bold;
   font-family: 'Oswald', sans-serif;
-  color: #E40000;
+  color: #b81711;
   text-transform: uppercase;
 }
 
@@ -242,6 +242,12 @@ summary::marker {
   margin-right: 15px;
 }
 
+@media (max-width: 424px) {
+  .b-header__bascet {
+    margin-right: 0;
+  }
+}
+
 .b-header__bascet svg {
   position: absolute;
   top: 0;
@@ -254,6 +260,16 @@ summary::marker {
 
 .b-header__bascet:hover svg path {
   fill: #E40000;
+}
+
+.b-header__bascet_m {
+  margin-right: 15px;
+}
+
+@media (max-width: 424px) {
+  .b-header__bascet_m:last-child {
+    margin-right: 0;
+  }
 }
 
 .b-header__lk {
@@ -508,6 +524,9 @@ summary::marker {
         -ms-flex-pack: justify;
             justify-content: space-between;
     height: 83px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -515,10 +534,6 @@ summary::marker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.b-header__bascet_m {
-  margin-right: 15px;
 }
 
 .b-header-mobile__button {
@@ -541,6 +556,13 @@ summary::marker {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   position: relative;
+  width: 30px;
+}
+
+@media (max-width: 424px) {
+  .b-header-mobile__button {
+    margin-right: -30px;
+  }
 }
 
 .b-header-mobile__button svg:nth-child(2) {
@@ -619,6 +641,7 @@ summary::marker {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: Oswald;
 }
 
 .b-nav-740__summary svg {
@@ -629,6 +652,11 @@ summary::marker {
 .b-nav-740__link {
   text-decoration: none;
   color: #000000;
+  font-family: Oswald;
+}
+
+.b-nav-740__link_elsmi {
+  text-transform: none;
 }
 
 .b-nav-740__details[open] .b-nav-740__summary ~ * {
@@ -752,6 +780,7 @@ summary::marker {
 
 .b-main__tagline {
   color: #D10015;
+  font-style: italic;
 }
 
 .b-main__link {
