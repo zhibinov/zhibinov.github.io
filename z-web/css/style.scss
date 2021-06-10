@@ -135,12 +135,12 @@ a {
     font-weight: 500;
     text-decoration: none;
     line-height: 170%;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .b-nav__link:hover {
     transition: 0.5s;
-    transform: rotate(-20deg);
+    transform: scale(1.2);
 }
 
 .b-nav__link:not(:last-child) {
@@ -229,12 +229,13 @@ a {
     line-height: 170%;
     color: #FFFFFF;
     text-decoration: none;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .b-main__contact:hover {
-    transform: rotate(-20deg);
+    // transform: rotate(-20deg);
     transition: 0.5s;
+    transform: scale(1.2);
 }
 
 .b-main__contact:not(:last-child) {
@@ -583,6 +584,13 @@ a {
 .swiper-button-next {
     position: unset;
     margin-top: 0;
+    transition: 0.3s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    transform: scale(1.3);
+    transition: 0.3s;
 }
 
 .b-reviews__slide {
@@ -612,6 +620,12 @@ a {
 .b-reviews__link {
     color: #000000;
     font-weight: 500;
+    transition: 0.5s;
+}
+
+.b-reviews__link:hover {
+    transition: 0.5s;
+    color: #4491FF;
 }
 
 .b-team {
@@ -717,6 +731,12 @@ a {
     font-size: 22px;
     line-height: 170%;
     color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.b-feetback__contact:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
 }
 
 .b-feetback__contact:not(:last-child) {
@@ -749,5 +769,10 @@ a {
     a {
         color: #FFFFFF;
         text-decoration: none;
+    }
+
+    a:hover {
+        transform: scale(1.2);
+        transition: 0.5s;
     }
 }
