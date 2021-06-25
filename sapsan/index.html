@@ -25,8 +25,8 @@
                 <span>такси</span>
             </div>
             <div class="b-header__links">
-                <a href="#" class="b-header__link">Наши преимущества</a>
-                <a href="#" class="b-header__link">Тарифы</a>
+                <a href="#" class="b-header__link b-header__link_dn">Наши преимущества</a>
+                <a href="#" class="b-header__link b-header__link_dn">Тарифы</a>
                 <a href="#" class="b-header__link">Контакты</a>
             </div>
         </header>
@@ -111,10 +111,10 @@
                     </p>
                 </div>
             </div>
-            <div class="b-benefits__block"><img src="img/auto1.png" alt=""></div>
+            <div class="b-benefits__block b-benefits__block-img"><img src="img/auto1.png" alt=""></div>
         </div>
         <div class="b-benefits__box">
-            <div class="b-benefits__block"><img src="img/auto2.png" alt=""></div>
+            <div class="b-benefits__block b-benefits__block-img"><img src="img/auto2.png" alt=""></div>
             <div class="b-benefits__block b-benefits__block_back-right">
                 <div class="b-benefits__block-line b-benefits__block-line_right">
                     <div class="b-benefits__heading-box">
@@ -247,169 +247,171 @@
     <section class="b-tariffs">
         <div class="container">
             <h2 class="b-tariffs__heading heading">Тарифы</h2>
-            <table class="b-tariffs__table">
-                <tr class="b-tariffs__tr">
-                    <td class="b-tariffs__td b-tariffs__td_350 text">Услуга</td>
-                    <td class="b-tariffs__td text">Стоимость
-                        посадки</td>
-                    <td class="b-tariffs__td text">Стоимость
-                        1 км</td>
-                    <td class="b-tariffs__td text">Стоимость
-                        ожидания</td>
-                    <td class="b-tariffs__td text">Почасовая
-                        оплата (р/час)</td>
-                    <td class="b-tariffs__td text">Время
-                        пути</td>
-                </tr>
-                <tr class="b-tariffs__tr">
-                    <td colspan="6" class="b-tariffs__td b-tariffs__td_row">Тариф «Комфорт»</td>
-                </tr>
-                <tr class="b-tariffs__tr b-tariffs__tr_grey">
-                    <td class="b-tariffs__td b-tariffs__td_350 text">Загородный/городской</td>
-                    <td class="b-tariffs__td text">100</td>
-                    <td class="b-tariffs__td text">20</td>
-                    <td class="b-tariffs__td text">7</td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                </tr>
-                <tr class="b-tariffs__tr">
-                    <td class="b-tariffs__td b-tariffs__td_350 b-tariffs__td_flex text">
-                        <div class="b-tariffs__td-discount">
-                            <span class="b-tariffs__dis-span">-20%</span>
-                        </div>
-                        <div class="b-tariffs__td-box">Межгород
-                            <span>*скидка 20% при поездке в оба направления</span>
-                        </div>
-                    </td>
-                    <td class="b-tariffs__td text">100</td>
-                    <td class="b-tariffs__td text">25</td>
-                    <td class="b-tariffs__td text">7</td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                </tr>
-                <tr class="b-tariffs__tr b-tariffs__tr_grey">
-                    <td class="b-tariffs__td b-tariffs__td_350 text">Трансфер Аэропорт</td>
-                    <td class="b-tariffs__td text">1000</td>
-                    <td class="b-tariffs__td text">
-                        20 <br>
-                        (после 25 км)
-                    </td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                </tr>
-                <tr class="b-tariffs__tr">
-                    <td class="b-tariffs__td b-tariffs__td_350 text">Встреча ЖД вокзал - город</td>
-                    <td class="b-tariffs__td text">400</td>
-                    <td class="b-tariffs__td text">
-                        20 <br>
-                        (после 5 км)
-                    </td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                </tr>
-                <tr class="b-tariffs__tr">
-                    <td colspan="6" class="b-tariffs__td b-tariffs__td_row">Тариф «Бизнес»</td>
-                </tr>
-                <tr class="b-tariffs__tr b-tariffs__tr_grey">
-                    <td class="b-tariffs__td b-tariffs__td_350 text">Загородный/городской</td>
-                    <td class="b-tariffs__td text">300</td>
-                    <td class="b-tariffs__td text">25</td>
-                    <td class="b-tariffs__td text">10</td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                </tr>
-                <tr class="b-tariffs__tr">
-                    <td class="b-tariffs__td b-tariffs__td_350 b-tariffs__td_flex text">
-                        <div class="b-tariffs__td-discount">
-                            <span class="b-tariffs__dis-span">-20%</span>
-                        </div>
-                        <div class="b-tariffs__td-box">Межгород
-                            <span>*скидка 20% при поездке в оба направления</span>
-                        </div>
-                    </td>
-                    <td class="b-tariffs__td text">300</td>
-                    <td class="b-tariffs__td text">30</td>
-                    <td class="b-tariffs__td text">10</td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                </tr>
-                <tr class="b-tariffs__tr b-tariffs__tr_grey">
-                    <td class="b-tariffs__td b-tariffs__td_350 text">Трансфер Аэропорт</td>
-                    <td class="b-tariffs__td text">1500</td>
-                    <td class="b-tariffs__td text">
-                        25 <br>
-                        (после 30 км)
-                    </td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                </tr>
-                <tr class="b-tariffs__tr">
-                    <td class="b-tariffs__td b-tariffs__td_350 text">Встреча ЖД вокзал - город</td>
-                    <td class="b-tariffs__td text">400</td>
-                    <td class="b-tariffs__td text">
-                        25 <br>
-                        (после 5 км)
-                    </td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                </tr>
-                <tr>
-                    <td colspan="6" class="b-tariffs__td b-tariffs__td_row"></td>
-                </tr>
-                <tr class="b-tariffs__tr b-tariffs__tr_grey">
-                    <td class="b-tariffs__td b-tariffs__td_350 text">Доставка-куръер</td>
-                    <td class="b-tariffs__td text">40</td>
-                    <td class="b-tariffs__td text">
-                        20 <br>
-                        (после 5 км)
-                    </td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                </tr>
-                <tr class="b-tariffs__tr">
-                    <td class="b-tariffs__td b-tariffs__td_350 text">Прикуриватель</td>
-                    <td class="b-tariffs__td text">400</td>
-                    <td class="b-tariffs__td text">0
-                    </td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                </tr>
-                <tr class="b-tariffs__tr b-tariffs__tr_grey">
-                    <td class="b-tariffs__td b-tariffs__td_350 text">Водитель-гид</td>
-                    <td class="b-tariffs__td text"></td>
-                    <td class="b-tariffs__td text">
-                    </td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">1200</td>
-                    <td class="b-tariffs__td text">0</td>
-                </tr>
-                <tr class="b-tariffs__tr">
-                    <td class="b-tariffs__td b-tariffs__td_350 text">Трезвый водитель</td>
-                    <td class="b-tariffs__td text">800</td>
-                    <td class="b-tariffs__td text">
-                        20
-                    </td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">0</td>
-                </tr>
-                <tr class="b-tariffs__tr b-tariffs__tr_grey">
-                    <td class="b-tariffs__td b-tariffs__td_350 text">Водитель с переводчиком</td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">
-                        0
-                    </td>
-                    <td class="b-tariffs__td text">0</td>
-                    <td class="b-tariffs__td text">3000</td>
-                    <td class="b-tariffs__td text">0</td>
-                </tr>
-            </table>
+            <div class="b-tariffs__table-box">
+                <table class="b-tariffs__table">
+                    <tr class="b-tariffs__tr">
+                        <td class="b-tariffs__td b-tariffs__td_350 text">Услуга</td>
+                        <td class="b-tariffs__td text">Стоимость
+                            посадки</td>
+                        <td class="b-tariffs__td text">Стоимость
+                            1 км</td>
+                        <td class="b-tariffs__td text">Стоимость
+                            ожидания</td>
+                        <td class="b-tariffs__td text">Почасовая
+                            оплата (р/час)</td>
+                        <td class="b-tariffs__td text">Время
+                            пути</td>
+                    </tr>
+                    <tr class="b-tariffs__tr">
+                        <td colspan="6" class="b-tariffs__td b-tariffs__td_row">Тариф «Комфорт»</td>
+                    </tr>
+                    <tr class="b-tariffs__tr b-tariffs__tr_grey">
+                        <td class="b-tariffs__td b-tariffs__td_350 text">Загородный/городской</td>
+                        <td class="b-tariffs__td text">100</td>
+                        <td class="b-tariffs__td text">20</td>
+                        <td class="b-tariffs__td text">7</td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                    </tr>
+                    <tr class="b-tariffs__tr">
+                        <td class="b-tariffs__td b-tariffs__td_350 b-tariffs__td_flex text">
+                            <div class="b-tariffs__td-discount">
+                                <span class="b-tariffs__dis-span">-20%</span>
+                            </div>
+                            <div class="b-tariffs__td-box">Межгород
+                                <span>*скидка 20% при поездке в оба направления</span>
+                            </div>
+                        </td>
+                        <td class="b-tariffs__td text">100</td>
+                        <td class="b-tariffs__td text">25</td>
+                        <td class="b-tariffs__td text">7</td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                    </tr>
+                    <tr class="b-tariffs__tr b-tariffs__tr_grey">
+                        <td class="b-tariffs__td b-tariffs__td_350 text">Трансфер Аэропорт</td>
+                        <td class="b-tariffs__td text">1000</td>
+                        <td class="b-tariffs__td text">
+                            20 <br>
+                            (после 25 км)
+                        </td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                    </tr>
+                    <tr class="b-tariffs__tr">
+                        <td class="b-tariffs__td b-tariffs__td_350 text">Встреча ЖД вокзал - город</td>
+                        <td class="b-tariffs__td text">400</td>
+                        <td class="b-tariffs__td text">
+                            20 <br>
+                            (после 5 км)
+                        </td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                    </tr>
+                    <tr class="b-tariffs__tr">
+                        <td colspan="6" class="b-tariffs__td b-tariffs__td_row">Тариф «Бизнес»</td>
+                    </tr>
+                    <tr class="b-tariffs__tr b-tariffs__tr_grey">
+                        <td class="b-tariffs__td b-tariffs__td_350 text">Загородный/городской</td>
+                        <td class="b-tariffs__td text">300</td>
+                        <td class="b-tariffs__td text">25</td>
+                        <td class="b-tariffs__td text">10</td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                    </tr>
+                    <tr class="b-tariffs__tr">
+                        <td class="b-tariffs__td b-tariffs__td_350 b-tariffs__td_flex text">
+                            <div class="b-tariffs__td-discount">
+                                <span class="b-tariffs__dis-span">-20%</span>
+                            </div>
+                            <div class="b-tariffs__td-box">Межгород
+                                <span>*скидка 20% при поездке в оба направления</span>
+                            </div>
+                        </td>
+                        <td class="b-tariffs__td text">300</td>
+                        <td class="b-tariffs__td text">30</td>
+                        <td class="b-tariffs__td text">10</td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                    </tr>
+                    <tr class="b-tariffs__tr b-tariffs__tr_grey">
+                        <td class="b-tariffs__td b-tariffs__td_350 text">Трансфер Аэропорт</td>
+                        <td class="b-tariffs__td text">1500</td>
+                        <td class="b-tariffs__td text">
+                            25 <br>
+                            (после 30 км)
+                        </td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                    </tr>
+                    <tr class="b-tariffs__tr">
+                        <td class="b-tariffs__td b-tariffs__td_350 text">Встреча ЖД вокзал - город</td>
+                        <td class="b-tariffs__td text">400</td>
+                        <td class="b-tariffs__td text">
+                            25 <br>
+                            (после 5 км)
+                        </td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="b-tariffs__td b-tariffs__td_row"></td>
+                    </tr>
+                    <tr class="b-tariffs__tr b-tariffs__tr_grey">
+                        <td class="b-tariffs__td b-tariffs__td_350 text">Доставка-куръер</td>
+                        <td class="b-tariffs__td text">40</td>
+                        <td class="b-tariffs__td text">
+                            20 <br>
+                            (после 5 км)
+                        </td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                    </tr>
+                    <tr class="b-tariffs__tr">
+                        <td class="b-tariffs__td b-tariffs__td_350 text">Прикуриватель</td>
+                        <td class="b-tariffs__td text">400</td>
+                        <td class="b-tariffs__td text">0
+                        </td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                    </tr>
+                    <tr class="b-tariffs__tr b-tariffs__tr_grey">
+                        <td class="b-tariffs__td b-tariffs__td_350 text">Водитель-гид</td>
+                        <td class="b-tariffs__td text"></td>
+                        <td class="b-tariffs__td text">
+                        </td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">1200</td>
+                        <td class="b-tariffs__td text">0</td>
+                    </tr>
+                    <tr class="b-tariffs__tr">
+                        <td class="b-tariffs__td b-tariffs__td_350 text">Трезвый водитель</td>
+                        <td class="b-tariffs__td text">800</td>
+                        <td class="b-tariffs__td text">
+                            20
+                        </td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">0</td>
+                    </tr>
+                    <tr class="b-tariffs__tr b-tariffs__tr_grey">
+                        <td class="b-tariffs__td b-tariffs__td_350 text">Водитель с переводчиком</td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">
+                            0
+                        </td>
+                        <td class="b-tariffs__td text">0</td>
+                        <td class="b-tariffs__td text">3000</td>
+                        <td class="b-tariffs__td text">0</td>
+                    </tr>
+                </table>
+            </div>
             <a href="#" class="button">
                 <p>Связаться</p>
             </a>
