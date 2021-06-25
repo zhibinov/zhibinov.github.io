@@ -617,7 +617,7 @@ a {
 
 @media (max-width: 767px) {
   .b-tariffs__table {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 }
 
