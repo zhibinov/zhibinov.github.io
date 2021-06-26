@@ -577,6 +577,8 @@ a {
 
 .b-contacts__text {
     font-weight: normal;
+    max-width: 500px;
+    text-align: center;
 }
 
 .b-contacts__phones {
@@ -601,7 +603,8 @@ a {
 
 .b-contacts__social-box {
     display: flex;
-    margin-top: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .b-contacts__social {
