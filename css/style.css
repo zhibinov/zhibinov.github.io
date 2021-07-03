@@ -591,6 +591,7 @@ a {
 @media (max-width: 575px) {
   .b-site__box {
     grid-gap: 15px;
+    margin-bottom: 15px;
   }
 }
 
