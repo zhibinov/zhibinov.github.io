@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   outline: none;
+  -webkit-appearance: none;
 }
 
 a {
@@ -106,10 +107,6 @@ a {
   text-decoration: underline;
 }
 
-.b-header__geo-link svg {
-  margin-right: 6px;
-}
-
 .b-header__geo-link svg:hover {
   opacity: 0.7;
 }
@@ -120,8 +117,12 @@ a {
   }
 }
 
-.b-header__geo-link:not(:last-child) {
+.b-header__geo-link_mr {
   margin-right: 35px;
+}
+
+.b-header__geo-link_mr svg {
+  margin-right: 6px;
 }
 
 .b-header__currency {
@@ -227,6 +228,13 @@ a {
 .b-header__burger-button {
   background: none;
   border: none;
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .b-header__burger-button {
+    display: block;
+  }
 }
 
 .b-header__burger-menu {
@@ -541,7 +549,7 @@ a {
 }
 
 .b-main__phone {
-  width: 449px;
+  width: 431px;
 }
 
 @media (max-width: 1199px) {
@@ -570,6 +578,40 @@ a {
 
 @media (max-width: 424px) {
   .b-main__phone {
+    width: 310px;
+  }
+}
+
+.b-main__phone_email {
+  width: 475px;
+}
+
+@media (max-width: 1199px) {
+  .b-main__phone_email {
+    width: 475px;
+  }
+}
+
+@media (max-width: 991px) {
+  .b-main__phone_email {
+    width: 355px;
+  }
+}
+
+@media (max-width: 767px) {
+  .b-main__phone_email {
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-main__phone_email {
+    width: 400px;
+  }
+}
+
+@media (max-width: 424px) {
+  .b-main__phone_email {
     width: 310px;
   }
 }

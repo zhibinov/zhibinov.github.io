@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     outline: none;
+    -webkit-appearance: none;
 }
 
 a {
@@ -83,7 +84,6 @@ a {
     }
 
     svg {
-        margin-right: 6px;
 
         &:hover {
             opacity: 0.7;
@@ -95,8 +95,12 @@ a {
     }
 }
 
-.b-header__geo-link:not(:last-child) {
+.b-header__geo-link_mr {
     margin-right: 35px;
+
+    svg {
+        margin-right: 6px;
+    }
 }
 
 .b-header__currency {
@@ -180,6 +184,11 @@ a {
 .b-header__burger-button {
     background: none;
     border: none;
+    display: none;
+
+    @media (max-width: 1199px) {
+        display: block;
+    }
 }
 
 .b-header__burger-menu {
@@ -447,7 +456,31 @@ a {
 }
 
 .b-main__phone {
-    width: 449px;
+    width: 431px;
+
+    @media (max-width: 1199px) {
+        width: 475px;
+    }
+
+    @media (max-width: 991px) {
+        width: 355px;
+    }
+
+    @media (max-width: 767px) {
+        width: 540px;
+    }
+
+    @media (max-width: 575px) {
+        width: 400px;
+    }
+
+    @media (max-width: 424px) {
+        width: 310px;
+    }
+}
+
+.b-main__phone_email {
+    width: 475px;
 
     @media (max-width: 1199px) {
         width: 475px;
