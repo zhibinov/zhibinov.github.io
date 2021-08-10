@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     outline: none;
-    -webkit-appearance: none;
+    // -webkit-appearance: none;
 }
 
 a {
@@ -280,7 +280,9 @@ a {
 }
 
 .tablet_block {
-    display: block;
+    @media (max-width: 1199px) {
+        display: block;
+    }
 }
 
 .b-main__input {
@@ -569,7 +571,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: start;
-    max-width: 130px;
+    max-width: 200px;
 
     @media (max-width: 575px) {
         max-width: unset;

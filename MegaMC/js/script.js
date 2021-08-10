@@ -85,8 +85,8 @@ function tubletShow(item) {
         tabletNone.forEach(element => tubletShow2(element));
         function tubletShow2(item) {
             item.classList.add('tablet_block')
-            item.classList.add('animate__animated')
-            item.classList.add('animate__fadeInUp')
+            // item.classList.add('animate__animated')
+            // item.classList.add('animate__fadeInUp')
         }
     });
 }
