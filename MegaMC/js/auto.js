@@ -75,36 +75,13 @@ document.addEventListener('click', e => {
 const tabletNone = document.querySelectorAll('.tablet_none');
 const tabletButton = document.querySelectorAll('.tablet_button');
 
-// language.addEventListener('click', function(){
-//     languageMenu.classList.toggle('display_flex')
-// });
-
 tabletButton.forEach(element => tubletShow(element));
 function tubletShow(item) {
     item.addEventListener('click', function (event) {
         tabletNone.forEach(element => tubletShow2(element));
         function tubletShow2(item) {
             item.classList.add('tablet_block')
-            // item.classList.add('animate__animated')
-            // item.classList.add('animate__fadeInUp')
         }
-    });
-}
-
-const sorting = document.querySelector('.b-sorting__select');
-const sortingMenu = document.querySelector('.b-sorting__select-menu');
-const sortingNow = document.querySelector('.b-sorting__select-now');
-const sortingType = document.querySelectorAll('.b-sorting__select-type');
-
-sorting.addEventListener('click', function(){
-    sortingMenu.classList.toggle('sortingOpen')
-});
-
-sortingType.forEach(element => sortingChoice(element));
-function sortingChoice(item) {
-    item.addEventListener('click', function (event) {
-       let sortingTypeContent = event.target.textContent;
-       sortingNow.textContent = sortingTypeContent;
     });
 }
 
@@ -143,3 +120,16 @@ popAppCancel.addEventListener('click', function(){
 popAppOk.addEventListener('click', function(){
     popApp.classList.toggle('display_flex')
 });
+
+const swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 3,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
