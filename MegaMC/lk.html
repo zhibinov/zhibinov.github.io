@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaMC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="b-header">
+        <div class="container">
+            <div class="b-header__logo-link">
+                <a href="#">
+                    <img src="img/logo.svg" alt="logo" class="b-header__logo">
+                </a>
+            </div>
+            <a href="#" class="b-header__geo-link text b-header__geo-link_mr">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.98322 2.08643C9.06712 0.76057 7.61523 0 6.00013 0C4.38503 0 2.93315 0.76057 2.01704 2.08643C1.10544 3.40559 0.894951 5.07567 1.45286 6.55118C1.60208 6.95412 1.83929 7.34559 2.15622 7.71244L5.6807 11.8523C5.76041 11.946 5.8772 12 6.00013 12C6.12306 12 6.23985 11.946 6.31956 11.8523L9.84306 7.71356C10.1614 7.34461 10.3983 6.95356 10.5463 6.55385C11.1053 5.07567 10.8948 3.40559 9.98322 2.08643ZM9.76056 6.25999C9.64644 6.56838 9.46014 6.87328 9.20713 7.16655C9.20643 7.16726 9.20573 7.16796 9.20516 7.1688L6.00013 10.9333L2.79313 7.16644C2.54026 6.87342 2.35396 6.56855 2.23872 6.2572C1.77733 5.03693 1.95243 3.65609 2.70726 2.56364C3.46445 1.4677 4.66473 0.839156 6.00013 0.839156C7.33551 0.839156 8.53565 1.46768 9.29287 2.56364C10.0478 3.65609 10.2231 5.03693 9.76056 6.25999Z"
+                        fill="white" />
+                    <path
+                        d="M6.00029 2.4895C4.70476 2.4895 3.65063 3.54349 3.65063 4.83916C3.65063 6.13483 4.70462 7.18882 6.00029 7.18882C7.29596 7.18882 8.34995 6.13483 8.34995 4.83916C8.34995 3.54363 7.29582 2.4895 6.00029 2.4895ZM6.00029 6.34964C5.16742 6.34964 4.48979 5.67201 4.48979 4.83914C4.48979 4.00626 5.16742 3.32863 6.00029 3.32863C6.83317 3.32863 7.51079 4.00626 7.51079 4.83914C7.51079 5.67201 6.83317 6.34964 6.00029 6.34964Z"
+                        fill="white" />
+                </svg>
+                Locations
+            </a>
+            <div class="b-header__geo-link text b-header__currency b-header__geo-link_mr">
+                <div class="b-header__currency-now">RUB</div>
+                <div class="b-header__currency-menu">
+                    <a class="b-header__currency-type text">RUB</a>
+                    <a class="b-header__currency-type text">USD</a>
+                    <a class="b-header__currency-type text">EUR</a>
+                </div>
+            </div>
+            <div class="b-header__geo-link text b-header__language b-header__geo-link_mr">
+                <div class="b-header__language-now">
+                    <img class="b-header__language-img" src="img/eng.svg" alt="language">
+                </div>
+                <div class="b-header__currency-menu b-header__language-menu">
+                    <a class="text b-header__language-type b-header__language-eng">English</a>
+                    <a class="text b-header__language-type b-header__language-rus">Русский</a>
+                </div>
+            </div>
+            <a href="#" class="b-header__geo-link text">
+                <svg class="b-header__svg-link" width="28" height="28" viewBox="0 0 28 28" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="14" cy="14" r="13.5" stroke="white" />
+                    <g clip-path="url(#clip0)">
+                        <path
+                            d="M14.0019 15.0117C9.19447 15.0117 6.54688 17.286 6.54688 21.4156C6.54688 21.7382 6.80828 21.9996 7.13081 21.9996H20.8729C21.1954 21.9996 21.4568 21.7382 21.4568 21.4156C21.4569 17.2862 18.8093 15.0117 14.0019 15.0117Z"
+                            fill="white" />
+                        <path
+                            d="M13.9985 6C11.7902 6 10.125 7.69869 10.125 9.95116C10.125 12.2696 11.8626 14.1555 13.9985 14.1555C16.1343 14.1555 17.8719 12.2696 17.8719 9.95134C17.8719 7.69869 16.2068 6 13.9985 6Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="16" height="16" fill="white" transform="translate(6 6)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <button class="b-header__burger-button">
+                <svg width="38" height="20" viewBox="0 0 38 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="38" height="4.44444" fill="white" />
+                    <rect y="7.77783" width="38" height="4.44444" fill="white" />
+                    <rect y="15.5555" width="38" height="4.44444" fill="white" />
+                </svg>
+            </button>
+        </div>
+        <div class="b-header__burger-menu">
+            <div class="container">
+                <a href="#" class="b-header__burger-link text">Location</a>
+                <select name="#" id="currency" class="b-header__burger-select text">
+                    <option value="usd">USD</option>
+                    <option value="rub">RUB</option>
+                    <option value="eur">EUR</option>
+                </select>
+                <select name="#" id="language" class="b-header__burger-select text">
+                    <option value="usd">English</option>
+                    <option value="rub">Русский</option>
+                </select>
+                <a href="#" class="b-header__burger-link text">Personal Area</a>
+            </div>
+        </div>
+    </header>
+    <main class="b-lk">
+        <div class="container">
+            <div class="b-lk__menu">
+                <p class="b-lk__menu-text text">Profile</p>
+                <a href="" class="b-lk__menu-link text">My reservations</a>
+                <hr class="b-lk__menu-hr">
+                <a href="" class="b-lk__menu-link text">Exit</a>
+            </div>
+            <form class="b-lk__profile">
+                <div class="b-lk__general-box">
+                    <a href="" class="b-lk__img-box">
+                        <img src="img/profile.png" alt="profile_photo">
+                    </a>
+                    <div class="b-lk__info-box">
+                        <p class="b-lk__name heading-mini mb5">John Rambo</p>
+                        <p class="b-lk__mail text">andrei@mail.ru</p>
+                        <p class="b-lk__mail text">8 (888) 000-00-00</p>
+                    </div>
+                </div>
+                <div class="b-lk__details-box">
+                    <p class="b-lk__name heading-mini mt25 mb15">Driver details</p>
+                    <div class="b-lk__details">
+                        <input type="text" class="b-lk__input text" placeholder="First name">
+                        <input type="text" class="b-lk__input text" placeholder="Last name">
+                        <input type="tel" class="b-lk__input text" placeholder="Phone number">
+                        <input type="email" class="b-lk__input text" placeholder="E-mail">
+                        <input type="text" class="b-lk__input text" placeholder="Country">
+                        <input type="text" class="b-lk__input text" placeholder="City">
+                        <input type="text" class="b-lk__input text" placeholder="Region">
+                        <input type="text" class="b-lk__input text" placeholder="Street">
+                        <input type="text" class="b-lk__input text" placeholder="Postcode">
+                        <input type="text" class="b-lk__input text b-main__input-cal" placeholder="Date of Birth">
+                    </div>
+                </div>
+                <div class="b-lk__details-box mb35">
+                    <p class="b-lk__name heading-mini mt15 mb15">Change Password</p>
+                    <div class="b-lk__details">
+                        <input type="text" class="b-lk__input text" placeholder="Old Password">
+                        <input type="text" class="b-lk__input text" placeholder="New Password">
+                    </div>
+                </div>
+                <a href="" class="b-lk__button text">Save changes</a>
+            </form>
+        </div>
+    </main>
+    <div class="b-lk-menu__button">
+        <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip5)">
+                <path
+                    d="M11.4998 14.2129C4.58912 14.2129 0.783203 17.7664 0.783203 24.219C0.783203 24.723 1.15897 25.1314 1.62261 25.1314H21.3769C21.8405 25.1314 22.2163 24.723 22.2163 24.219C22.2163 17.7668 18.4104 14.2129 11.4998 14.2129Z"
+                    fill="white" />
+                <path
+                    d="M11.4978 0C8.3234 0 5.92969 2.6542 5.92969 6.17368C5.92969 9.79624 8.42753 12.743 11.4978 12.743C14.5681 12.743 17.0659 9.79624 17.0659 6.17397C17.0659 2.6542 14.6722 0 11.4978 0Z"
+                    fill="white" />
+            </g>
+            <defs>
+                <clipPath id="clip5">
+                    <rect width="23" height="25" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    </div>
+    <div class="b-lk-menu__menu">
+        <p class="b-lk-menu__menu-text text">Profile</p>
+        <a href="" class="b-lk-menu__menu-link text">My reservations</a>
+        <hr class="b-lk-menu__menu-hr">
+        <a href="" class="b-lk-menu__menu-link text">Exit</a>
+    </div>
+    <footer class="b-footer">
+        <div class="container">
+            <a href="" class="b-footer__logo">
+                <img src="img/logo_footer.svg" alt="logo">
+            </a>
+            <div class="b-footer__links">
+                <a href="" class="b-footer__link text">Rental policy</a>
+                <a href="" class="b-footer__link text">Rent terms</a>
+                <a href="" class="b-footer__link text">Cancellation and change policy</a>
+                <a href="" class="b-footer__link text">Frequently cuked questions</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/lk.js"></script>
+</body>
+
+</html>
