@@ -5,6 +5,18 @@
     // -webkit-appearance: none;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+main {
+    height: 100%;
+    flex: 1;
+}
+
 a {
     cursor: pointer;
 }
@@ -590,6 +602,7 @@ summary::marker {
 .b-footer {
     background: #1B1C1D;
     padding: 34px 0 48px;
+    // flex: 0 0 auto;
 
     .container {
         display: flex;
