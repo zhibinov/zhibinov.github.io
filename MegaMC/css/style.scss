@@ -909,7 +909,7 @@ summary::marker {
 }
 
 .b-sorting__checkbox>input:checked+span::before {
-    background-image: url(/img/checked.svg);
+    background-image: url(../img/checked.svg);
     background-repeat: no-repeat;
     background-position: center 2px;
     background-color: #EF7D00;
@@ -1599,7 +1599,7 @@ input:checked+.b-sorting__link-span:before {
 }
 
 .b-auto__checkbox>input:checked+span::before {
-    background-image: url(/img/checked1.svg);
+    background-image: url(../img/checked1.svg);
     background-repeat: no-repeat;
     background-position: center 3px;
     background-color: white;
