@@ -3016,6 +3016,12 @@ input:checked + .b-sorting__link-span:before {
   }
 }
 
+.b-lk_reg .container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .display_flex {
   display: -webkit-box;
   display: -ms-flexbox;
