@@ -74,9 +74,9 @@
         </nav>
     </header>
     <section class="b-index-slider">
-        <div class="swiper">
+        <div class="swiper swiper1">
             <div class="swiper-wrapper">
-                <div class="swiper-slide b-index-slider__slide1">
+                <div class="swiper-slide b-index-slider__slide1 swiper-slide1">
                     <div class="container">
                         <h1 class="b-index-slider__heading heading">
                             Мы работаем
@@ -87,7 +87,7 @@
                         <p class="b-index-slider__number heading-mini">01</p>
                     </div>
                 </div>
-                <div class="swiper-slide b-index-slider__slide2">
+                <div class="swiper-slide b-index-slider__slide2 swiper-slide1">
                     <div class="container">
                         <h1 class="b-index-slider__heading heading">
                             Эту возможность нельзя упускать!</h1>
@@ -97,25 +97,66 @@
                         <p class="b-index-slider__number heading-mini">02</p>
                     </div>
                 </div>
+                <div class="swiper-slide b-index-slider__slide3 swiper-slide1">
+                    <div class="container">
+                        <h1 class="b-index-slider__heading heading">
+                            Вы можете арендовать дом своей мечты</h1>
+                        <p class="b-index-slider__text heading-mini">
+                            Позвоните нам, чтобы провести отпуск с семьей в арендованном летнем домике! Не упускайте
+                            возможности.
+                        </p>
+                        <p class="b-index-slider__number heading-mini">02</p>
+                    </div>
+                </div>
+                <div class="swiper-slide b-index-slider__slide4 swiper-slide1">
+                    <div class="container">
+                        <h1 class="b-index-slider__heading heading">
+                            Умные инвестиционные аппартамены с доходом
+                            от сдачи в аренду</h1>
+                        <p class="b-index-slider__text heading-mini">
+                            Мы сдаем вашу квартиру в аренду и создаем для вас источник дохода.
+                        </p>
+                        <p class="b-index-slider__number heading-mini">02</p>
+                    </div>
+                </div>
+                <div class="swiper-slide b-index-slider__slide5 swiper-slide1">
+                    <div class="container">
+                        <h1 class="b-index-slider__heading heading">
+                            Возможные инвестиции здесь</h1>
+                        <p class="b-index-slider__text heading-mini">
+                            Аланья - город, который предлагает возможности для инвесторов. Откройте для себя самую
+                            выгодную недвижимость вместе с нами.
+                        </p>
+                        <p class="b-index-slider__number heading-mini">02</p>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination swiper-pagination1"></div>
+            <div class="swiper-button-prev swiper-button-prev1"></div>
+            <div class="swiper-button-next swiper-button-next1"></div>
         </div>
     </section>
     <div class="b-search">
         <form class="container">
             <div class="b-search__input-box">
                 <input type="text" class="b-search__input text-mini" placeholder="Улица, город">
-                <select class="b-search__select text-mini">
-                    <option value="1">На все случаи жизни</option>
-                    <option value="2">Продажа</option>
-                    <option value="3">Аренда</option>
-                </select>
-                <select class="b-search__select text-mini">
-                    <option value="1">Все типы функций</option>
-                    <option value="2">Корпус</option>
-                </select>
+                <div class="select b-search__select">
+                    <input class="select__input text-mini" type="hidden" name="#">
+                    <div class="select__head b-search__select-head text-mini">На все случаи жизни</div>
+                    <ul class="select__list" style="display: none;">
+                        <li class="select__item text-mini">На все случаи жизни</li>
+                        <li class="select__item text-mini">Продажа</li>
+                        <li class="select__item text-mini">Аренда</li>
+                    </ul>
+                </div>
+                <div class="select b-search__select">
+                    <input class="select__input text-mini" type="hidden" name="#">
+                    <div class="select__head b-search__select-head text-mini">Все типы функций</div>
+                    <ul class="select__list" style="display: none;">
+                        <li class="select__item text-mini">Все типы функций</li>
+                        <li class="select__item text-mini">Корпус</li>
+                    </ul>
+                </div>
                 <div class="b-search__range-box">
                     <p class="b-search__range-text text-mini">Диапозон цен:
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -446,60 +487,92 @@
             </button>
         </header>
         <div class="b-detailed-search__input-box">
-            <select class="b-search__select text-mini b-detailed-search__input">
-                <option value="1">Все типы функций</option>
-                <option value="2">Корпус</option>
-            </select>
-            <select class="b-search__select text-mini b-detailed-search__input">
-                <option value="1">Все города</option>
-                <option value="2">Алания</option>
-                <option value="3">Анталия</option>
-            </select>
-            <select class="b-search__select text-mini b-detailed-search__input">
-                <option value="1">Все районы</option>
-                <option value="2">Авсаллар</option>
-                <option value="3">Белек</option>
-                <option value="4">Ведущий</option>
-                <option value="5">Чикчилли</option>
-                <option value="6">Каргичак</option>
-                <option value="7">Кестель</option>
-                <option value="8">Кизларпинари</option>
-                <option value="9">Махмутлар</option>
-                <option value="7">Центр</option>
-                <option value="8">Ова</option>
-                <option value="9">Водный глаз</option>
-            </select>
+            <div class="select b-detailed-search__select">
+                <input class="select__input" type="hidden" name="#">
+                <div class="select__head b-detailed-search__head">Все типы функций</div>
+                <ul class="select__list" style="display: none;">
+                    <li class="select__item text-mini">Все типы функций</li>
+                    <li class="select__item text-mini">Корпус</li>
+                </ul>
+            </div>
+            <div class="select b-detailed-search__select">
+                <input class="select__input" type="hidden" name="#">
+                <div class="select__head b-detailed-search__head">Все города</div>
+                <ul class="select__list" style="display: none;">
+                    <li class="select__item text-mini">Все города</li>
+                    <li class="select__item text-mini">Алания</li>
+                    <li class="select__item text-mini">Анталия</li>
+                </ul>
+            </div>
+            <div class="select b-detailed-search__select">
+                <input class="select__input" type="hidden" name="#">
+                <div class="select__head b-detailed-search__head">Все районы</div>
+                <ul class="select__list" style="display: none;">
+                    <li class="select__item text-mini">Все районы</li>
+                    <li class="select__item text-mini">Авсаллар</li>
+                    <li class="select__item text-mini">Белек</li>
+                    <li class="select__item text-mini">Ведущий</li>
+                    <li class="select__item text-mini">Чикчилли</li>
+                    <li class="select__item text-mini">Каргичак</li>
+                    <li class="select__item text-mini">Кестель</li>
+                    <li class="select__item text-mini">Кизларпинари</li>
+                    <li class="select__item text-mini">Махмутлар</li>
+                    <li class="select__item text-mini">Центр</li>
+                    <li class="select__item text-mini">Ова</li>
+                    <li class="select__item text-mini">Водный глаз</li>
+                </ul>
+            </div>
             <input type="text" class="b-search__input text-mini b-detailed-search__input" placeholder="Улица">
             <input type="text" class="b-search__input text-mini b-detailed-search__input" placeholder="Почтовый индекс">
-            <select class="b-search__select text-mini b-detailed-search__input">
-                <option value="1">Все страны</option>
-                <option value="2">Турция</option>
-            </select>
-            <select class="b-search__select text-mini b-detailed-search__input">
-                <option value="1">Любое количество спален</option>
-                <option value="2">1 спальня</option>
-                <option value="3">2 спальни</option>
-                <option value="4">3 спальни</option>
-                <option value="5">4 спальни</option>
-                <option value="6">5 спален</option>
-            </select>
-            <select class="b-search__select text-mini b-detailed-search__input">
-                <option value="1">Любое количество ванных комнат</option>
-                <option value="2">1 ванная комната</option>
-                <option value="3">2 ванных комнаты</option>
-                <option value="4">3 ванных комнаты</option>
-                <option value="5">4 ванных комнаты</option>
-                <option value="6">5 ванных комнат</option>
-            </select>
-            <select class="b-search__select text-mini b-detailed-search__input">
-                <option value="1">На все случаи жизни</option>
-                <option value="2">Продажа</option>
-                <option value="3">Аренда</option>
-            </select>
-            <select class="b-search__select text-mini b-detailed-search__input">
-                <option value="1">Все комплексы</option>
-                <option value="2">Волчья башня</option>
-            </select>
+            <div class="select b-detailed-search__select">
+                <input class="select__input" type="hidden" name="#">
+                <div class="select__head b-detailed-search__head">Все страны</div>
+                <ul class="select__list" style="display: none;">
+                    <li class="select__item text-mini">Все страны</li>
+                    <li class="select__item text-mini">Турция</li>
+                </ul>
+            </div>
+            <div class="select b-detailed-search__select">
+                <input class="select__input" type="hidden" name="#">
+                <div class="select__head b-detailed-search__head">Любое количество спален</div>
+                <ul class="select__list" style="display: none;">
+                    <li class="select__item text-mini">Любое количество спален</li>
+                    <li class="select__item text-mini">1 спальня</li>
+                    <li class="select__item text-mini">2 спальни</li>
+                    <li class="select__item text-mini">3 спальни</li>
+                    <li class="select__item text-mini">4 спальни</li>
+                    <li class="select__item text-mini">5 спален</li>
+                </ul>
+            </div>
+            <div class="select b-detailed-search__select">
+                <input class="select__input" type="hidden" name="#">
+                <div class="select__head b-detailed-search__head">Любое количество ванных комнат</div>
+                <ul class="select__list" style="display: none;">
+                    <li class="select__item text-mini">Любое количество ванных комнат</li>
+                    <li class="select__item text-mini">1 ванная комната</li>
+                    <li class="select__item text-mini">2 ванных комнаты</li>
+                    <li class="select__item text-mini">3 ванных комнаты</li>
+                    <li class="select__item text-mini">4 ванных комнаты</li>
+                    <li class="select__item text-mini">5 ванных комнат</li>
+                </ul>
+            </div>
+            <div class="select b-detailed-search__select">
+                <input class="select__input" type="hidden" name="#">
+                <div class="select__head b-detailed-search__head">На все случаи жизни</div>
+                <ul class="select__list" style="display: none;">
+                    <li class="select__item text-mini">На все случаи жизни</li>
+                    <li class="select__item text-mini">Продажа</li>
+                    <li class="select__item text-mini">Аренда</li>
+                </ul>
+            </div>
+            <div class="select b-detailed-search__select">
+                <input class="select__input" type="hidden" name="#">
+                <div class="select__head b-detailed-search__head">Все комплексы</div>
+                <ul class="select__list" style="display: none;">
+                    <li class="select__item text-mini">Все комплексы</li>
+                    <li class="select__item text-mini">Волчья башня</li>
+                </ul>
+            </div>
             <input type="text" class="b-search__input text-mini b-detailed-search__input" placeholder="Цена от (€)">
             <input type="text" class="b-search__input text-mini b-detailed-search__input" placeholder="Цена до (€)">
             <input type="text" class="b-search__input text-mini b-detailed-search__input" placeholder="Площадь от (м2)">
