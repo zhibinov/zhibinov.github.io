@@ -121,7 +121,7 @@ summary::marker {
     font-family: 'Cormorant', serif;
     font-weight: bold;
     font-size: 58px;
-    line-height: 82px;
+    line-height: 56px;
 
     @media (max-width: 991px) {
         font-size: 40px;
@@ -138,7 +138,7 @@ summary::marker {
     font-family: 'Cormorant', serif;
     font-weight: bold;
     font-size: 118px;
-    line-height: 113px;
+    line-height: 100px;
 
     @media (max-width: 1350px) {
         font-size: 60px;
@@ -369,24 +369,11 @@ summary::marker {
     }
 }
 
-.swiper2 {
-    width: 100% !important;
-    height: 538px !important;
-
-    @media (max-width: 991px) {
-        height: 400px !important;
-    }
-
-    @media (max-width: 991px) {
-        height: 300px !important;
-    }
-}
-
 .swiper-slide1 {
     background-size: cover;
 
     .container {
-        padding: 210px 0 240px !important;
+        padding: 180px 30px 240px !important;
 
         @media (max-width: 767px) {
             padding: 120px 0 !important;
@@ -444,19 +431,89 @@ summary::marker {
     }
 }
 
-.b-card__slide {
-    background: url(../img/card_big.png) no-repeat center / cover;
+.swiper2 {
+    width: 100% !important;
+    height: 538px !important;
+
+    @media (max-width: 991px) {
+        height: 400px !important;
+    }
+
+    @media (max-width: 991px) {
+        height: 300px !important;
+    }
+}
+
+.swiper3 {
+    width: 100% !important;
+    height: 195px !important;
+    margin: 20px 0 40px;
+
+    @media (max-width: 1350px) {
+        margin-bottom: 30px;
+        height: 150px !important;
+    }
+
+    @media (max-width: 991px) {
+        height: 110px !important;
+    }
+
+    @media (max-width: 767px) {
+        height: 90px !important;
+    }
+
+    @media (max-width: 575px) {
+        display: none;
+    }
+}
+
+.b-card__slide3 {
     display: flex;
+    width: 312.5px !important;
+    cursor: pointer;
+
+    @media (max-width: 1350px) {
+        width: 225px !important;
+    }
+
+    @media (max-width: 991px) {
+        width: 165px !important;
+    }
+
+    @media (max-width: 767px) {
+        width: 120px !important;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.b-card__slide {
+    display: flex;
+    justify-content: center;
     align-items: flex-start;
+    cursor: pointer;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 .b-card__slide-label {
+    position: absolute;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     color: #FFFFFF;
+    top: 20px;
+    left: 0;
     padding: 10px 12px;
     background: linear-gradient(94.98deg, #B48B1C 36.78%, #715302 139.7%);
-    margin-top: 20px;
 }
 
 .swiper-pagination1 {
@@ -486,6 +543,7 @@ summary::marker {
     width: 17px !important;
     margin: 0 !important;
     color: rgba(255, 255, 255, 0.3) !important;
+    left: 20px !important;
 
     @media (max-width: 991px) {
         display: none !important;
@@ -506,6 +564,7 @@ summary::marker {
     width: 17px !important;
     margin: 0 !important;
     color: rgba(255, 255, 255, 0.3) !important;
+    right: 20px !important;
 
     @media (max-width: 991px) {
         display: none !important;
@@ -924,7 +983,7 @@ summary::marker {
 
 .b-recently {
     .container {
-        padding: 60px 0 10px;
+        padding: 100px 0 30px;
 
         @media (max-width: 1350px) {
             padding: 30px 0 0 0;
@@ -934,7 +993,7 @@ summary::marker {
 
 .b-recently_2 {
     .container {
-        padding: 30px 0;
+        padding: 50px 0;
 
         @media (max-width: 1350px) {
             padding: 15px 0;
@@ -995,6 +1054,7 @@ summary::marker {
     text-decoration: none;
     box-sizing: border-box;
     margin-bottom: 20px;
+    border: 2px solid rgba(255, 255, 128, 0.0);
 
     @media (max-width: 991px) {
         width: 350px;
@@ -1011,14 +1071,41 @@ summary::marker {
     }
 }
 
+.b-recently__text {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 10px 5px 10px;
+}
+
+.b-recently__description {
+    color: #FFFFFF;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 10px 10px 10px;
+}
+
 .b-recently__price-box {
     width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
     background: linear-gradient(197.79deg, #AC7E00 -61.19%, #715302 280.86%);
     padding: 6px 10px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.b-recently__price {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+}
+
+.b-recently__price-text {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
 }
 
 .b-recently__checkbox {
@@ -1066,30 +1153,6 @@ summary::marker {
     background-image: url(../img/checked.png);
     background-repeat: no-repeat;
     background-position: center center;
-}
-
-.b-recently__price {
-    font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF;
-}
-
-.b-recently__price-text {
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-}
-
-.b-recently__text {
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    padding: 0 10px 5px 10px;
-}
-
-.b-recently__description {
-    color: #FFFFFF;
-    font-weight: normal;
-    font-family: 'Montserrat', sans-serif;
-    padding: 0 10px 10px 10px;
 }
 
 .b-recently__page-box {
@@ -1145,6 +1208,7 @@ summary::marker {
     text-decoration: none;
     box-sizing: border-box;
     margin-bottom: 20px;
+    border: 2px solid rgba(255, 255, 128, 0.0);
 
     @media (max-width: 991px) {
         width: 350px;
@@ -1208,7 +1272,7 @@ summary::marker {
 
 .b-services {
     .container {
-        padding: 30px 0;
+        padding: 50px 0;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -1248,6 +1312,7 @@ summary::marker {
     font-weight: 500;
     background: url(../img/service1.png) no-repeat center;
     background-size: cover;
+    border: 2px solid rgba(255, 255, 128, 0.0);
 
     @media (max-width: 1350px) {
         width: 474px;
@@ -1588,7 +1653,6 @@ summary::marker {
     background: rgba(255, 255, 255, 0.6);
     border: 1px solid #AD8004;
     box-sizing: border-box;
-    border-radius: 5px;
     font-weight: normal;
     font-family: 'Montserat', sans-serif;
     padding: 10px 30px;
@@ -1845,7 +1909,7 @@ summary::marker {
 .b-about-us__card {
     background: #FFFFFF;
     box-shadow: 0px 0px 22px -6px rgba(22, 23, 27, 0.22);
-    padding: 40px 110px;
+    padding: 40px 110px 50px;
     margin-top: -293px;
     box-sizing: border-box;
     width: 100%;
@@ -1881,7 +1945,7 @@ summary::marker {
 }
 
 .b-team {
-    padding: 60px 0 145px;
+    padding: 60px 0 125px;
 
     @media (max-width: 1350px) {
         padding: 30px 0 45px;
@@ -1900,7 +1964,6 @@ summary::marker {
 .b-team__card-box {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: start;
     flex-wrap: wrap;
 
@@ -1913,25 +1976,21 @@ summary::marker {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 312.5px;
+    margin-bottom: 20px;
 
     @media (max-width: 1350px) {
         margin-bottom: 20px;
     }
 }
 
+.b-team__card:not(:nth-child(4n)) {
+    margin-right: 20px;
+}
+
 .b-team__img-box {
-    width: 313px;
+    width: 100%;
     height: 319px;
-
-    @media (max-width: 1350px) {
-        width: 350px;
-        height: 350px;
-    }
-
-    @media (max-width: 991px) {
-        width: 313px;
-        height: 319px;
-    }
 
     img {
         width: 100%;
@@ -1945,6 +2004,7 @@ summary::marker {
     font-weight: bold;
     color: #16171B;
     margin: 20px 0 10px;
+    text-align: center;
 }
 
 .b-team__card-possition {
@@ -1953,6 +2013,7 @@ summary::marker {
     font-size: 16px;
     line-height: 20px;
     color: #16171B;
+    text-align: center;
 }
 
 .b-about-us__bcg_contacts {
@@ -1968,9 +2029,20 @@ summary::marker {
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: 1350px) {
+    @media (max-width: 991px) {
         flex-direction: column;
         align-items: start;
+    }
+}
+
+.b-about-us__vertical-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.b-about-us__vertical-box:not(:last-child) {
+    @media (max-width: 991px) {
+        margin-bottom: 20px;
     }
 }
 
@@ -1979,6 +2051,9 @@ summary::marker {
     color: #16171B;
     display: flex;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    line-height: 27px;
 
     &:hover {
         color: #DBBF72;
@@ -1986,12 +2061,47 @@ summary::marker {
 
     svg {
         margin-right: 20px;
-        width: 43px;
+        height: 20px;
+        width: 21px;
     }
 }
 
-.b-about-us__contact-text {
-    width: calc(100% - 43px);
+.b-about-us__contact:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.b-about-us__vertical-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    line-height: 27px;
+    color: #16171B;
+}
+
+.b-about-us__social-box {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.b-about-us__social {
+    text-decoration: none;
+    font-size: 28px;
+    border-radius: 50%;
+    background: #16171B;
+    color: white;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background: linear-gradient(180deg, #AC7E00 0%, #715302 100%);
+    }
+}
+
+.b-about-us__social:not(:last-child) {
+    margin-right: 10px;
 }
 
 .b-about-us__contact:not(:last-child) {

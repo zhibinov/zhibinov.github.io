@@ -21,25 +21,46 @@ document.addEventListener('click', e => {
     }
 });
 
-const swiper = new Swiper('.swiper', {
+var swiper = new Swiper(".swiper3", {
+  loop: true,
+  spaceBetween: 20,
+  slidesPerView: 4,
+});
+var swiper2 = new Swiper(".swiper2", {
+  loop: true,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 10000,
+  },
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+      swiper: swiper,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
+
+// const swiper = new Swiper('.swiper', {
     // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    autoplay: {
-        delay: 10000,
-    },
+//     direction: 'horizontal',
+//     loop: true,
+//     autoplay: {
+//         delay: 10000,
+//     },
   
     // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
+
   
     // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-});
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
+// });
 
 $( '.lightzoom' ).lightzoom({
     speed:                 400,   // скорость появления
