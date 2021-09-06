@@ -488,6 +488,8 @@ a {
 
 .swiper-container-clients {
   width: 100%;
+  overflow-x: hidden;
+  margin: auto;
 }
 
 .swiper-slide_clients {
