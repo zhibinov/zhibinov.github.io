@@ -769,6 +769,8 @@ a {
 .swiper-container_reviews {
     width: 1050px;
     height: 740px;
+    overflow-x: hidden;
+    margin: auto;
 
     @media (max-width: 1199px) {
         width: 960px;
