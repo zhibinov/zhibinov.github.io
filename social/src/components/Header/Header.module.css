@@ -1,0 +1,10 @@
+.b-header {
+    grid-area: b-header;
+    background: linear-gradient(
+180deg, #95D8F7 0%, #4491FF 100%);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;                        
+}

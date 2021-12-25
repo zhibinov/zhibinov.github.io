@@ -1,0 +1,33 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+}
+.dialogs-items{
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(
+180deg, #95D8F7 0%, #4491FF 100%);
+}
+.dialog{
+    padding: 0 0 10px 0;
+}
+.dialog a{
+    color: black;
+    text-decoration: none;
+}
+.dialog a:hover{
+    color: white;
+}
+.dialog a.active{
+    color: darkred;
+}
+.dialogs-messages{
+    padding: 10px;
+    border-radius: 10px;   
+    background: linear-gradient(
+180deg, #95D8F7 0%, #4491FF 100%);
+}
+.message{
+    padding: 0 0 10px 0;
+}

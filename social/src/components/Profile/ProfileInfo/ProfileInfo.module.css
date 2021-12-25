@@ -1,0 +1,28 @@
+.b-profile__info{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        "img-background img-background img-background"
+        "avatar description description"
+        "post post post";
+    width: 100%;
+}
+.b-profile__img-background {
+    height: 100px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    grid-area: img-background;
+}
+
+.b-profile__avatar {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    grid-area: avatar;
+}
+
+.b-profile__description {
+    grid-area: description;
+}

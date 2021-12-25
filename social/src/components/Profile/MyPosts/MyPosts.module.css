@@ -1,0 +1,4 @@
+.b-profile__post {
+    width: 100%;
+    grid-area: post;
+}

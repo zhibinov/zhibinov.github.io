@@ -1,0 +1,20 @@
+.b-app-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 70px 1fr;
+      grid-template-rows: 70px 1fr;
+  -ms-grid-columns: 2fr 10fr;
+      grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+      grid-template-areas: "b-header b-header b-header" "b-nav content content";
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.b-app-wrapper__content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: content;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,15 @@
+.b-app-wrapper {
+    display: grid;
+    grid-template-rows: 70px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
+    grid-template-areas:
+        "b-header b-header b-header"
+        "b-nav content content";
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.b-app-wrapper__content {
+    grid-area: content;
+}
