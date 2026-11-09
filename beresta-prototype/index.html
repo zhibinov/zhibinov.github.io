@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СОУТ — прототип</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="themes/beresta/style.css">
+    <style>
+        .sout-hero {
+            height: auto;
+            min-height: 420px;
+            padding-bottom: 40px;
+        }
+        .sout-hero .main-docs-block-item {
+            width: 100%;
+        }
+        .sout-subtitle {
+            color: #999999;
+            max-width: 720px;
+            margin: 20px 0 0;
+        }
+
+        .sout-bl {
+            background: #1A1A1A;
+            border-radius: 16px;
+            margin-top: -16px;
+            position: relative;
+            z-index: 2;
+            padding: 0 50px 60px;
+        }
+        .sout-block {
+            width: 1440px;
+            max-width: 100%;
+            margin: auto;
+            padding-top: 40px;
+        }
+
+        .sout-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            transition: opacity .25s ease, transform .25s ease;
+        }
+        .sout-list.is-switching {
+            opacity: 0;
+            transform: translateY(8px);
+        }
+        .sout-doc {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 18px 22px;
+            background: #0B0B0B;
+            border: 1px solid #262626;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: background .2s ease, border-color .2s ease, transform .2s ease;
+        }
+        .sout-doc:hover {
+            background: #131313;
+            border-color: #A3E625;
+            transform: translateY(-1px);
+        }
+        .sout-doc-icon {
+            flex: 0 0 56px;
+            width: 56px;
+            height: 56px;
+        }
+        .sout-doc-icon img {
+            display: block;
+            width: 56px;
+            height: 56px;
+        }
+        .sout-doc-info {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            flex: 1;
+            min-width: 0;
+        }
+        .sout-doc-name {
+            color: #F2F2F2;
+            margin: 0;
+            overflow-wrap: anywhere;
+        }
+        .sout-doc-meta {
+            color: #777777;
+            text-transform: uppercase;
+        }
+        .sout-doc-action {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #A3E625;
+            font-family: "Inter", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        .sout-doc-action svg {
+            transition: transform .2s ease;
+        }
+        .sout-doc:hover .sout-doc-action svg {
+            transform: translateX(4px);
+        }
+
+        .sout-empty {
+            padding: 48px 24px;
+            text-align: center;
+            color: #777777;
+            background: #0B0B0B;
+            border: 1px dashed #333333;
+            border-radius: 12px;
+        }
+
+        .sout-years {
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid #333333;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .sout-years-label {
+            color: #999999;
+            margin: 0;
+        }
+        .sout-years-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .sout-year-btn {
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #F2F2F2;
+            background: transparent;
+            border: 1px solid #3F3F3F;
+            border-radius: 8px;
+            padding: 8px 24px;
+            cursor: pointer;
+            transition: background .2s ease, border-color .2s ease, color .2s ease;
+        }
+        .sout-year-btn:hover {
+            border-color: #A3E625;
+            color: #A3E625;
+        }
+        .sout-year-btn.is-active {
+            background: #A3E625;
+            border-color: #A3E625;
+            color: #121212;
+        }
+
+        @media (max-width: 1440px) {
+            .sout-hero {
+                min-height: 345px;
+            }
+            .sout-bl {
+                padding: 0 50px 60px;
+            }
+        }
+        @media (max-width: 768px) {
+            .sout-hero {
+                min-height: 0;
+                padding-bottom: 30px;
+            }
+            .sout-hero .main-docs-block-item {
+                margin-top: 40px;
+            }
+            .sout-subtitle {
+                margin-top: 12px;
+            }
+            .sout-bl {
+                padding: 0 25px 45px;
+            }
+            .sout-doc {
+                padding: 14px;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+            .sout-doc-icon,
+            .sout-doc-icon img {
+                flex-basis: 44px;
+                width: 44px;
+                height: 44px;
+            }
+            .sout-doc-action {
+                display: none;
+            }
+            .sout-years {
+                margin-top: 32px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .sout-year-btn {
+                padding: 8px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+
+    <header>
+        <span class="header-line"></span>
+        <div class="header-block">
+            <div class="header-block-logo">
+                <a href="index.html"><img src="themes/beresta/img/Logo.svg" alt="Береста"></a>
+            </div>
+
+            <div class="header-block-mb">
+                <div class="header-block-mb-menu">
+                    <ul>
+                        <li><a href="index.html"> Продукт</a></li>
+                        <li><a href="#"> Компания</a></li>
+                        <li><a href="#"> Новости</a></li>
+                        <li><a href="#"> Партнерам</a></li>
+                        <li><a href="#"> Документация</a></li>
+                        <li><a href="#"> Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="header-block-mb-button">
+                    <a class="button" href="#">
+                        Приобрести
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                            <rect width="36" height="36" rx="4" fill="#121212"/>
+                            <path d="M13 13H23M23 13V23M23 13L13 23" stroke="#A3E625" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header-block-mobil">
+                <div class="header-block-mob">
+                    <a class="button" href="#">Приобрести
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                            <rect width="36" height="36" rx="4" fill="#121212"/>
+                            <path d="M13 13H23M23 13V23M23 13L13 23" stroke="#A3E625" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox">
+                    <label class="menu__btn" for="menu__toggle"><span></span></label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item text-5" href="index.html"> Продукт</a></li>
+                        <li><a class="menu__item text-5" href="#"> Компания</a></li>
+                        <li><a class="menu__item text-5" href="#"> Новости</a></li>
+                        <li><a class="menu__item text-5" href="#"> Партнерам</a></li>
+                        <li><a class="menu__item text-5" href="#"> Контакты</a></li>
+                        <li><a class="menu__item text-5" href="#"> Документация</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-docs-block sout-hero">
+        <div class="main-docs-block-item">
+            <p class="title-icon">СОУТ</p>
+            <p class="text-1" id="soutTitle">СОУТ 2026</p>
+            <p class="text-bm sout-subtitle">Специальная оценка условий труда. Документы за выбранный год.</p>
+        </div>
+    </div>
+
+    <div class="sout-bl">
+        <div class="sout-block">
+            <div class="sout-list" id="soutList"></div>
+
+            <div class="sout-years">
+                <p class="text-bm sout-years-label">Документы за другие годы:</p>
+                <div class="sout-years-buttons" id="soutYears"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prefooter-block"></div>
+
+    <footer>
+        <div class="footer-block">
+            <div class="footer-block-lb">
+                <a href="index.html"><img src="themes/beresta/img/Logo.svg" alt="Береста"></a>
+                <p class="text-bm">ПО «Береста» внесено в Единый реестр российских программ для электронных вычислительных машин и баз данных. Реестровая запись № 20665 от 25.12.2023.</p>
+                <a class="button" href="#">
+                    Приобрести
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                        <rect width="36" height="36" rx="4" fill="#121212"/>
+                        <path d="M13 13H23M23 13V23M23 13L13 23" stroke="#A3E625" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-block-menu">
+                <ul>
+                    <li><a href="index.html">Продукт</a></li>
+                    <li><a href="#">Компания</a></li>
+                    <li><a href="#">Партнерам</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Документация</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-block-cop">
+                <span class="text-bs">Beresta @ 2026. Все права защищены.</span>
+                <div class="footer-block-cop-link">
+                    <div class="footer-block-cop-link-c">
+                        <a class="text-bs" href="#">Обработка персональных данных</a>
+                        <a class="text-bs" href="#">Условия пользования</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script>
+    var soutDocs = {
+        2026: [
+            {
+                title: 'Компания-Береста-РК--11-09-2026_01_24_PM.pdf',
+                href: 'demo.pdf',
+                meta: 'PDF · 5,6 МБ'
+            },
+            {
+                title: 'Отчёт о результатах специальной оценки условий труда.pdf',
+                href: 'demo.pdf',
+                meta: 'PDF · 3,1 МБ'
+            },
+            {
+                title: 'Перечень рабочих мест и результаты СОУТ.pdf',
+                href: 'demo.pdf',
+                meta: 'PDF · 1,8 МБ'
+            },
+            {
+                title: 'Сводная ведомость результатов СОУТ.pdf',
+                href: 'demo.pdf',
+                meta: 'PDF · 2,4 МБ'
+            }
+        ],
+        2025: [],
+        2024: [
+            {
+                title: 'Отчёт о результатах специальной оценки условий труда за 2024 год.pdf',
+                href: 'demo.pdf',
+                meta: 'PDF · 3,0 МБ'
+            },
+            {
+                title: 'Перечень рабочих мест за 2024 год.pdf',
+                href: 'demo.pdf',
+                meta: 'PDF · 1,7 МБ'
+            }
+        ]
+    };
+
+    var years = [2026, 2025, 2024];
+    var currentYear = 2026;
+
+    var list = document.getElementById('soutList');
+    var yearsBox = document.getElementById('soutYears');
+    var title = document.getElementById('soutTitle');
+
+    function renderDocs(year) {
+        list.innerHTML = '';
+        var docs = soutDocs[year] || [];
+
+        if (!docs.length) {
+            var empty = document.createElement('div');
+            empty.className = 'sout-empty';
+            empty.innerHTML = '<p class="text-5">За ' + year + ' год документы пока не добавлены</p>';
+            list.appendChild(empty);
+            return;
+        }
+
+        docs.forEach(function (doc) {
+            var a = document.createElement('a');
+            a.className = 'sout-doc';
+            a.href = doc.href;
+            if (doc.href !== '#') {
+                a.target = '_blank';
+                a.rel = 'noopener';
+            }
+
+            var icon = document.createElement('span');
+            icon.className = 'sout-doc-icon';
+            icon.innerHTML = '<img src="themes/beresta/img/docs-icon.svg" alt="">';
+
+            var info = document.createElement('span');
+            info.className = 'sout-doc-info';
+
+            var name = document.createElement('span');
+            name.className = 'text-5 sout-doc-name';
+            name.textContent = doc.title;
+
+            var meta = document.createElement('span');
+            meta.className = 'text-d sout-doc-meta';
+            meta.textContent = doc.meta;
+
+            info.appendChild(name);
+            info.appendChild(meta);
+
+            var action = document.createElement('span');
+            action.className = 'sout-doc-action';
+            action.innerHTML = 'Открыть' +
+                '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+                '<path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="#A3E625" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+                '</svg>';
+
+            a.appendChild(icon);
+            a.appendChild(info);
+            a.appendChild(action);
+            list.appendChild(a);
+        });
+    }
+
+    function renderYears() {
+        yearsBox.innerHTML = '';
+        years.forEach(function (year) {
+            var btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'sout-year-btn' + (year === currentYear ? ' is-active' : '');
+            btn.textContent = year;
+            btn.addEventListener('click', function () {
+                if (year === currentYear) return;
+                currentYear = year;
+
+                Array.prototype.forEach.call(yearsBox.children, function (item) {
+                    item.classList.toggle('is-active', Number(item.textContent) === currentYear);
+                });
+
+                title.textContent = 'СОУТ ' + currentYear;
+
+                list.classList.add('is-switching');
+                setTimeout(function () {
+                    renderDocs(currentYear);
+                    list.classList.remove('is-switching');
+                }, 200);
+            });
+            yearsBox.appendChild(btn);
+        });
+    }
+
+    renderDocs(currentYear);
+    renderYears();
+</script>
+
+</body>
+</html>
