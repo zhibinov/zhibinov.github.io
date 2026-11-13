@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelector(".sd-footer__contacts--email-socs"),t=document.querySelectorAll(".sd-footer__contacts--phone-time-works");if(!e||t.length<2)return;const o=t[1],n=e.querySelector(".sd-footer__contacts--phone-time-works");n&&o&&(n.innerHTML=o.innerHTML)}));
