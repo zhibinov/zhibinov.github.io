@@ -475,6 +475,7 @@ body.menu-open .menu-backdrop{opacity:1;pointer-events:auto}
 .fab__btn .icon{width:23px;height:23px}
 .fab__wa{background:#25d366;color:#fff}
 .fab__tg{background:#2aabee;color:#fff}
+.fab__vk{background:#0077ff;color:#fff}
 .fab__up{background:var(--ink);color:#fff;opacity:0;pointer-events:none;transform:translateY(8px) rotate(-90deg)}
 .fab__up.is-visible{opacity:1;pointer-events:auto;transform:rotate(-90deg)}
 .mobile-bar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:95;background:#fff;border-top:1px solid var(--gray-200);padding:9px 14px calc(9px + env(safe-area-inset-bottom));gap:9px;box-shadow:0 -8px 30px rgba(20,24,15,.07);transition:opacity .25s var(--ease),transform .3s var(--ease)}

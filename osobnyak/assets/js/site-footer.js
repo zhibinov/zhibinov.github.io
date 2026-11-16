@@ -43,6 +43,7 @@
           <div class="footer__socials">
             <a href="https://wa.me/79109103111" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg></a>
             <a href="https://t.me/+79109103111" target="_blank" rel="noopener" aria-label="Telegram"><svg class="icon" aria-hidden="true"><use href="#i-telegram"></use></svg></a>
+            <a href="https://vk.ru/family_cottage" target="_blank" rel="noopener" aria-label="ВКонтакте"><svg class="icon" aria-hidden="true"><use href="#i-vk"></use></svg></a>
             <button class="social-max" type="button" aria-label="MAX" data-max-link><svg class="icon" aria-hidden="true"><use href="#i-max"></use></svg></button>
           </div>
         </div>
