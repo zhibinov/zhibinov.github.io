@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Памятная дата РФ — праздники, история России и Великая Отечественная война</title>
+  <meta name="description" content="Праздники, памятные даты истории России и важные события Великой Отечественной войны на каждый день. Календарь, поиск и ежедневная подписка.">
+  <meta name="theme-color" content="#f3eee3">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Памятная дата РФ">
+  <meta property="og:description" content="Праздники, история России и Великая Отечественная война — на каждый день года.">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/alt.css">
+</head>
+<body class="alt-body">
+  <a class="alt-skip" href="#main">Перейти к содержанию</a>
+
+  <header class="alt-header">
+    <div class="alt-container alt-header__inner">
+      <a class="alt-brand" href="index.html" aria-label="Памятная дата РФ — на главную">
+        <span class="alt-brand__mark" aria-hidden="true">★</span>
+        <span class="alt-brand__text">
+          <strong>Памятная дата РФ</strong>
+          <small>Праздники, история, памятные даты России</small>
+        </span>
+      </a>
+
+      <button class="alt-burger" type="button" id="alt-burger" aria-expanded="false" aria-controls="alt-nav" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="alt-nav" id="alt-nav" aria-label="Основная навигация">
+        <a class="is-active" href="#today">Сегодня</a>
+        <a href="#calendar">Календарь</a>
+        <a href="#subscribe">Подписка</a>
+        <a href="#about">О проекте</a>
+      </nav>
+
+      <form class="alt-search" role="search" id="alt-search-form">
+        <svg class="alt-search__icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="6.5"></circle>
+          <path d="M16 16l4 4"></path>
+        </svg>
+        <input type="search" id="alt-search-input" placeholder="Поиск по сайту" autocomplete="off" aria-label="Поиск по памятным датам" aria-controls="alt-search-results" aria-expanded="false">
+        <button class="alt-search__clear" type="button" id="alt-search-clear" aria-label="Очистить поиск" hidden>×</button>
+        <div class="alt-search__results" id="alt-search-results" hidden></div>
+      </form>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="alt-hero" aria-labelledby="alt-hero-title">
+      <div class="alt-hero__bg" aria-hidden="true">
+        <img src="img/main.png" alt="">
+      </div>
+      <div class="alt-container alt-hero__inner">
+        <div class="alt-hero__copy">
+          <p class="alt-kicker">Праздники, памятные даты и важные события</p>
+          <h1 id="alt-hero-title">Памятная дата РФ</h1>
+          <span class="alt-brush" aria-hidden="true"></span>
+          <p class="alt-hero__lead">Праздники, памятные даты и важные события в истории России</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt-today" id="today" aria-labelledby="alt-today-title">
+      <div class="alt-container">
+        <div class="alt-today__panel" id="themes">
+          <div class="alt-today__head">
+            <span class="alt-icon alt-icon--calendar" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="15" rx="2"></rect><path d="M7 3.5v4M17 3.5v4M3.5 10h17"></path><path d="M8 14h2M14 14h2M8 17.5h2M14 17.5h2"></path></svg>
+            </span>
+            <div class="alt-today__titles">
+              <h2 id="alt-today-title"><span id="alt-today-prefix">Сегодня, </span><span id="alt-today-date">22 ноября</span></h2>
+              <p>Три важные даты этого дня</p>
+            </div>
+            <div class="alt-today__nav" aria-label="Переключение дня">
+              <button type="button" id="alt-day-prev" aria-label="Предыдущий день">‹</button>
+              <button type="button" id="alt-day-next" aria-label="Следующий день">›</button>
+            </div>
+            <a class="alt-today__all" href="#calendar">Весь календарь <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="alt-today-grid" id="alt-today-grid" aria-live="polite">
+            <noscript><div class="alt-fallback">Для отображения дат включите JavaScript.</div></noscript>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt-calendar" id="calendar" aria-labelledby="alt-calendar-title">
+      <div class="alt-container">
+        <div class="alt-section-head">
+          <div class="alt-section-title">
+            <span class="alt-icon alt-icon--calendar" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="15" rx="2"></rect><path d="M7 3.5v4M17 3.5v4M3.5 10h17"></path><path d="M8 14h2M14 14h2M8 17.5h2M14 17.5h2"></path></svg>
+            </span>
+            <div>
+              <h2 id="alt-calendar-title">Календарь памятных дат</h2>
+              <p>Выберите месяц, чтобы посмотреть все памятные события, праздники и значимые даты года.</p>
+            </div>
+          </div>
+
+          <div class="alt-year" aria-label="Выбор года">
+            <button type="button" id="alt-year-prev" aria-label="Предыдущий год">‹</button>
+            <span id="alt-year-label">2026 год</span>
+            <button type="button" id="alt-year-next" aria-label="Следующий год">›</button>
+          </div>
+        </div>
+
+        <div class="alt-months" id="alt-months"></div>
+      </div>
+    </section>
+
+    <section class="alt-subscribe" id="subscribe" aria-labelledby="alt-subscribe-title">
+      <div class="alt-container">
+        <div class="alt-subscribe__panel">
+          <div class="alt-subscribe__art" aria-hidden="true" data-image-slot="subscribe-flag"></div>
+          <div class="alt-subscribe__copy">
+            <span class="alt-icon alt-icon--mail" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2"></rect><path d="M4 6.5l8 6 8-6"></path></svg>
+            </span>
+            <div>
+              <h2 id="alt-subscribe-title">Три даты — каждое утро на почту</h2>
+              <p>Короткая подборка важных и интересных событий из истории России — в удобном письме.</p>
+            </div>
+          </div>
+          <form class="alt-subscribe__form" id="alt-subscribe-form" novalidate>
+            <div class="alt-subscribe__row">
+              <input type="email" id="alt-subscribe-email" name="email" placeholder="Ваш e-mail" autocomplete="email" inputmode="email" required aria-label="Ваш e-mail">
+              <button type="submit">Подписаться на рассылку</button>
+            </div>
+            <label class="alt-consent">
+              <input type="checkbox" id="alt-subscribe-consent" required>
+              <span>Согласен с <a href="legal/consent.html" target="_blank" rel="noopener">обработкой персональных данных</a> и <a href="legal/privacy.html" target="_blank" rel="noopener">политикой конфиденциальности</a>.</span>
+            </label>
+            <p class="alt-form-error" id="alt-subscribe-error" role="alert" hidden></p>
+            <p class="alt-form-note">Без спама, отписка в любой момент. Прототип: данные не отправляются.</p>
+            <p class="alt-form-success" id="alt-subscribe-success" role="status" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt-about" id="about" aria-labelledby="alt-about-title">
+      <div class="alt-container alt-about__inner">
+        <div class="alt-about__title">
+          <span class="alt-wheat" aria-hidden="true">❦</span>
+          <h2 id="alt-about-title">День за днём — без лишнего шума</h2>
+        </div>
+        <p>«Памятная дата РФ» — это удобный календарь и справочник важных событий, который помогает лучше понимать историю страны, её традиции и людей, которые её создавали.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="alt-footer" id="footer">
+    <div class="alt-footer__silhouette" aria-hidden="true"></div>
+    <div class="alt-container alt-footer__grid">
+      <div class="alt-footer__brand">
+        <a class="alt-brand alt-brand--footer" href="index.html">
+          <span class="alt-brand__mark" aria-hidden="true">★</span>
+          <span class="alt-brand__text">
+            <strong>Памятная дата РФ</strong>
+            <small>Праздники, история, памятные даты России</small>
+          </span>
+        </a>
+        <p>Праздники, история России и Великая Отечественная война на каждый день года.</p>
+        <p class="alt-footer__note">Сайт не является официальным ресурсом государственных органов. Материалы носят просветительский характер.</p>
+      </div>
+
+      <nav class="alt-footer__col" aria-label="Навигация">
+        <h3>Навигация</h3>
+        <a href="#today">Сегодня</a>
+        <a href="#calendar">Календарь</a>
+        <a href="#themes">Темы</a>
+        <a href="#subscribe">Подписка</a>
+      </nav>
+
+      <nav class="alt-footer__col" aria-label="О проекте">
+        <h3>О проекте</h3>
+        <a href="#about">О сайте</a>
+        <a href="mailto:p.zhibinov@yandex.ru">Контакты</a>
+        <a href="#subscribe">Поддержка</a>
+        <a href="legal/terms.html">Соглашение</a>
+      </nav>
+
+      <nav class="alt-footer__col" aria-label="Темы">
+        <h3>Темы</h3>
+        <a href="#today">История России</a>
+        <a href="#today">Великая Отечественная война</a>
+        <a href="#today">Дни воинской славы</a>
+        <a href="#today">Праздники России</a>
+      </nav>
+
+      <div class="alt-footer__socials" aria-label="Автор проекта в соцсетях">
+        <h3>Автор проекта</h3>
+        <div>
+          <a href="https://vk.ru/zhibinov_pavel" target="_blank" rel="noopener" aria-label="ВКонтакте">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.575 2.389 7.15 2.389z"/></svg>
+          </a>
+          <a href="https://t.me/SitesAndDesign" target="_blank" rel="noopener" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </a>
+          <a href="https://max.ru/channel_zhibinov" target="_blank" rel="noopener" aria-label="MAX">
+            <img src="img/max-icon.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="alt-container alt-footer__bottom">
+      <div class="alt-footer__legal">
+        <a href="legal/privacy.html">Политика ПД</a>
+        <a href="legal/consent.html">Согласие ПД</a>
+        <a href="legal/cookies.html">Cookie</a>
+        <a href="legal/cookie-consent.html">Согласие cookie</a>
+        <a href="legal/donations.html">Взносы</a>
+      </div>
+      <p>© 2026 «Памятная дата РФ». ИП Жибинов Павел Вадимович · ИНН 110313341216</p>
+      <p>Разработка сайта — <a href="https://sitesanddesign.ru/" target="_blank" rel="noopener">СайтыиДизайн.рф</a></p>
+    </div>
+  </footer>
+
+  <button class="alt-donate" type="button" id="alt-donate-open" aria-haspopup="dialog" aria-controls="alt-donate-modal">
+    <span aria-hidden="true">♥</span> Помочь проекту
+  </button>
+
+  <aside class="alt-cookie" id="alt-cookie" aria-label="Уведомление об использовании cookie" hidden>
+    <div>
+      <strong>Мы используем cookie</strong>
+      <p>Технические cookie нужны для работы сайта. Аналитические — только с вашего согласия. Подробнее — в <a href="legal/cookies.html">политике cookie</a> и <a href="legal/cookie-consent.html">согласии</a>.</p>
+    </div>
+    <div class="alt-cookie__actions">
+      <button type="button" class="alt-btn alt-btn--ghost" data-alt-cookie="necessary">Только необходимые</button>
+      <button type="button" class="alt-btn alt-btn--red" data-alt-cookie="all">Принять все</button>
+    </div>
+  </aside>
+
+  <div class="alt-modal" id="alt-date-modal" aria-hidden="true" hidden>
+    <div class="alt-modal__backdrop" data-alt-close></div>
+    <div class="alt-modal__dialog alt-modal__dialog--wide" role="dialog" aria-modal="true" aria-labelledby="alt-date-modal-title">
+      <button class="alt-modal__close" type="button" data-alt-close aria-label="Закрыть окно">×</button>
+      <div class="alt-modal__body" id="alt-date-modal-body"></div>
+    </div>
+  </div>
+
+  <div class="alt-modal" id="alt-event-modal" aria-hidden="true" hidden>
+    <div class="alt-modal__backdrop" data-alt-close></div>
+    <div class="alt-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="alt-event-modal-title">
+      <button class="alt-modal__close" type="button" data-alt-close aria-label="Закрыть окно">×</button>
+      <div class="alt-modal__body" id="alt-event-modal-body"></div>
+    </div>
+  </div>
+
+  <div class="alt-modal" id="alt-donate-modal" aria-hidden="true" hidden>
+    <div class="alt-modal__backdrop" data-alt-close></div>
+    <div class="alt-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="alt-donate-modal-title">
+      <button class="alt-modal__close" type="button" data-alt-close aria-label="Закрыть окно">×</button>
+      <div class="alt-modal__body">
+        <p class="alt-kicker">Поддержка проекта</p>
+        <h2 class="alt-modal__title" id="alt-donate-modal-title">Помочь проекту</h2>
+        <p class="alt-note alt-note--plain">Раздел в разработке.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app-alt.js"></script>
+</body>
+</html>
