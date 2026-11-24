@@ -14,9 +14,10 @@
   <meta property="og:image" content="assets/img/hero.jpg">
   <link rel="icon" href="assets/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style-alt.css">
 </head>
 
-<body class="has-mobile-bar">
+<body class="has-mobile-bar alt-home">
 
   <svg class="svg-sprite" aria-hidden="true" focusable="false">
     <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
@@ -182,8 +183,9 @@
       </a>
       <nav class="nav" id="nav" aria-label="Основная навигация">
         <a href="#projects">Проекты</a>
-        <a href="#mortgage">Ипотека</a>
         <a href="#finished">Готовые дома</a>
+        <a href="#tradein">Trade-in</a>
+        <a href="#mortgage">Ипотека</a>
         <a href="#foundation">Фундамент</a>
         <a href="#contacts">Контакты</a>
         <button class="btn btn--primary nav__cta" type="button" data-open-quiz>Рассчитать дом</button>
@@ -206,11 +208,7 @@
 
   <main id="top">
 
-    <section class="hero">
-      <div class="hero__bg">
-        <img src="assets/img/main.webp" alt="Современный частный дом, построенный компанией «Семейный особняк»"
-          width="1774" height="887">
-      </div>
+    <section class="hero hero--alt">
       <div class="hero__pattern" aria-hidden="true"></div>
       <div class="container hero__inner">
         <div class="hero__content">
@@ -233,49 +231,161 @@
             <div class="hero__stat"><b>1</b><span>договор с фиксированной сметой</span></div>
           </div>
         </div>
-        <div class="hero__badge" aria-hidden="true">с 2009<br>года</div>
+        <div class="hero__visual">
+          <img src="assets/img/main.webp" alt="Современный частный дом, построенный компанией «Семейный особняк»"
+            width="1774" height="887">
+          <div class="hero__badge" aria-hidden="true">с 2009<br>года</div>
+        </div>
       </div>
     </section>
 
-    <div class="hero-features-wrap">
+
+
+    <section class="section quiz-section section--lime" id="quiz">
       <div class="container">
-        <div class="hero-features">
-          <div class="feature">
-            <span class="feature__icon"><svg class="icon" aria-hidden="true">
-                <use href="#i-home"></use>
-              </svg></span>
-            <div><b>Индивидуальная планировка</b><span>Адаптируем проект под вашу семью</span></div>
+        <div class="quiz-layout">
+          <div class="quiz-intro reveal hide-mobile">
+            <span class="kicker">Расчёт стоимости</span>
+            <h2>Узнайте стоимость дома <span class="mark">за 1 минуту</span></h2>
+            <p class="section-sub">Ответьте на 8 вопросов — покажем предварительную стоимость и предложим оптимальный
+              вариант. Это бесплатно и ни к чему не обязывает.</p>
+            <ul class="list-check list-check--dark">
+              <li><svg class="icon" aria-hidden="true">
+                  <use href="#i-check"></use>
+                </svg><span>Предварительная смета по вашим параметрам</span></li>
+              <li><svg class="icon" aria-hidden="true">
+                  <use href="#i-check"></use>
+                </svg><span>Подберём подходящий проект</span></li>
+              <li><svg class="icon" aria-hidden="true">
+                  <use href="#i-check"></use>
+                </svg><span>Эскизный проект в подарок при заключении договора</span></li>
+            </ul>
+            <div class="quiz-intro__media">
+              <img src="assets/img/quiz.jpg" alt="Современный дом с продуманной архитектурой" width="1000" height="558"
+                loading="lazy">
+              <div class="quiz-intro__badge"><b>1 минута</b><span>8 простых вопросов</span></div>
+            </div>
           </div>
-          <div class="feature">
-            <span class="feature__icon"><svg class="icon" aria-hidden="true">
-                <use href="#i-layers"></use>
-              </svg></span>
-            <div><b>Помощь с коммуникациями</b><span>Подключим газ, воду и электричество</span></div>
+          <div class="quiz-card reveal" id="quizInline" aria-label="Квиз по расчёту стоимости дома"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head__text">
+            <span class="kicker">Типовые проекты</span>
+            <h2>Проекты, которые <span class="mark">уже стали домами</span></h2>
+            <p class="hide-mobile">10 готовых решений с продуманными планировками. Любой проект адаптируем под ваш
+              участок, состав семьи и бюджет.</p>
           </div>
-          <div class="feature">
-            <span class="feature__icon"><svg class="icon" aria-hidden="true">
-                <use href="#i-doc"></use>
-              </svg></span>
-            <div><b>Межевание и документы</b><span>Поможем оформить участок и дом</span></div>
+          <button class="btn btn--outline" type="button" data-open-quiz>Подобрать проект <svg class="icon"
+              aria-hidden="true">
+              <use href="#i-arrow"></use>
+            </svg></button>
+        </div>
+        <div class="projects-toolbar reveal">
+          <div class="filters" role="group" aria-label="Фильтр проектов">
+            <button class="filter is-active" type="button" data-filter="all">Все проекты</button>
+            <button class="filter" type="button" data-filter="1">1 этаж</button>
+            <button class="filter" type="button" data-filter="2">2 этажа</button>
+            <button class="filter" type="button" data-filter="small">До 130 м²</button>
+            <button class="filter" type="button" data-filter="large">150+ м²</button>
           </div>
-          <div class="feature">
-            <span class="feature__icon"><svg class="icon" aria-hidden="true">
-                <use href="#i-shield"></use>
-              </svg></span>
-            <div><b>Гарантия по договору</b><span>Отвечаем за результат после сдачи</span></div>
+          <span class="projects-toolbar__count" id="projectsCount">10 проектов</span>
+        </div>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section finished section--lime" id="finished">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head__text">
+            <span class="kicker">Сделанные проекты</span>
+            <h2>Дома, в которых <span class="mark">уже живут</span></h2>
+            <p class="hide-mobile">Реальные объекты в Калуге и области. Приезжайте посмотреть — покажем дома вживую и
+              ответим на вопросы.</p>
+          </div>
+          <div class="section-head__actions">
+            <button class="btn btn--outline" type="button" data-open-form="Записаться на просмотр">Записаться на
+              просмотр <svg class="icon" aria-hidden="true">
+                <use href="#i-arrow"></use>
+              </svg></button>
+            <a class="btn btn--primary" href="projects.html">Смотреть все проекты <svg class="icon" aria-hidden="true">
+                <use href="#i-arrow"></use>
+              </svg></a>
+          </div>
+        </div>
+        <div class="done-grid" id="doneGrid"></div>
+      </div>
+    </section>
+
+    <section class="section tradein" id="tradein">
+      <div class="container">
+        <div class="tradein__grid">
+          <div class="tradein__intro reveal">
+            <span class="kicker">Trade-in</span>
+            <h2>Сдайте старое жильё — <span class="mark">постройте новое</span></h2>
+            <p class="section-sub">Вы можете сдать старую квартиру или дом, пока строится новый. Компания сама
+              продаст вашу недвижимость, а вырученные средства зачтём в стоимость строительства.</p>
+            <ul class="list-check list-check--dark">
+              <li><svg class="icon" aria-hidden="true">
+                  <use href="#i-check"></use>
+                </svg><span>Примем в зачёт квартиру или дом в Калуге и области</span></li>
+              <li><svg class="icon" aria-hidden="true">
+                  <use href="#i-check"></use>
+                </svg><span>Возьмём на себя продажу, показы и оформление документов</span></li>
+              <li><svg class="icon" aria-hidden="true">
+                  <use href="#i-check"></use>
+                </svg><span>Зачтём вырученные средства в строительство нового дома</span></li>
+            </ul>
+            <div class="tradein__actions">
+              <button class="btn btn--primary" type="button" data-open-form="Trade-in">Обсудить trade-in
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-arrow"></use>
+                </svg></button>
+              <button class="btn btn--outline" type="button" data-open-quiz>Рассчитать новый дом</button>
+            </div>
+          </div>
+          <div class="tradein__steps reveal">
+            <article class="tradein-step">
+              <span class="tradein-step__num">01</span>
+              <div class="tradein-step__body">
+                <b>Оценка и расчёт</b>
+                <p>Изучим вашу квартиру или дом, оценим рыночную стоимость и предложим понятную схему зачёта.</p>
+              </div>
+            </article>
+            <article class="tradein-step">
+              <span class="tradein-step__num">02</span>
+              <div class="tradein-step__body">
+                <b>Продажа недвижимости</b>
+                <p>Возьмём на себя рекламу, показы, переговоры и оформление сделки — вам не нужно вести это
+                  самостоятельно.</p>
+              </div>
+            </article>
+            <article class="tradein-step">
+              <span class="tradein-step__num">03</span>
+              <div class="tradein-step__body">
+                <b>Строительство нового дома</b>
+                <p>Зачтём вырученные средства в стоимость дома и начнём стройку по согласованному графику.</p>
+              </div>
+            </article>
           </div>
         </div>
       </div>
-    </div>
-    <section class="section section--dark mortgage" id="mortgage">
+    </section>
+
+    <section class="section mortgage mortgage--light section--lime" id="mortgage">
       <div class="section-pattern" aria-hidden="true"></div>
       <div class="container">
         <div class="mortgage__grid">
           <div class="mortgage__intro reveal">
             <span class="kicker">Ипотека</span>
             <h2>Дом в ипотеку — <span class="accent">реально</span></h2>
-            <p class="section-sub">Поможем выбрать программу, собрать документы и получить одобрение. Работаем с
-              семейной, сельской ипотекой и кредитами на строительство.</p>
+            <p class="section-sub hide-mobile">Поможем выбрать программу, собрать документы и получить одобрение.
+              Работаем с семейной, сельской ипотекой и кредитами на строительство.</p>
             <ul class="list-check">
               <li><svg class="icon" aria-hidden="true">
                   <use href="#i-check"></use>
@@ -320,95 +430,51 @@
       </div>
     </section>
 
-    <section class="section section--gray quiz-section" id="quiz">
+    <section class="hero-features-wrap" id="advantages">
       <div class="container">
-        <div class="quiz-layout">
-          <div class="quiz-intro reveal">
-            <span class="kicker">Расчёт стоимости</span>
-            <h2>Узнайте стоимость дома <span class="mark">за 1 минуту</span></h2>
-            <p class="section-sub">Ответьте на 8 вопросов — покажем предварительную стоимость и предложим оптимальный
-              вариант. Это бесплатно и ни к чему не обязывает.</p>
-            <ul class="list-check list-check--dark">
-              <li><svg class="icon" aria-hidden="true">
-                  <use href="#i-check"></use>
-                </svg><span>Предварительная смета по вашим параметрам</span></li>
-              <li><svg class="icon" aria-hidden="true">
-                  <use href="#i-check"></use>
-                </svg><span>Подберём подходящий проект</span></li>
-              <li><svg class="icon" aria-hidden="true">
-                  <use href="#i-check"></use>
-                </svg><span>Эскизный проект в подарок при заключении договора</span></li>
-            </ul>
-            <div class="quiz-intro__media">
-              <img src="assets/img/quiz.jpg" alt="Современный дом с продуманной архитектурой" width="1000" height="558"
-                loading="lazy">
-              <div class="quiz-intro__badge"><b>1 минута</b><span>8 простых вопросов</span></div>
-            </div>
+        <div class="features-head reveal">
+          <span class="kicker">Почему с нами удобно</span>
+          <h2>Берём на себя <span class="mark">весь процесс</span></h2>
+          <p>От первой встречи до вручения ключей — сопровождаем на каждом этапе и отвечаем за результат.</p>
+        </div>
+        <div class="hero-features reveal">
+          <div class="feature">
+            <span class="feature__icon"><svg class="icon" aria-hidden="true">
+                <use href="#i-home"></use>
+              </svg></span>
+            <div><b>Индивидуальная планировка</b><span>Адаптируем проект под вашу семью</span></div>
           </div>
-          <div class="quiz-card reveal" id="quizInline" aria-label="Квиз по расчёту стоимости дома"></div>
+          <div class="feature">
+            <span class="feature__icon"><svg class="icon" aria-hidden="true">
+                <use href="#i-layers"></use>
+              </svg></span>
+            <div><b>Помощь с коммуникациями</b><span>Подключим газ, воду и электричество</span></div>
+          </div>
+          <div class="feature">
+            <span class="feature__icon"><svg class="icon" aria-hidden="true">
+                <use href="#i-doc"></use>
+              </svg></span>
+            <div><b>Межевание и документы</b><span>Поможем оформить участок и дом</span></div>
+          </div>
+          <div class="feature">
+            <span class="feature__icon"><svg class="icon" aria-hidden="true">
+                <use href="#i-shield"></use>
+              </svg></span>
+            <div><b>Гарантия по договору</b><span>Отвечаем за результат после сдачи</span></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section projects" id="projects">
-      <div class="container">
-        <div class="section-head reveal">
-          <div class="section-head__text">
-            <span class="kicker">Типовые проекты</span>
-            <h2>Проекты, которые <span class="mark">уже стали домами</span></h2>
-            <p>10 готовых решений с продуманными планировками. Любой проект адаптируем под ваш участок, состав семьи и
-              бюджет.</p>
-          </div>
-          <button class="btn btn--outline" type="button" data-open-quiz>Подобрать проект <svg class="icon"
-              aria-hidden="true">
-              <use href="#i-arrow"></use>
-            </svg></button>
-        </div>
-        <div class="projects-toolbar reveal">
-          <div class="filters" role="group" aria-label="Фильтр проектов">
-            <button class="filter is-active" type="button" data-filter="all">Все проекты</button>
-            <button class="filter" type="button" data-filter="1">1 этаж</button>
-            <button class="filter" type="button" data-filter="2">2 этажа</button>
-            <button class="filter" type="button" data-filter="small">До 130 м²</button>
-            <button class="filter" type="button" data-filter="large">150+ м²</button>
-          </div>
-          <span class="projects-toolbar__count" id="projectsCount">10 проектов</span>
-        </div>
-        <div class="projects-grid" id="projectsGrid"></div>
-      </div>
-    </section>
-
-    <section class="section section--gray finished" id="finished">
-      <div class="container">
-        <div class="section-head reveal">
-          <div class="section-head__text">
-            <span class="kicker">Сделанные проекты</span>
-            <h2>Дома, в которых <span class="mark">уже живут</span></h2>
-            <p>Реальные объекты в Калуге и области. Приезжайте посмотреть — покажем дома вживую и ответим на вопросы.
-            </p>
-          </div>
-          <div class="section-head__actions">
-            <button class="btn btn--outline" type="button" data-open-form="Записаться на просмотр">Записаться на
-              просмотр <svg class="icon" aria-hidden="true">
-                <use href="#i-arrow"></use>
-              </svg></button>
-            <a class="btn btn--primary" href="projects.html">Смотреть все проекты <svg class="icon" aria-hidden="true">
-                <use href="#i-arrow"></use>
-              </svg></a>
-          </div>
-        </div>
-        <div class="done-grid" id="doneGrid"></div>
-      </div>
-    </section>
-    <section class="section section--dark send" id="send">
+    <section class="section send send--light section--lime" id="send">
       <div class="section-pattern" aria-hidden="true"></div>
       <div class="container">
         <div class="send__grid">
           <div class="send__intro reveal">
             <span class="kicker">У вас уже есть проект?</span>
             <h2>Отправьте проект — <span class="accent">предложим свою цену</span></h2>
-            <p class="section-sub">Пришлите планировку или эскиз. Мы изучим проект, проверим смету и предложим стоимость
-              строительства. Ответим в течение рабочего дня.</p>
+            <p class="section-sub hide-mobile">Пришлите планировку или эскиз. Мы изучим проект, проверим смету и
+              предложим стоимость строительства. Ответим в течение рабочего дня.</p>
             <ul class="list-check">
               <li><svg class="icon" aria-hidden="true">
                   <use href="#i-check"></use>
@@ -511,8 +577,8 @@
           <div class="section-head__text">
             <span class="kicker">Фундамент</span>
             <h2>Фото фундаментов <span class="mark">с наших объектов</span></h2>
-            <p>Фундамент — основа дома. Работаем по проекту, используем качественные материалы и контролируем каждый
-              этап.</p>
+            <p class="hide-mobile">Фундамент — основа дома. Работаем по проекту, используем качественные материалы и
+              контролируем каждый этап.</p>
           </div>
           <button class="btn btn--primary" type="button" data-open-form="Рассчитать фундамент">Рассчитать фундамент <svg
               class="icon" aria-hidden="true">
@@ -529,7 +595,7 @@
       </div>
     </section>
 
-    <section class="section section--gray contacts" id="contacts">
+    <section class="section contacts section--lime" id="contacts">
       <div class="container">
         <div class="section-head reveal">
           <div class="section-head__text">
@@ -628,7 +694,7 @@
     <div class="container">
       <div class="footer__top">
         <div class="footer__brand">
-          <a href="#top" aria-label="Семейный особняк — на главную"><img src="assets/img/logo-light.png"
+          <a href="#top" aria-label="Семейный особняк — на главную"><img src="assets/img/logo-dark.png"
               alt="Семейный особняк — строительная компания" width="220" height="43" loading="lazy"></a>
           <p>Строительная компания «Семейный особняк». Строим частные дома под ключ в Калуге и области с 2009 года.</p>
           <button class="btn btn--primary footer__cta" type="button" data-open-quiz>Рассчитать дом <svg class="icon"
@@ -641,8 +707,9 @@
           <ul>
             <li><a href="#projects">Типовые проекты</a></li>
             <li><a href="#finished">Готовые дома</a></li>
-            <li><a href="#foundation">Фундаменты</a></li>
+            <li><a href="#tradein">Trade-in</a></li>
             <li><a href="#mortgage">Ипотека</a></li>
+            <li><a href="#foundation">Фундаменты</a></li>
           </ul>
         </div>
         <div class="footer__col">
@@ -731,6 +798,19 @@
         <use href="#i-chevron-right"></use>
       </svg></button>
   </div>
+
+  <a class="tradein-promo" href="#tradein" id="tradeinPromo" aria-label="Trade-in: сдать старую квартиру или дом">
+    <span class="tradein-promo__icon"><svg class="icon" aria-hidden="true">
+        <use href="#i-home"></use>
+      </svg></span>
+    <span class="tradein-promo__text">
+      <b>Trade-in</b>
+      <span>Сдайте старую квартиру или дом — зачтём в новый дом</span>
+    </span>
+    <span class="tradein-promo__arrow"><svg class="icon" aria-hidden="true">
+        <use href="#i-arrow"></use>
+      </svg></span>
+  </a>
 
   <div class="mobile-bar">
     <a class="btn btn--outline" href="tel:+79109103111"><svg class="icon" aria-hidden="true">
@@ -846,6 +926,7 @@
   <script src="assets/js/done-projects.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/cookie.js"></script>
+  <script src="assets/js/tradein.js"></script>
 </body>
 
 </html>

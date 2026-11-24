@@ -1,7 +1,22 @@
 /* ===== Alternative light home page ===== */
 .alt-home{
   background:var(--white);
+  --band-lime:#e9f2cd;
 }
+
+/* Alternating lime/white section bands */
+.alt-home .section--lime{background:var(--band-lime)}
+.alt-home .section--lime::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:url('../img/pattern-dark.svg') repeat;
+  background-size:620px auto;
+  opacity:.05;
+  pointer-events:none;
+}
+.alt-home .section--lime>.container{position:relative;z-index:1}
+.alt-home .section--lime .section-pattern{display:none}
 
 /* Top bar */
 .topbar{
@@ -22,10 +37,7 @@ a.topbar__item:hover{color:#10120d}
   color:var(--ink);
 }
 .hero--alt::after{display:none}
-.hero--alt .hero__pattern{
-  background-image:url('../img/pattern-dark.svg');
-  opacity:.035;
-}
+.hero--alt .hero__pattern{display:none}
 .hero--alt .hero__inner{
   display:grid;
   grid-template-columns:1.02fr .98fr;
@@ -61,7 +73,13 @@ a.topbar__item:hover{color:#10120d}
   max-width:640px;
 }
 .hero--alt .hero__stat b{color:var(--lime-dark)}
-.hero--alt .hero__stat span{color:var(--gray-500)}
+.hero--alt .hero__stat span{
+  font-size:14.5px;
+  line-height:1.5;
+  font-weight:600;
+  color:var(--ink);
+  max-width:230px;
+}
 .hero--alt .btn--outline-light{
   background:transparent;
   color:var(--ink);
@@ -114,7 +132,7 @@ a.topbar__item:hover{color:#10120d}
   z-index:0;
   margin-top:0;
   padding:80px 0;
-  background:var(--lime-soft);
+  background:var(--white);
   border-top:1px solid rgba(173,203,64,.24);
   border-bottom:1px solid rgba(173,203,64,.24);
 }
@@ -149,7 +167,7 @@ a.topbar__item:hover{color:#10120d}
   align-items:flex-start;
   gap:18px;
   padding:28px 24px;
-  background:#fff;
+  background:var(--lime-soft);
   border:1px solid var(--gray-200);
   border-radius:18px;
   box-shadow:0 14px 34px rgba(20,24,15,.06);
@@ -178,7 +196,7 @@ a.topbar__item:hover{color:#10120d}
 }
 
 /* Mortgage */
-.mortgage--light{background:var(--gray-50);color:var(--ink)}
+.mortgage--light{background:var(--band-lime);color:var(--ink)}
 .mortgage--light .section-pattern{opacity:.05}
 .mortgage--light .kicker{color:var(--ink)}
 .mortgage--light .accent{color:var(--lime-dark)}
@@ -208,7 +226,7 @@ a.topbar__item:hover{color:#10120d}
 .mortgage--light .rate-card--highlight p{color:rgba(16,18,13,.64)}
 
 /* Send project */
-.send--light{background:var(--lime-soft);color:var(--ink)}
+.send--light{background:var(--band-lime);color:var(--ink)}
 .send--light .section-pattern{opacity:.045}
 .send--light .kicker{color:var(--ink)}
 .send--light .accent{color:var(--lime-dark)}
@@ -234,7 +252,7 @@ a.topbar__item:hover{color:#10120d}
   color:var(--ink);
   border-top:1px solid var(--gray-200);
 }
-.footer__pattern{opacity:.05}
+.footer__pattern{display:none}
 .footer__top{border-bottom-color:var(--gray-200)}
 .footer__brand p{color:var(--gray-500)}
 .footer h4{color:var(--gray-500)}
@@ -274,6 +292,127 @@ a.topbar__item:hover{color:#10120d}
 }
 .cookie-banner p{color:var(--gray-600)}
 .cookie-banner a{color:var(--lime-dark)}
+
+/* ===== Higher contrast for small body text ===== */
+.alt-home .section-head p,
+.alt-home .section-sub,
+.alt-home .features-head p,
+.alt-home .hero--alt .hero__lead,
+.alt-home .project-card__meta,
+.alt-home .rate-card p,
+.alt-home .hero-features .feature > div > span,
+.alt-home .send__alt,
+.alt-home .quiz-intro__badge span,
+.alt-home .contacts__map-label small,
+.alt-home .footer__brand p,
+.alt-home .footer ul a,
+.alt-home .footer__contacts li{
+  color:var(--ink);
+  font-weight:500;
+}
+.alt-home .mortgage--light .rate-card p{color:var(--ink-2)}
+.alt-home .mortgage--light .rate-card--highlight p{color:rgba(16,18,13,.78)}
+.alt-home .footer h4{color:var(--gray-600)}
+.alt-home .contact-item b{color:var(--gray-600)}
+.alt-home .projects-toolbar__count{color:var(--ink)}
+
+/* ===== Done projects: three cards per row ===== */
+.alt-home .done-grid{grid-template-columns:repeat(3,1fr);gap:20px}
+.alt-home .done-card{min-height:300px}
+.alt-home .done-card--wide{grid-column:auto;min-height:300px}
+.alt-home .done-card__content{padding:22px}
+.alt-home .done-card h3{font-size:20px}
+
+/* ===== Trade-in section ===== */
+.tradein{overflow:hidden}
+.tradein__grid{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center}
+.tradein__intro h2{
+  font-size:clamp(30px,3.5vw,48px);
+  line-height:1.08;
+  letter-spacing:-.025em;
+  font-weight:800;
+  margin-top:14px;
+}
+.tradein__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.tradein__steps{display:grid;gap:14px}
+.tradein-step{
+  display:flex;
+  gap:18px;
+  padding:24px 26px;
+  border:1px solid var(--gray-200);
+  border-left:3px solid var(--lime);
+  border-radius:16px;
+  background:var(--gray-50);
+}
+.tradein-step__num{
+  font-family:'Tenor Sans',Georgia,serif;
+  font-size:30px;
+  line-height:1;
+  color:var(--lime-dark);
+  flex-shrink:0;
+  min-width:44px;
+}
+.tradein-step__body b{display:block;font-size:16px;line-height:1.25;font-weight:700;margin-bottom:5px}
+.tradein-step__body p{font-size:13.5px;line-height:1.5;color:var(--ink);font-weight:500}
+
+/* ===== Fixed Trade-in notification ===== */
+.tradein-promo{
+  position:fixed;
+  left:22px;
+  bottom:22px;
+  z-index:85;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  width:min(390px,calc(100% - 44px));
+  padding:13px 15px;
+  border-radius:16px;
+  border:1px solid rgba(173,203,64,.38);
+  background:#10120d;
+  color:#fff;
+  box-shadow:0 18px 50px rgba(20,24,15,.3);
+  overflow:hidden;
+  opacity:0;
+  transform:translateY(14px);
+  pointer-events:none;
+  transition:opacity .35s var(--ease),transform .35s var(--ease);
+}
+.tradein-promo::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:url('../img/pattern-lime.svg') repeat;
+  background-size:220px auto;
+  opacity:.05;
+  pointer-events:none;
+}
+.tradein-promo>*{position:relative;z-index:1}
+.tradein-promo.is-visible{opacity:1;transform:none;pointer-events:auto}
+.tradein-promo.is-visible:hover{transform:translateY(-2px)}
+.tradein-promo.is-hidden{opacity:0;transform:translateY(14px);pointer-events:none}
+.tradein-promo__icon{
+  width:42px;
+  height:42px;
+  border-radius:12px;
+  background:var(--lime);
+  color:#10120d;
+  display:grid;
+  place-items:center;
+  flex-shrink:0;
+}
+.tradein-promo__icon .icon{width:21px;height:21px}
+.tradein-promo__text{display:flex;flex-direction:column;gap:2px;min-width:0;text-align:left}
+.tradein-promo__text b{
+  font-size:11px;
+  line-height:1.2;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--lime);
+  font-weight:700;
+}
+.tradein-promo__text span{font-size:12.5px;line-height:1.35;color:rgba(255,255,255,.82)}
+.tradein-promo__arrow{margin-left:auto;color:var(--lime);flex-shrink:0}
+.tradein-promo__arrow .icon{width:18px;height:18px}
 
 /* ===== Responsive ===== */
 @media (max-width:1024px){
@@ -358,4 +497,56 @@ a.topbar__item:hover{color:#10120d}
   .hero--alt .kicker{display:none}
   .hero--alt h1{font-size:24px;margin-top:0}
   .hero--alt .hero__actions .btn{font-size:11.5px;min-height:44px}
+}
+
+/* ===== Trade-in / done grid responsive ===== */
+@media (max-width:1024px){
+  .tradein__grid{grid-template-columns:1fr;gap:32px}
+  .alt-home .done-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:768px){
+  .hide-mobile{display:none!important}
+  .alt-home .done-grid{grid-template-columns:1fr}
+  .alt-home .done-card,
+  .alt-home .done-card--wide{min-height:320px}
+  .tradein{padding-top:64px;padding-bottom:64px}
+  .tradein__intro h2{font-size:clamp(26px,6.4vw,32px)}
+  .tradein__actions .btn{width:100%}
+  .tradein-step{padding:20px}
+  .tradein-promo{
+    left:14px;
+    right:14px;
+    bottom:calc(82px + env(safe-area-inset-bottom));
+    width:auto;
+    padding:12px 13px;
+    gap:11px;
+  }
+  .tradein-promo__icon{width:40px;height:40px}
+  .tradein-promo__text span{font-size:12px}
+}
+@media (max-width:520px){
+  .mortgage--light .mortgage__intro h2{font-size:26px}
+  .mortgage--light .mortgage__intro .btn{
+    width:100%;
+    white-space:normal;
+    padding-inline:14px;
+    line-height:1.2;
+  }
+  .mortgage--light .list-check li{font-size:14px}
+  .mortgage--light .rate-card{padding:20px 18px}
+  .mortgage--light .rate-card__value{font-size:30px}
+  .mortgage--light .mortgage__note{font-size:10.5px}
+  .tradein-step{gap:14px;padding:18px}
+  .tradein-step__num{font-size:24px;min-width:34px}
+  .tradein-step__body p{font-size:12.5px}
+}
+@media (max-width:380px){
+  .mortgage--light .mortgage__intro h2{font-size:23px}
+  .mortgage--light .mortgage__intro .btn{font-size:12.5px;min-height:48px}
+  .mortgage--light .list-check li{font-size:13.5px}
+  .mortgage--light .rate-card{padding:18px 16px}
+  .mortgage--light .rate-card__label{font-size:14px}
+  .mortgage--light .rate-card__value{font-size:27px}
+  .mortgage--light .rate-card p{font-size:12px}
+  .mortgage--light .mortgage__note{font-size:10px}
 }
